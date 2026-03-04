@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-SDKI Pro — Panduan Keperawatan Indonesia</title>
+    <title>SDKI Pro — Panduan Keperawatan Indonesia</title>
     <meta name="description" content="Aplikasi panduan lengkap Standar Diagnosis (SDKI), Intervensi (SIKI), dan Luaran (SLKI) Keperawatan Indonesia.">
     <meta name="keywords" content="SDKI, SIKI, SLKI, keperawatan, diagnosa, intervensi, luaran, nursing">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
             <section class="home-greeting">
                 <h2>Selamat Datang, Perawat Hebat! 👋</h2>
                 <div class="greeting-desc">
-                    <p><strong>E-SDKI Pro</strong> adalah asisten pintar Anda untuk proses asuhan keperawatan. Temukan panduan lengkap SDKI, SLKI, dan SIKI dengan mudah, gunakan Pengkajian Pintar untuk rekomendasi diagnosa instan, dan buat dokumen ASKEP profesional dalam hitungan detik.</p>
+                    <p><strong>SDKI Pro</strong> adalah asisten pintar Anda untuk proses asuhan keperawatan. Temukan panduan lengkap SDKI, SLKI, dan SIKI dengan mudah, gunakan Pengkajian Pintar untuk rekomendasi diagnosa instan, dan buat dokumen ASKEP profesional dalam hitungan detik.</p>
                 </div>
             </section>
 
@@ -82,7 +82,6 @@
             <section class="quick-actions">
                 <div class="qa-header">
                     <h3>QUICK ACTIONS</h3>
-                    <button class="btn-link">Lihat Semua</button>
                 </div>
                 <div class="qa-grid">
                     <div class="qa-item" onclick="openModalEl(document.getElementById('quizModal')); if (typeof updateOsceScoreboard === 'function') updateOsceScoreboard();">
@@ -101,6 +100,22 @@
                         <div class="qa-icon-wrap text-amber"><i class="fa-solid fa-stethoscope pulse-icon"></i></div>
                         <span>Pengkajian</span>
                     </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('calcModal')); setTimeout(()=>switchCalcTab('infus'), 100);">
+                        <div class="qa-icon-wrap" style="color:#ef4444;"><i class="fa-solid fa-calculator"></i></div>
+                        <span>Kalkulator</span>
+                    </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('labModal'))">
+                        <div class="qa-icon-wrap text-emerald"><i class="fa-solid fa-flask-vial"></i></div>
+                        <span>Nilai Lab</span>
+                    </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('agdModal'))">
+                        <div class="qa-icon-wrap" style="color:#0ea5e9;"><i class="fa-solid fa-lungs"></i></div>
+                        <span>BGA / AGD</span>
+                    </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('sopModal'))">
+                        <div class="qa-icon-wrap text-blue"><i class="fa-solid fa-list-check"></i></div>
+                        <span>SOP Klinis</span>
+                    </div>
                 </div>
             </section>
 
@@ -109,7 +124,7 @@
                     <div class="guide-icon"><i class="fa-regular fa-compass fa-spin-hover"></i></div>
                     <div class="guide-text">
                         <h4>Panduan Penggunaan</h4>
-                        <p>Pelajari cara memaksimalkan fitur E-SDKI Pro</p>
+                        <p>Pelajari cara memaksimalkan fitur SDKI Pro</p>
                     </div>
                     <i class="fa-solid fa-chevron-right guide-arrow"></i>
                 </div>
@@ -128,7 +143,7 @@
                 </button>
                 <div class="logo">
                     <div class="logo-icon"><i class="fa-solid fa-notes-medical"></i></div>
-                    <h1>E-SDKI <span class="logo-pro">PRO</span></h1>
+                    <h1>SDKI <span class="logo-pro">PRO</span></h1>
                 </div>
 
                 <nav class="main-tabs" id="mainTabs" role="tablist">
@@ -150,19 +165,19 @@
                 </nav>
 
                 <div class="header-actions">
-                    <button id="toggleGlossary" class="btn btn-outline" title="Glosarium Medis">
+                    <button id="toggleGlossary" class="btn btn-outline btn-sm" title="Glosarium Medis">
                         <i class="fa-solid fa-book"></i>
                         <span class="btn-text">Glosarium</span>
                     </button>
-                    <button id="toggleQuiz" class="btn btn-outline" title="Latihan UKOM">
+                    <button id="toggleQuiz" class="btn btn-outline btn-sm" title="Latihan UKOM">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <span class="btn-text">Quiz</span>
                     </button>
-                    <button class="btn btn-outline" title="Pengkajian Pintar" onclick="openModalEl(document.getElementById('pengkajianModal'))">
+                    <button class="btn btn-outline btn-sm" title="Pengkajian Pintar" onclick="openModalEl(document.getElementById('pengkajianModal'))">
                         <i class="fa-solid fa-stethoscope text-amber"></i>
                         <span class="btn-text">Pengkajian</span>
                     </button>
-                    <button id="toggleAskep" class="btn btn-primary" title="Lihat Keranjang ASKEP">
+                    <button id="toggleAskep" class="btn btn-primary btn-sm" title="Lihat Keranjang ASKEP">
                         <i class="fa-solid fa-file-medical"></i>
                         <span class="btn-text">ASKEP</span>
                         <span class="badge" id="askepCounter">0</span>
@@ -172,13 +187,6 @@
                     </button>
                 </div>
             </div>
-
-            <!-- Page Title in Navbar -->
-            <div class="header-intro">
-                <h2 id="pageTitle">Panduan Diagnosa Keperawatan</h2>
-                <p id="pageDesc">Alat Bantu Digital untuk Belajar Diagnosis Keperawatan (SDKI) Berbasis Data.</p>
-            </div>
-
             <div class="header-row-bottom">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -235,26 +243,6 @@
         </div>
     </main>
     </div> <!-- End of listScreen -->
-
-    <!-- Main Bottom Navigation -->
-    <nav class="bottom-nav">
-        <button class="nav-item active" onclick="goToHome()">
-            <i class="fa-solid fa-house"></i>
-            <span>Beranda</span>
-        </button>
-        <button class="nav-item" onclick="showToast('Fitur Riwayat segera hadir', 'info')">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span>Riwayat</span>
-        </button>
-        <button class="nav-item" onclick="goToListFav()">
-            <i class="fa-regular fa-heart"></i>
-            <span>Favorit</span>
-        </button>
-        <button class="nav-item" onclick="showToast('Menu Setelan', 'info')">
-            <i class="fa-solid fa-gear"></i>
-            <span>Setelan</span>
-        </button>
-    </nav>
 
     <div id="detailsModal" class="modal hidden">
         <div class="modal-overlay"></div>
@@ -546,7 +534,7 @@
         <div class="modal-content glass-card" style="max-width:800px;">
             <button class="modal-close" id="closeGuideModal" onclick="closeModalEl(document.getElementById('guideModal'))"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header modern-hero" style="background: linear-gradient(135deg, #10b981, #059669); margin: -2.5rem -2.5rem 2rem -2.5rem; border-radius: 24px 24px 0 0; padding: 3rem 2.5rem !important;">
-                <h2 style="color:white !important;"><i class="fa-regular fa-compass"></i> Panduan E-SDKI Pro</h2>
+                <h2 style="color:white !important;"><i class="fa-regular fa-compass"></i> Panduan SDKI Pro</h2>
                 <p style="color:rgba(255,255,255,0.9);">Cara cepat dan efisien menggunakan seluruh fitur aplikasi.</p>
             </div>
             <div class="modal-body" style="padding: 0 0.5rem;">
@@ -576,6 +564,355 @@
                         <div class="guide-header"><i class="fa-solid fa-graduation-cap text-blue"></i> 4. Latihan OSCE & UKOM</div>
                         <div class="guide-content">
                             <p>Menu <strong>Quiz</strong> berguna untuk menguji seberapa hafal Anda dengan patokan skor GCS, tanda vital normal, atau rumus intervensi. Cocok untuk perawat klinis baru atau mahasiswa keperawatan yang akan menghadapi Ujian Kompetensi (UKOM) maupun ujian praktik OSCE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Medical Calculator Modal -->
+    <div id="calcModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('calcModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:700px; padding: 0; background: var(--bg);">
+            <div class="calc-header modern-hero" style="background: linear-gradient(135deg, #ef4444, #b91c1c); margin: 0; border-radius: 24px 24px 0 0; padding: 2.5rem !important;">
+                <button class="modal-close" id="closeCalcModal" onclick="closeModalEl(document.getElementById('calcModal'))" style="background: rgba(255,255,255,0.2); color:white;"><i class="fa-solid fa-xmark"></i></button>
+                <h2 style="color:white !important; margin:0; font-size: 1.8rem !important;"><i class="fa-solid fa-calculator"></i> Kalkulator Medis</h2>
+                <p style="color:rgba(255,255,255,0.9); margin-top:0.5rem; font-size:0.95rem;">Alat hitung cepat untuk efisiensi praktek klinis perawat.</p>
+                
+                <div class="calc-tabs" style="margin-top:1.5rem; display:flex; gap:0.5rem; overflow-x:auto; padding-bottom: 0.5rem;">
+                    <button class="calc-tab-btn active" data-target="calc-infus" onclick="switchCalcTab('infus')"><i class="fa-solid fa-prescription-bottle-medical"></i> Tetes Infus</button>
+                    <button class="calc-tab-btn" data-target="calc-dosis" onclick="switchCalcTab('dosis')"><i class="fa-solid fa-baby"></i> Dosis Anak</button>
+                    <button class="calc-tab-btn" data-target="calc-bmi" onclick="switchCalcTab('bmi')"><i class="fa-solid fa-weight-scale"></i> BMI & MAP</button>
+                    <button class="calc-tab-btn" data-target="calc-baxter" onclick="switchCalcTab('baxter')"><i class="fa-solid fa-fire"></i> Luka Bakar</button>
+                </div>
+            </div>
+
+            <div class="modal-body" style="padding: 2rem;">
+                
+                <!-- Tab: Infus -->
+                <div id="calc-infus" class="calc-section">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-droplet text-blue"></i> Rumus Tetes Infus (TPM)</h3>
+                    <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Volume Cairan / Kebutuhan (cc)</label>
+                                <input type="number" id="calc-infus-vol" placeholder="Contoh: 500">
+                            </div>
+                            <div>
+                                <label>Waktu Habis (Jam)</label>
+                                <input type="number" id="calc-infus-waktu" placeholder="Contoh: 8">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Faktor Tetes</label>
+                                <select id="calc-infus-faktor">
+                                    <option value="20">Dewasa / Makro (20 tpm)</option>
+                                    <option value="15">Dewasa / Makro (15 tpm)</option>
+                                    <option value="60">Anak / Mikro (60 tpm)</option>
+                                    <option value="1">Syringe Pump (ml/jam)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem;" onclick="hitungInfus()"><i class="fa-solid fa-calculator"></i> Hitung Tetesan</button>
+                    
+                    <div id="res-infus" class="calc-result hidden">
+                        <h4>Hasil Perhitungan:</h4>
+                        <div class="calc-res-value" id="val-infus">--</div>
+                    </div>
+                </div>
+
+                <!-- Tab: BMI & MAP -->
+                <div id="calc-bmi" class="calc-section hidden">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-heart-pulse text-blue"></i> Antropometri & Hemodinamik</h3>
+                    
+                    <div style="background:var(--bg-alt); padding:1.25rem; border-radius:var(--radius-lg); margin-bottom:1.5rem; border:1px solid var(--border);">
+                        <h4 style="margin: 0 0 1rem; color:var(--primary); font-size:0.95rem;">Body Mass Index (BMI)</h4>
+                        <div class="pengkajian-input-group row-group" style="margin-bottom:1rem;">
+                            <div>
+                                <label>Berat Badan (kg)</label>
+                                <input type="number" id="calc-bb" placeholder="Contoh: 65">
+                            </div>
+                            <div>
+                                <label>Tinggi Badan (cm)</label>
+                                <input type="number" id="calc-tb" placeholder="Contoh: 165">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-outline" style="width:100%; justify-content:center;" onclick="hitungBMI()"><i class="fa-solid fa-weight-scale"></i> Hitung BMI</button>
+                        <div id="res-bmi" class="calc-result hidden" style="margin-top:1rem; padding:1rem;">
+                            <span id="val-bmi" class="calc-res-value-small"></span> <span id="kategori-bmi" class="badge" style="font-size:0.85rem; padding:0.3rem 0.8rem;"></span>
+                        </div>
+                    </div>
+
+                    <div style="background:var(--bg-alt); padding:1.25rem; border-radius:var(--radius-lg); border:1px solid var(--border);">
+                        <h4 style="margin: 0 0 1rem; color:var(--primary); font-size:0.95rem;">Mean Arterial Pressure (MAP)</h4>
+                        <div class="pengkajian-input-group row-group" style="margin-bottom:1rem;">
+                            <div>
+                                <label>Sistolik (mmHg)</label>
+                                <input type="number" id="calc-sistol" placeholder="120">
+                            </div>
+                            <div>
+                                <label>Diastolik (mmHg)</label>
+                                <input type="number" id="calc-diastol" placeholder="80">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-outline" style="width:100%; justify-content:center;" onclick="hitungMAP()"><i class="fa-solid fa-heart"></i> Hitung MAP</button>
+                        <div id="res-map" class="calc-result hidden" style="margin-top:1rem; padding:1rem; border-top-color:var(--emerald);">
+                            <span id="val-map" class="calc-res-value-small"></span> <span id="kategori-map" class="badge" style="font-size:0.85rem; padding:0.3rem 0.8rem;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Baxter -->
+                <div id="calc-baxter" class="calc-section hidden">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-fire text-amber"></i> Resusitasi Cairan Luka Bakar (Baxter)</h3>
+                    <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1.5rem;">Digunakan untuk menghitung kebutuhan cairan RL 24 jam pertama paska trauma luka bakar (Resusitasi Cairan).</p>
+                    <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Berat Badan (kg)</label>
+                                <input type="number" id="calc-baxter-bb" placeholder="Contoh: 60">
+                            </div>
+                            <div>
+                                <label>Luas Luka Bakar (%)</label>
+                                <input type="number" id="calc-baxter-luas" placeholder="Contoh: 30" max="100">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem; background:var(--amber); border-color:var(--amber); color:white;" onclick="hitungBaxter()"><i class="fa-solid fa-calculator"></i> Kalkulasi Cairan</button>
+                    
+                    <div id="res-baxter" class="calc-result hidden" style="border-top-color:var(--amber);">
+                        <h4>Total Kebutuhan Cairan (24 Jam Pertama):</h4>
+                        <div class="calc-res-value" id="val-baxter-total" style="color:var(--amber); margin-bottom:1rem;">--</div>
+                        <div style="font-size:0.95rem; color:var(--text-secondary); background:var(--bg-alt); padding:1rem; border-radius:var(--radius-md); text-align:left; border:1px dashed var(--amber);">
+                            <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;">
+                                <strong>8 Jam Pertama (1/2 dosis):</strong> <span id="val-baxter-8" style="font-weight:700; color:var(--text-primary);">--</span>
+                            </div>
+                            <div style="display:flex; justify-content:space-between;">
+                                <strong>16 Jam Berikutnya (1/2 dosis):</strong> <span id="val-baxter-16" style="font-weight:700; color:var(--text-primary);">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Dosis Anak -->
+                <div id="calc-dosis" class="calc-section hidden">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-baby text-blue"></i> Dosis Obat Anak</h3>
+                    <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Berat Badan Anak (kg)</label>
+                                <input type="number" id="calc-dosis-bb" placeholder="Contoh: 12">
+                            </div>
+                            <div>
+                                <label>Dosis Anjuran (mg/kgBB/kali)</label>
+                                <input type="number" id="calc-dosis-rek" placeholder="Contoh: 15">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Sediaan Obat (mg)</label>
+                                <input type="number" id="calc-dosis-mg" placeholder="Contoh: 125">
+                            </div>
+                            <div>
+                                <label>Pelarut Sediaan (ml/cc)</label>
+                                <input type="number" id="calc-dosis-ml" placeholder="Contoh: 5">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem; background:var(--primary); border-color:var(--primary); color:white;" onclick="hitungDosis()"><i class="fa-solid fa-calculator"></i> Hitung Dosis</button>
+                    
+                    <div id="res-dosis" class="calc-result hidden" style="border-top-color:var(--primary);">
+                        <h4>Jumlah Liquid yg Diberikan:</h4>
+                        <div class="calc-res-value" id="val-dosis-total" style="color:var(--primary); margin-bottom:1rem;">--</div>
+                        <div style="font-size:0.95rem; color:var(--text-secondary); background:var(--bg-alt); padding:1rem; border-radius:var(--radius-md); text-align:left; border:1px dashed var(--primary);">
+                            <div style="display:flex; justify-content:space-between;">
+                                <strong>Kebutuhan Total Tablet (sekali):</strong> <span id="val-dosis-butuh" style="font-weight:700; color:var(--text-primary);">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Lab Modal -->
+    <div id="labModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('labModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:800px; padding: 0; background: var(--bg);">
+            <div class="calc-header modern-hero" style="background: linear-gradient(135deg, #10b981, #059669); margin: 0; border-radius: 24px 24px 0 0; padding: 2rem 2.5rem !important;">
+                <button class="modal-close" onclick="closeModalEl(document.getElementById('labModal'))" style="background: rgba(255,255,255,0.2); color:white;"><i class="fa-solid fa-xmark"></i></button>
+                <h2 style="color:white !important; margin:0;"><i class="fa-solid fa-flask-vial"></i> Nilai Normal Lab</h2>
+                <p style="color:rgba(255,255,255,0.9); margin-top:0.5rem; font-size:0.95rem;">Referensi cepat hasil uji laboratorium klinik dasar.</p>
+            </div>
+            <div class="modal-body" style="padding: 1.5rem 2rem;">
+                <!-- Section Darah Rutin -->
+                <div style="background:var(--bg-alt); padding:1rem; border-radius:var(--radius-lg); margin-bottom:1rem; border:1px solid var(--border);">
+                    <h3 style="font-size:1.05rem; margin-bottom:0.75rem; color:var(--emerald);"><i class="fa-solid fa-droplet"></i> Hematologi / Darah Rutin</h3>
+                    <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Hemoglobin (Hb)</td><td style="text-align:right; font-weight:600;">♂ 13.5 - 17.5 | ♀ 12.0 - 15.5 g/dL</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Leukosit (WBC)</td><td style="text-align:right; font-weight:600;">4.500 - 11.000 /µL</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Trombosit (PLT)</td><td style="text-align:right; font-weight:600;">150.000 - 450.000 /µL</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0;">Hematokrit (Ht)</td><td style="text-align:right; font-weight:600;">♂ 41 - 50% | ♀ 36 - 48%</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Section Elektrolit -->
+                <div style="background:var(--bg-alt); padding:1rem; border-radius:var(--radius-lg); margin-bottom:1rem; border:1px solid var(--border);">
+                    <h3 style="font-size:1.05rem; margin-bottom:0.75rem; color:var(--blue);"><i class="fa-solid fa-bolt"></i> Elektrolit & Fungsi Ginjal</h3>
+                    <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Natrium (Na)</td><td style="text-align:right; font-weight:600;">135 - 145 mEq/L</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Kalium (K)</td><td style="text-align:right; font-weight:600;">3.5 - 5.0 mEq/L</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">Ureum (BUN)</td><td style="text-align:right; font-weight:600;">8 - 20 mg/dL</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0;">Kreatinin</td><td style="text-align:right; font-weight:600;">0.6 - 1.2 mg/dL</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!-- Section Gula Darah -->
+                <div style="background:var(--bg-alt); padding:1rem; border-radius:var(--radius-lg); border:1px solid var(--border);">
+                    <h3 style="font-size:1.05rem; margin-bottom:0.75rem; color:var(--amber);"><i class="fa-solid fa-cubes-stacked"></i> Gula Darah</h3>
+                    <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <td style="padding:0.5rem 0;">GDS (Sewaktu)</td><td style="text-align:right; font-weight:600;">< 200 mg/dL</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0;">GDP (Puasa)</td><td style="text-align:right; font-weight:600;">70 - 100 mg/dL</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AGD Modal -->
+    <div id="agdModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('agdModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:600px; padding: 0; background: var(--bg);">
+            <div class="calc-header modern-hero" style="background: linear-gradient(135deg, #0284c7, #0369a1); margin: 0; border-radius: 24px 24px 0 0; padding: 2rem 2.5rem !important;">
+                <button class="modal-close" onclick="closeModalEl(document.getElementById('agdModal'))" style="background: rgba(255,255,255,0.2); color:white;"><i class="fa-solid fa-xmark"></i></button>
+                <h2 style="color:white !important; margin:0;"><i class="fa-solid fa-lungs"></i> Analisa Gas Darah</h2>
+                <p style="color:rgba(255,255,255,0.9); margin-top:0.5rem; font-size:0.95rem;">Interpretasi otomatis membaca gangguan asam basa tubuh.</p>
+            </div>
+            <div class="modal-body" style="padding: 2rem;">
+                <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                    <div class="pengkajian-input-group row-group">
+                        <div>
+                            <label>pH (7.35 - 7.45)</label>
+                            <input type="number" id="agd-ph" placeholder="Contoh: 7.30" step="0.01">
+                        </div>
+                        <div>
+                            <label>PaCO2 (35 - 45)</label>
+                            <input type="number" id="agd-pco2" placeholder="Contoh: 50" step="0.1">
+                        </div>
+                    </div>
+                    <div class="pengkajian-input-group">
+                        <div style="width:100%">
+                            <label>HCO3 (22 - 26)</label>
+                            <input type="number" id="agd-hco3" placeholder="Contoh: 24" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem; background:#0ea5e9; border-color:#0ea5e9;" onclick="hitungAGD()"><i class="fa-solid fa-microscope"></i> Interpretasi Hasil AGD</button>
+                
+                <div id="res-agd" class="calc-result hidden" style="border-top-color:#0ea5e9; background: var(--surface-opaque);">
+                    <h4 style="margin-bottom:1rem;">Kesimpulan AGD:</h4>
+                    <div class="calc-res-value-small" id="val-agd" style="color:#0284c7; margin-bottom:0.5rem; text-align:center;">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOP Modal -->
+    <div id="sopModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('sopModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:800px; padding: 0; background: var(--bg);">
+            <div class="calc-header modern-hero" style="background: linear-gradient(135deg, #4f46e5, #4338ca); margin: 0; border-radius: 24px 24px 0 0; padding: 2rem 2.5rem !important;">
+                <button class="modal-close" onclick="closeModalEl(document.getElementById('sopModal'))" style="background: rgba(255,255,255,0.2); color:white;"><i class="fa-solid fa-xmark"></i></button>
+                <h2 style="color:white !important; margin:0;"><i class="fa-solid fa-list-check"></i> SOP Tindakan Klinis</h2>
+                <p style="color:rgba(255,255,255,0.9); margin-top:0.5rem; font-size:0.95rem;">Standar Operasional Prosedur esensial bagi perawat.</p>
+                
+                <div class="search-box" style="margin-top: 1.5rem; max-width: 100%;">
+                    <i class="fa-solid fa-magnifying-glass search-icon" style="color: var(--text-muted);"></i>
+                    <input type="text" id="sopSearch" placeholder="Cari SOP tindakan (mis. Kateter, Infus)..." autocomplete="off" onkeyup="filterSOP()" style="background:white; color:var(--text-primary);">
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 1.5rem 2rem;">
+                <div class="guide-accordion" id="sopList">
+                    <!-- SOP 1 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-syringe text-blue"></i> Pemasangan Infus (IV Line) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> IV kateter (abocath), Infus set, Cairan infus, Tourniquet, Kapas alkohol, Plester/Hypafix, Perlak/pengalas, Bengkok, Sarung tangan steril.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Cuci tangan & pakai sarung tangan.</li>
+                                <li>Pasang tourniquet 10-15 cm di atas area insersi vena.</li>
+                                <li>Desinfeksi area penusukan (sirkuler dari dalam ke luar).</li>
+                                <li>Tusukkan jarum IV kateter dengan sudut 15-30 derajat.</li>
+                                <li>Jika terlihat darah keluar di indikator abocath, tarik sedikit jarum (mandrin) lalu dorong selongsong kateter hingga pangkal.</li>
+                                <li>Lepaskan tourniquet. Tarik jarum sepenuhnya, segera hubungkan selongsong luar dengan selang infus set.</li>
+                                <li>Buka klem aliran cairan infus. Pastikan tetesan lancar tak ada pembengkakan.</li>
+                                <li>Lakukan fiksasi / plester (teknik kupu-kupu).</li>
+                                <li>Beri label (tanggal pemasangan). Rapikan alat & cuci tangan.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <!-- SOP 2 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-tube text-amber"></i> Pemasangan Selang NGT (Nasogastric Tube) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> Selang NGT (ukuran sesuai toleransi pasien: no 14,16,18), Jelly/pelumas, Spuit Catheter Tip 50cc, Stetoskop, Gelas isi air matang, Plester, Bengkok, Perlak, Sarung tangan, Penlight.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Cek kepatenan lubang hidung pasien, atur posisi pasien (fowler/duduk 45-90 derajat) jika tidak ada kontraindikasi servikal.</li>
+                                <li>Ukur panjang batas selang: Dari ujung hidung &rarr; ujung telinga bawah &rarr; prosesus xiphoideus (PX) epigastrium. Beri tanda pada selang.</li>
+                                <li>Oleskan jelly pada ujung NGT sepanjang 10-20 cm.</li>
+                                <li>Masukkan perlahan melalui hidung (ekstensikan kepala sedikit). Minta pasien menundukkan kepala saat selang terasa melewati nasofaring, dan suruh menelan (bantu minum air jika tidak puasa).</li>
+                                <li>Terus dorong perlahan seiring refleks menelan pasien hingga batas tanda pita ukur.</li>
+                                <li><strong>Cek Kepastian Posisi (PENTING):</strong> Pasang spuit 50cc, berikan udara 10-20cc dengan cepat sambil mendengarkan letupan udara "blub" di kuadran kiri atas abdomen (epigastrium) memakai stetoskop. Cek residu dengan menyedot/aspirasi, jika keluar cairan kekuningan/kehijauan (asam lambung) = TEPAT POSISI.</li>
+                                <li>Fiksasi / plester menyilang hidung.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 3 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-pump-medical text-emerald"></i> Pemasangan Kateter Urine (Foley) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> Kateter Foley steril (nomor 16-18 dewasa), Urine bag, Spuit 10cc, Aquadest steril (untuk isi balon), Jelly (klorheksidin/lidokain steril), Sarung tangan steril & bersih kom steril, Kasa steril, Povidon Iodine/Savlon pekat, Perlak bengkok, Pinset anatomis.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur Steril:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Berikan penjelasan ttg ketidaknyamanan singkat yg akan terjadi.</li>
+                                <li>Atur posisi: Dorsal recumbent (wanita lutut ditekuk/terbuka) atau supine terlentang (pria).</li>
+                                <li>Lakukan vulva hygiene (wanita) / penis hygiene (pria memutar di glans sampai bersih) menggunakan kasa savlon/povidon jepit pinset anatomis. (Pakai sarung tangan bersih).</li>
+                                <li>Ganti dengan **sarung tangan bedah steril**.</li>
+                                <li>Siapkan alat di atas dukong/area steril. Lumuri merata ujung kateter dengan jelly steril klorheksidin (pada pria sebaiknya di-spuit-kan jelly langsung masuk ke saluran uretra minimal 10cc agar tidak nyeri).</li>
+                                <li><strong>Pria:</strong> Pegang batang penis tegak lurus mengarah ke atas (90 derajat dari tubuh), regangkan glans, masukkan kateter berlahan sekitar 15-20 cm atau sampai terlihat gross urine memancar keluar. <strong>Wanita:</strong> Identifikasi benar orificium uretra (di bawah klitoris), buka labia minora dengan tangan tak dominan, minta tarik napas dalam, masukkan kateter perlahan 5-10 cm sampai urine memancar keluar.</li>
+                                <li>Setelah pancaran urine terlihat, dorong masukkan lagi kateter 2-5 cm lebih dalam ke pangkal.</li>
+                                <li>Kembangkan balon kunci (Foley balloon) dengan air aquadest steril (PENTING: JANGAN pakai NaCl kristal). Pakai sekitar 10-15 cc sesuai klaim pabrik.</li>
+                                <li>Tarik sedikit perlahan kateter membelakang untuk memastikan bahwa sisa kateter tertahan oleh balon pengunci (terfiksasi internal di leher vesika urinaria).</li>
+                                <li>Sambungkan ke *Urine Bag*, pastikan klem terkunci, dan fiksasi plester kateter di area paha atas.</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -617,15 +954,9 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <div class="footer-logo-pulse"><i class="fa-solid fa-heart-pulse"></i></div>
-                <span class="footer-brand-text">E-SDKI Pro</span>
+                <span class="footer-brand-text">SDKI Pro</span>
             </div>
-            <p class="footer-text">Alat bantu digital belajar keperawatan.<br>Referensi utama: Buku SDKI, SIKI, SLKI — Persatuan Perawat Nasional Indonesia (PPNI).</p>
-            <div class="footer-shortcuts">
-                <span class="footer-shortcut"><kbd>Ctrl</kbd>+<kbd>K</kbd> Cari</span>
-                <span class="footer-shortcut"><kbd>Esc</kbd> Tutup</span>
-                <span class="footer-shortcut"><kbd>Alt</kbd>+<kbd>T</kbd> Tema</span>
-            </div>
-            <div class="footer-divider"></div>
+            <p class="footer-text">Alat bantu digital belajar keperawatan</p>
             <p class="footer-copyright">Copyright &copy; 2026 <a href="https://masandigital.com" target="_blank" rel="noopener noreferrer">masandigital.com</a> — All rights reserved.</p>
         </div>
     </footer>

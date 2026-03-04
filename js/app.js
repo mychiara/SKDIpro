@@ -963,7 +963,7 @@ async function downloadPDF() {
   content.innerHTML = `
     <div style="text-align:center; margin-bottom:24px;">
       <h1 style="color:#2563eb; margin:0; font-size:20px;">RENCANA ASUHAN KEPERAWATAN</h1>
-      <p style="margin:4px 0; color:#64748b;">E-SDKI Pro — Dokumentasi Digital</p>
+      <p style="margin:4px 0; color:#64748b;">SDKI Pro — Dokumentasi Digital</p>
     </div>
     <table style="width:100%; border-collapse:collapse; margin-bottom:20px; font-size:11px;">
       <tr><td style="padding:6px; border:1px solid #e2e8f0; width:30%;"><strong>Nama Pasien</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">${namaPasien}</td></tr>
@@ -985,7 +985,7 @@ async function downloadPDF() {
     ${catatan ? `<div style="margin-top:16px;padding:12px;border:1px solid #e2e8f0;border-radius:8px;"><strong>Catatan Tambahan:</strong><p style="margin:4px 0;">${catatan}</p></div>` : ""}
     <div style="margin-top:40px; padding-top:16px; border-top:1px solid #e2e8f0; display:flex; justify-content:space-between;">
       <div><p style="margin:0;">Tanda Tangan Perawat</p><br><br><p style="border-top:1px solid #333; display:inline-block; padding-top:4px; min-width:200px;">(............................)</p></div>
-      <div style="text-align:right;"><p style="font-size:9px; color:#94a3b8;">Dicetak via E-SDKI Pro — ${tgl}</p></div>
+      <div style="text-align:right;"><p style="font-size:9px; color:#94a3b8;">Dicetak via SDKI Pro — ${tgl}</p></div>
     </div>
   `;
 
@@ -1540,4 +1540,239 @@ function addToAskepByKode(kode, mode) {
       showToast(`${kode} sudah ada di ASKEP`, "info");
     }
   }
+}
+
+// === MEDICAL CALCULATOR LOGIC ===
+function switchCalcTab(tabId) {
+  document
+    .querySelectorAll(".calc-tab-btn")
+    .forEach((b) => b.classList.remove("active"));
+  let activeBtn = document.querySelector(
+    `.calc-tab-btn[data-target="calc-${tabId}"]`,
+  );
+  if (activeBtn) activeBtn.classList.add("active");
+
+  document
+    .querySelectorAll(".calc-section")
+    .forEach((s) => s.classList.add("hidden"));
+  let targetSection = document.getElementById(`calc-${tabId}`);
+  if (targetSection) targetSection.classList.remove("hidden");
+}
+
+function hitungInfus() {
+  const vol = parseFloat(document.getElementById("calc-infus-vol").value);
+  const waktu = parseFloat(document.getElementById("calc-infus-waktu").value);
+  const faktor = parseInt(document.getElementById("calc-infus-faktor").value);
+
+  if (!vol || !waktu || !faktor) {
+    showToast("Mohon lengkapi data infus form", "warning");
+    return;
+  }
+
+  let hasil = 0;
+  let desc = "";
+
+  if (faktor === 1) {
+    // Syringe pump ml/jam
+    hasil = vol / waktu;
+    desc = "cc/jam (ml/jam)";
+  } else {
+    // Tetes per menit
+    hasil = (vol * faktor) / (waktu * 60);
+    desc = "Tetes/menit (TPM)";
+  }
+
+  document.getElementById("val-infus").innerHTML =
+    `${Math.round(hasil)} <span style="font-size:1rem; color:var(--text-secondary);">${desc}</span>`;
+  document.getElementById("res-infus").classList.remove("hidden");
+}
+
+function hitungBMI() {
+  const bb = parseFloat(document.getElementById("calc-bb").value);
+  const tb = parseFloat(document.getElementById("calc-tb").value) / 100;
+
+  if (!bb || !tb) {
+    showToast("Lengkapi berat dan tinggi badan", "warning");
+    return;
+  }
+
+  const bmi = bb / (tb * tb);
+  let kat = "";
+  let color = "";
+
+  if (bmi < 18.5) {
+    kat = "Underweight";
+    color = "var(--amber)";
+  } else if (bmi < 25) {
+    kat = "Normal";
+    color = "var(--emerald)";
+  } else if (bmi < 30) {
+    kat = "Overweight";
+    color = "var(--amber)";
+  } else {
+    kat = "Obese";
+    color = "var(--danger)";
+  }
+
+  document.getElementById("val-bmi").textContent = bmi.toFixed(1);
+  const badge = document.getElementById("kategori-bmi");
+  badge.textContent = kat;
+  badge.style.background = color;
+  document.getElementById("res-bmi").classList.remove("hidden");
+}
+
+function hitungMAP() {
+  const sis = parseFloat(document.getElementById("calc-sistol").value);
+  const dia = parseFloat(document.getElementById("calc-diastol").value);
+
+  if (!sis || !dia) {
+    showToast("Lengkapi tekanan darah", "warning");
+    return;
+  }
+
+  const map = (sis + 2 * dia) / 3;
+  let kat = "";
+  let color = "";
+
+  if (map < 65) {
+    kat = "Hipotensi (Kurang)";
+    color = "var(--danger)";
+  } else if (map <= 100) {
+    kat = "Normal";
+    color = "var(--emerald)";
+  } else {
+    kat = "Hipertensi (Tinggi)";
+    color = "var(--amber)";
+  }
+
+  document.getElementById("val-map").textContent = map.toFixed(0) + " mmHg";
+  const badge = document.getElementById("kategori-map");
+  badge.textContent = kat;
+  badge.style.background = color;
+  document.getElementById("res-map").classList.remove("hidden");
+}
+
+function hitungBaxter() {
+  const bb = parseFloat(document.getElementById("calc-baxter-bb").value);
+  const luas = parseFloat(document.getElementById("calc-baxter-luas").value);
+
+  if (!bb || !luas) {
+    showToast("Lengkapi BB dan luas luka bakar", "warning");
+    return;
+  }
+  if (luas > 100) {
+    showToast("Luas luka maksimal 100%", "warning");
+    return;
+  }
+
+  // Baxter: 4 cc * BB * luas luka %
+  const total = 4 * bb * luas;
+  const jam8 = total / 2;
+  const jam16 = total / 2;
+
+  document.getElementById("val-baxter-total").textContent =
+    `${total.toLocaleString("id-ID")} cc/ml`;
+  document.getElementById("val-baxter-8").textContent =
+    `${jam8.toLocaleString("id-ID")} cc`;
+  document.getElementById("val-baxter-16").textContent =
+    `${jam16.toLocaleString("id-ID")} cc`;
+  document.getElementById("res-baxter").classList.remove("hidden");
+}
+
+function hitungDosis() {
+  const bb = parseFloat(document.getElementById("calc-dosis-bb").value);
+  const rek = parseFloat(document.getElementById("calc-dosis-rek").value);
+  const mg = parseFloat(document.getElementById("calc-dosis-mg").value);
+  const ml = parseFloat(document.getElementById("calc-dosis-ml").value);
+
+  if (!bb || !rek || !mg || !ml) {
+    showToast("Lengkapi form dosis dengan benar", "warning");
+    return;
+  }
+
+  const butuh_mg = bb * rek;
+  const hasil_ml = (butuh_mg / mg) * ml;
+
+  document.getElementById("val-dosis-total").innerHTML =
+    `${hasil_ml.toFixed(1)} <span style="font-size:1.2rem;">ml (cc)</span>`;
+  document.getElementById("val-dosis-butuh").textContent =
+    `${butuh_mg.toLocaleString()} mg`;
+  document.getElementById("res-dosis").classList.remove("hidden");
+}
+
+function hitungAGD() {
+  const ph = parseFloat(document.getElementById("agd-ph").value);
+  const pco2 = parseFloat(document.getElementById("agd-pco2").value);
+  const hco3 = parseFloat(document.getElementById("agd-hco3").value);
+
+  if (!ph || !pco2 || !hco3) {
+    showToast("Lengkapi semua parameter AGD", "warning");
+    return;
+  }
+
+  let diag = "";
+
+  if (
+    ph >= 7.35 &&
+    ph <= 7.45 &&
+    pco2 >= 35 &&
+    pco2 <= 45 &&
+    hco3 >= 22 &&
+    hco3 <= 26
+  ) {
+    diag = "AGD Normal / Seimbang";
+  } else {
+    if (ph < 7.35) {
+      if (pco2 > 45 && hco3 >= 22 && hco3 <= 26)
+        diag = "Asidosis Respiratorik Murni";
+      else if (pco2 > 45 && hco3 > 26)
+        diag = "Asidosis Respiratorik Kompensasi Sebagian";
+      else if (hco3 < 22 && pco2 >= 35 && pco2 <= 45)
+        diag = "Asidosis Metabolik Murni";
+      else if (hco3 < 22 && pco2 < 35)
+        diag = "Asidosis Metabolik Kompensasi Sebagian";
+      else diag = "Asidosis Campuran (Respiratorik + Metabolik)";
+    } else if (ph > 7.45) {
+      if (pco2 < 35 && hco3 >= 22 && hco3 <= 26)
+        diag = "Alkalosis Respiratorik Murni";
+      else if (pco2 < 35 && hco3 < 22)
+        diag = "Alkalosis Respiratorik Kompensasi Sebagian";
+      else if (hco3 > 26 && pco2 >= 35 && pco2 <= 45)
+        diag = "Alkalosis Metabolik Murni";
+      else if (hco3 > 26 && pco2 > 45)
+        diag = "Alkalosis Metabolik Kompensasi Sebagian";
+      else diag = "Alkalosis Campuran (Respiratorik + Metabolik)";
+    } else {
+      if (pco2 > 45 && hco3 > 26) {
+        diag =
+          ph < 7.4
+            ? "Asidosis Respiratorik Terkompensasi Penuh"
+            : "Alkalosis Metabolik Terkompensasi Penuh";
+      } else if (pco2 < 35 && hco3 < 22) {
+        diag =
+          ph < 7.4
+            ? "Asidosis Metabolik Terkompensasi Penuh"
+            : "Alkalosis Respiratorik Terkompensasi Penuh";
+      } else {
+        diag = "Data tidak sesuai dengan rentang kompensasi umum";
+      }
+    }
+  }
+
+  document.getElementById("val-agd").textContent = diag;
+  document.getElementById("res-agd").classList.remove("hidden");
+}
+
+function filterSOP() {
+  const input = document.getElementById("sopSearch").value.toLowerCase();
+  const items = document.querySelectorAll(".sop-item");
+
+  items.forEach((item) => {
+    const text = item.querySelector(".guide-header").textContent.toLowerCase();
+    if (text.includes(input)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
 }
