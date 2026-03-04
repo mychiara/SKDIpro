@@ -1399,3 +1399,134 @@ body {
 .modern-detail .detail-section ul { padding-left: 1.25rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0; }
 .modern-detail .detail-section ul li { margin-bottom: 0.4rem; }
 .modern-detail .detail-section ul li::marker { color: var(--primary); }
+
+/* === PENGKAJIAN PINTAR === */
+.pengkajian-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+    .pengkajian-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.pengkajian-card {
+    background: var(--bg-alt);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+.pengkajian-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+}
+.pengkajian-input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+}
+.pengkajian-input-group.row-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pengkajian-input-group label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--text-secondary);
+}
+.pengkajian-input-group input,
+.pengkajian-input-group select,
+.pengkajian-input-group textarea {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface-opaque);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+.pengkajian-input-group input:focus,
+.pengkajian-input-group select:focus,
+.pengkajian-input-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.pengkajian-input-group textarea {
+    resize: vertical;
+}
+
+/* === APP GUIDE & ANIMATIONS === */
+.pulse-icon {
+    animation: pulseIcon 2s infinite;
+}
+@keyframes pulseIcon {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); border-radius: 50%; }
+    70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); border-radius: 50%; }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); border-radius: 50%; }
+}
+.fa-spin-hover { transition: transform 0.5s ease; }
+.guide-banner:hover .fa-spin-hover { transform: rotate(180deg); }
+
+.mt-4 { margin-top: 1.5rem; }
+.app-guide-section {
+    width: 100%;
+}
+.guide-banner {
+    background: linear-gradient(135deg, var(--emerald) 0%, #059669 100%);
+    border-radius: var(--radius-xl);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.guide-banner::after {
+    content: ''; position: absolute; top: -50%; right: -10%; width: 150px; height: 150px; 
+    background: rgba(255,255,255,0.1); border-radius: 50%; pointer-events: none;
+}
+.guide-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+}
+.guide-banner:active { transform: scale(0.98); }
+.guide-icon {
+    width: 48px; height: 48px; background: rgba(255,255,255,0.2); 
+    border-radius: 14px; display: flex; align-items: center; justify-content: center; 
+    font-size: 1.5rem; backdrop-filter: blur(4px); flex-shrink: 0;
+}
+.guide-text { flex: 1; z-index: 1; }
+.guide-text h4 { margin: 0; font-size: 1.1rem; font-weight: 800; }
+.guide-text p { margin: 0.2rem 0 0; font-size: 0.8rem; opacity: 0.9; }
+.guide-arrow { font-size: 1.25rem; opacity: 0.8; z-index: 1; }
+
+.guide-accordion { display: flex; flex-direction: column; gap: 1rem; }
+.guide-item { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+.guide-header { font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 0.75rem; color: var(--text-primary); margin-bottom: 0.5rem; }
+.guide-content p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0; padding-left: 2rem; }
+.guide-content kbd {
+    display: inline-block; padding: 0.15rem 0.45rem; font-size: 0.7rem; font-family: inherit; font-weight: 600; 
+    color: var(--text); background: var(--surface-opaque); border: 1px solid var(--border); 
+    border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.08); margin: 0 0.1rem;
+}

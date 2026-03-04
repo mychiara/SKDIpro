@@ -1347,3 +1347,197 @@ function showEmptyState(t, d) {
 function applyFavorites() {
   applyFilters();
 }
+
+// === PENGKAJIAN PINTAR LOGIC ===
+let hasilPengkajianGlobal = [];
+
+document
+  .getElementById("btnProsesPengkajian")
+  ?.addEventListener("click", () => {
+    // 1. Gather all the data
+    const td = document.getElementById("pkj-td").value.trim();
+    const nadi = parseInt(document.getElementById("pkj-nadi").value) || 0;
+    const rr = parseInt(document.getElementById("pkj-rr").value) || 0;
+    const suhu = parseFloat(document.getElementById("pkj-suhu").value) || 0;
+    const spo2 = parseInt(document.getElementById("pkj-spo2").value) || 0;
+    const keluhan = document.getElementById("pkj-keluhan").value.toLowerCase();
+    const nyeri = parseInt(document.getElementById("pkj-nyeri").value) || 0;
+    const luka = document.getElementById("pkj-luka").value;
+    const riwayat = document.getElementById("pkj-riwayat").value.toLowerCase();
+
+    let keywords = new Set();
+
+    // Map keywords based on vitals/inputs
+    if (
+      rr > 24 ||
+      rr < 12 ||
+      keluhan.includes("sesak") ||
+      keluhan.includes("napas")
+    )
+      keywords.add("napas");
+    if (suhu > 37.5 || keluhan.includes("demam") || keluhan.includes("panas"))
+      keywords.add("hipertermia");
+    if (suhu < 36.0 || keluhan.includes("dingin")) keywords.add("hipotermia");
+    if (nyeri > 0 || keluhan.includes("sakit") || keluhan.includes("nyeri"))
+      keywords.add("nyeri");
+    if (spo2 > 0 && spo2 < 95) keywords.add("gas"); // Pertukaran Gas / Perfusi Perifer
+    if (keluhan.includes("batuk") || keluhan.includes("dahak"))
+      keywords.add("bersihan jalan");
+    if (luka !== "Tidak Ada Luka") keywords.add("integritas"); // Integritas Kulit / Jaringan
+    if (luka !== "Tidak Ada Luka" || suhu > 37.5) keywords.add("infeksi"); // Risiko Infeksi
+    if (keluhan.includes("lemas") || keluhan.includes("lelah"))
+      keywords.add("intoleransi"); // Intoleransi Aktivitas
+    if (keluhan.includes("diare") || keluhan.includes("mencret"))
+      keywords.add("diare");
+    if (keluhan.includes("mual") || keluhan.includes("muntah"))
+      keywords.add("nausea");
+    if (nadi > 100 || td.includes("/")) {
+      let sistol = 0;
+      if (td.includes("/")) sistol = parseInt(td.split("/")[0]) || 0;
+      if (sistol < 90 || nadi > 120 || keluhan.includes("pendarahan"))
+        keywords.add("hipovolemia");
+    }
+
+    // Add raw text keywords if any strong word is found
+    if (
+      keluhan.includes("cemas") ||
+      keluhan.includes("takut") ||
+      keluhan.includes("gelisah")
+    )
+      keywords.add("ansietas");
+    if (keluhan.includes("tidur")) keywords.add("tidur");
+
+    if (keywords.size === 0) {
+      // Fallback keyword if none matched but there's input
+      if (keluhan.length > 3) {
+        let words = keluhan.split(" ").filter((w) => w.length > 3);
+        words.forEach((w) => keywords.add(w));
+      } else {
+        showToast(
+          "Harap isi gejala atau keluhan pasien dengan lengkap",
+          "warning",
+        );
+        return;
+      }
+    }
+
+    // 2. Search in SDKI Database
+    const btn = document.getElementById("btnProsesPengkajian");
+    btn.innerHTML =
+      '<i class="fa-solid fa-spinner fa-spin"></i> Menganalisis...';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      let results = [];
+      const sdkiData = diagnosaData.sdki || [];
+
+      sdkiData.forEach((item) => {
+        let score = 0;
+        const targetText =
+          `${item.Nama} ${item.Definisi} ${item.Penyebab} ${item["Gejala Mayor"]} ${item["Gejala Minor"]}`.toLowerCase();
+
+        keywords.forEach((kw) => {
+          if (targetText.includes(kw)) {
+            // Exact diagnosa name match gives very high score
+            if (item.Nama.toLowerCase().includes(kw)) score += 5;
+            else score += 1;
+          }
+        });
+
+        if (score > 0) {
+          results.push({ item, score });
+        }
+      });
+
+      // Sort by score
+      results.sort((a, b) => b.score - a.score);
+      hasilPengkajianGlobal = results.slice(0, 5).map((r) => r.item); // Top 5
+
+      renderHasilPengkajian(hasilPengkajianGlobal);
+
+      btn.innerHTML =
+        '<i class="fa-solid fa-wand-magic-sparkles"></i> Analisis Otomatis (SDKI-SIKI-SLKI)';
+      btn.disabled = false;
+    }, 800);
+  });
+
+function renderHasilPengkajian(data) {
+  const resDiv = document.getElementById("pengkajianResult");
+  const resList = document.getElementById("pengkajianResultList");
+
+  resList.innerHTML = "";
+
+  if (data.length === 0) {
+    resList.innerHTML = `
+            <div class="empty-state" style="padding: 2rem;">
+                <div class="empty-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3 style="font-size:1.1rem">Tidak ada diagnosa spesifik yang terdeteksi</h3>
+                <p>Coba tuliskan keluhan dengan kata kunci medis atau lebih detail (contoh: batuk berdahak, demam, nyeri akut).</p>
+            </div>
+        `;
+  } else {
+    data.forEach((item) => {
+      const cat = CODE_TO_CAT[item.Kode];
+      resList.innerHTML += `
+                <div class="askep-card" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                    <div>
+                        <div style="margin-bottom:0.4rem;">
+                            <span class="badge" style="background:${cat ? cat.color : "var(--primary)"}">${item.Kode}</span>
+                            ${cat ? `<span style="font-size:0.75rem; color:var(--text-secondary); margin-left:0.5rem; font-weight:600;"><i class="fa-solid ${cat.icon}"></i> ${cat.name}</span>` : ""}
+                        </div>
+                        <h4 style="margin:0 0 0.5rem; font-size:1rem; color:var(--text-primary); cursor:pointer;" onclick="openModalEl(document.getElementById('pengkajianModal')) || openModalFallback('${item.Kode}')">${item.Nama}</h4>
+                        <p style="font-size:0.85rem; color:var(--text-secondary); margin:0; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">${item.Definisi}</p>
+                    </div>
+                    <button class="btn btn-primary" style="padding:0.4rem 0.6rem; font-size:0.8rem;" onclick="addToAskepByKode('${item.Kode}', 'sdki')"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            `;
+    });
+  }
+
+  resDiv.classList.remove("hidden");
+  resDiv.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function openModalFallback(kode) {
+  // If the modal was behind, close it and open normal modal.
+  closeModalEl(document.getElementById("pengkajianModal"));
+  setTimeout(() => {
+    let d = diagnosaData.sdki.find((x) => x.Kode === kode);
+    if (d) openModal(d, "sdki");
+  }, 300);
+}
+
+function salinKeAskep() {
+  if (hasilPengkajianGlobal.length === 0) return;
+  let added = 0;
+  hasilPengkajianGlobal.forEach((d) => {
+    const found = askepBasket.find((a) => a.Kode === d.Kode);
+    if (!found) {
+      askepBasket.push({ ...d, mode: "sdki" });
+      added++;
+    }
+  });
+
+  if (added > 0) {
+    localStorage.setItem("esdki_askep", JSON.stringify(askepBasket));
+    updateAskepCounter();
+    showToast(`${added} diagnosa ditambahkan ke ASKEP`, "success");
+  } else {
+    showToast(`Diagnosa sudah ada di ASKEP`, "info");
+  }
+}
+
+function addToAskepByKode(kode, mode) {
+  let d = diagnosaData[mode].find((x) => x.Kode === kode);
+  if (d) {
+    const found = askepBasket.find((a) => a.Kode === kode);
+    if (!found) {
+      askepBasket.push({ ...d, mode: mode });
+      localStorage.setItem("esdki_askep", JSON.stringify(askepBasket));
+      updateAskepCounter();
+      showToast(`${d.Kode} ditambahkan ke ASKEP`, "success");
+    } else {
+      showToast(`${kode} sudah ada di ASKEP`, "info");
+    }
+  }
+}

@@ -26,8 +26,8 @@
             <div class="home-brand">
                 <div class="home-logo-box"><i class="fa-solid fa-briefcase-medical"></i></div>
                 <div class="home-brand-text">
-                    <h1>SDKI <span>PRO</span></h1>
-                    <p>NURSING STANDARDS</p>
+                    <h1>SDKI <span>PRO V.1</span></h1>
+                    <p>NURSING STANDARDS By <span>masandigital.com</span></p>
                 </div>
             </div>
             <div class="home-user-actions">
@@ -38,13 +38,15 @@
 
         <main class="home-main">
             <section class="home-greeting">
-                <h2>Selamat Pagi,</h2>
-                <p>Siap menyusun asuhan keperawatan hari ini?</p>
+                <h2>Selamat Datang, Perawat Hebat! 👋</h2>
+                <div class="greeting-desc">
+                    <p><strong>E-SDKI Pro</strong> adalah asisten pintar Anda untuk proses asuhan keperawatan. Temukan panduan lengkap SDKI, SLKI, dan SIKI dengan mudah, gunakan Pengkajian Pintar untuk rekomendasi diagnosa instan, dan buat dokumen ASKEP profesional dalam hitungan detik.</p>
+                </div>
             </section>
 
             <section class="home-search-mock" onclick="openSearch()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <span class="search-placeholder">Cari diagnosis, intervensi...</span>
+                <i class="fa-solid fa-magnifying-glass search-mock-icon"></i>
+                <span class="search-placeholder">Ketik kata kunci diagnosa, gejala, atau intervensi...</span>
             </section>
 
             <section class="home-cards">
@@ -95,10 +97,21 @@
                         <div class="qa-icon-wrap text-purple"><i class="fa-solid fa-folder-plus"></i></div>
                         <span>ASKEP</span>
                     </div>
-                    <div class="qa-item" onclick="showToast('Fitur Dosis sedang dikembangkan','info')">
-                        <div class="qa-icon-wrap text-amber"><i class="fa-solid fa-calculator"></i></div>
-                        <span>Dosis</span>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('pengkajianModal'));">
+                        <div class="qa-icon-wrap text-amber"><i class="fa-solid fa-stethoscope pulse-icon"></i></div>
+                        <span>Pengkajian</span>
                     </div>
+                </div>
+            </section>
+
+            <section class="app-guide-section mt-4 hidden-guide">
+                <div class="guide-banner" onclick="openModalEl(document.getElementById('guideModal'))">
+                    <div class="guide-icon"><i class="fa-regular fa-compass fa-spin-hover"></i></div>
+                    <div class="guide-text">
+                        <h4>Panduan Penggunaan</h4>
+                        <p>Pelajari cara memaksimalkan fitur E-SDKI Pro</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right guide-arrow"></i>
                 </div>
             </section>
         </main>
@@ -144,6 +157,10 @@
                     <button id="toggleQuiz" class="btn btn-outline" title="Latihan UKOM">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <span class="btn-text">Quiz</span>
+                    </button>
+                    <button class="btn btn-outline" title="Pengkajian Pintar" onclick="openModalEl(document.getElementById('pengkajianModal'))">
+                        <i class="fa-solid fa-stethoscope text-amber"></i>
+                        <span class="btn-text">Pengkajian</span>
                     </button>
                     <button id="toggleAskep" class="btn btn-primary" title="Lihat Keranjang ASKEP">
                         <i class="fa-solid fa-file-medical"></i>
@@ -405,6 +422,163 @@
                     <div class="osce-score-card streak"><div class="osce-score-number" id="osceScoreStreak">0</div><div class="osce-score-label">Streak</div></div>
                 </div>
                 <div id="quizContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pengkajian Pintar Modal -->
+    <div id="pengkajianModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card" style="max-width:1000px;">
+            <button class="modal-close" id="closePengkajianModal" onclick="closeModalEl(document.getElementById('pengkajianModal'))"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-stethoscope"></i> Pengkajian Pintar</h2>
+                <p>Otomatis dikoneksikan dengan database SDKI, SIKI, dan SLKI berdasarkan data yang diinputkan</p>
+            </div>
+            <div class="modal-body">
+                <div class="pengkajian-grid">
+                    <!-- Card 1 -->
+                    <div class="pengkajian-card">
+                        <div class="pengkajian-card-title"><i class="fa-solid fa-heart-pulse text-blue"></i> Tanda-tanda Vital (TTV)</div>
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Tekanan Darah (mmHg)</label>
+                                <input type="text" id="pkj-td" placeholder="Contoh: 120/80">
+                            </div>
+                            <div>
+                                <label>Nadi (x/mnt)</label>
+                                <input type="number" id="pkj-nadi" placeholder="Contoh: 110">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>RR / Pernapasan (x/mnt)</label>
+                                <input type="number" id="pkj-rr" placeholder="Contoh: 26">
+                            </div>
+                            <div>
+                                <label>Suhu (°C)</label>
+                                <input type="number" id="pkj-suhu" placeholder="Contoh: 38.5" step="0.1">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>SpO2 (%)</label>
+                                <input type="number" id="pkj-spo2" placeholder="Contoh: 95">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pengkajian-card">
+                        <div class="pengkajian-card-title"><i class="fa-solid fa-comments text-blue"></i> Data Subjektif (Anamnesa)</div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Keluhan Utama</label>
+                                <textarea id="pkj-keluhan" placeholder="Contoh: Pasien mengeluh demam dan lemas" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Skala Nyeri (0-10)</label>
+                                <input type="number" id="pkj-nyeri" placeholder="0" min="0" max="10">
+                            </div>
+                            <div>
+                                <label>Lama Keluhan</label>
+                                <input type="text" id="pkj-lama" placeholder="Contoh: 3 hari">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Faktor Pencetus</label>
+                                <input type="text" id="pkj-pencetus" placeholder="Contoh: Setelah operasi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pengkajian-card">
+                        <div class="pengkajian-card-title"><i class="fa-solid fa-microscope text-blue"></i> Data Objektif & Riwayat</div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Kondisi Luka</label>
+                                <select id="pkj-luka">
+                                    <option value="Tidak Ada Luka">Tidak Ada Luka</option>
+                                    <option value="Luka Operasi">Luka Operasi</option>
+                                    <option value="Luka Bakar">Luka Bakar</option>
+                                    <option value="Luka Dekubitus">Luka Dekubitus</option>
+                                    <option value="Lainnya">Lainnya...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Kesadaran (GCS)</label>
+                                <input type="text" id="pkj-gcs" placeholder="Contoh: E4V5M6 (15)">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Penyakit Dahulu / Alergi</label>
+                                <input type="text" id="pkj-riwayat" placeholder="Contoh: HT, Tidak ada alergi">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pengkajian-actions">
+                    <button id="btnProsesPengkajian" class="btn btn-primary btn-large" style="width:100%; margin-top:1.5rem; font-size:1.1rem; padding:1rem; justify-content:center; border-radius: var(--radius-lg);"><i class="fa-solid fa-wand-magic-sparkles"></i> Analisis Otomatis (SDKI-SIKI-SLKI)</button>
+                </div>
+                
+                <div id="pengkajianResult" class="hidden" style="margin-top: 2rem;">
+                    <div class="askep-stats-row" style="margin-bottom: 1rem; display:flex; justify-content:space-between; align-items:center;">
+                        <div class="askep-stat sdki-stat"><i class="fa-solid fa-lightbulb"></i> Rekomendasi Diagnosa Ditemukan</div>
+                        <button onclick="salinKeAskep()" class="btn btn-primary" style="font-size: 0.85rem;"><i class="fa-solid fa-copy"></i> Salin Semua ke ASKEP</button>
+                    </div>
+                    <div id="pengkajianResultList" class="askep-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Guide Modal -->
+    <div id="guideModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('guideModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:800px;">
+            <button class="modal-close" id="closeGuideModal" onclick="closeModalEl(document.getElementById('guideModal'))"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header modern-hero" style="background: linear-gradient(135deg, #10b981, #059669); margin: -2.5rem -2.5rem 2rem -2.5rem; border-radius: 24px 24px 0 0; padding: 3rem 2.5rem !important;">
+                <h2 style="color:white !important;"><i class="fa-regular fa-compass"></i> Panduan E-SDKI Pro</h2>
+                <p style="color:rgba(255,255,255,0.9);">Cara cepat dan efisien menggunakan seluruh fitur aplikasi.</p>
+            </div>
+            <div class="modal-body" style="padding: 0 0.5rem;">
+                <div class="guide-accordion">
+                    <div class="guide-item">
+                        <div class="guide-header"><i class="fa-solid fa-magnifying-glass text-blue"></i> 1. Pencarian Cerdas & Navigasi</div>
+                        <div class="guide-content">
+                            <p>Gunakan ikon pencarian atau tekan <kbd>Ctrl</kbd> + <kbd>K</kbd> untuk mencari apa saja. Anda bisa memfilter berdasarkan Kategori (Misal: Respirasi, Sirkulasi) atau menggunakan mode <strong>Pencarian Gejala</strong> (ikon stetoskop di sebelah kotak pencarian) untuk mencari diagnosa berdasarkan keluhan klinis (misal: "batuk", "sesak").</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-item">
+                        <div class="guide-header"><i class="fa-solid fa-stethoscope text-amber"></i> 2. Pengkajian Pintar (Auto-Diagnosis)</div>
+                        <div class="guide-content">
+                            <p>Fitur revolusioner untuk menemukan diagnosa secara otomatis! Masukkan data pasien (TTV, keluhan, GCS, dll) ke dalam form. Klik tombol <strong>Analisis Otomatis</strong>, dan sistem akan mencocokkan gejala dengan database SDKI lalu memberikan top 5 rekomendasi diagnosa. Anda bisa menyalin rekomendasi tersebut langsung ke ASKEP.</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-header"><i class="fa-solid fa-folder-plus text-purple"></i> 3. Menyusun ASKEP (Rencana Asuhan)</div>
+                        <div class="guide-content">
+                            <p>Buka detail setiap Diagnosa (SDKI), Luaran (SLKI), atau Intervensi (SIKI), lalu klik tombol <code>+ ASKEP</code>. Anda juga bisa menambahkannya langsung dari halaman pencarian melalui icon plus. Setelah semua data terhimpun, buka menu ASKEP (ikon map ungu) untuk mengisi identitas pasien, cek kesimpulan, dan klik <strong>Ekspor PDF</strong> atau <strong>Print</strong> sebagai dokumen legal/laporan.</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-header"><i class="fa-solid fa-graduation-cap text-blue"></i> 4. Latihan OSCE & UKOM</div>
+                        <div class="guide-content">
+                            <p>Menu <strong>Quiz</strong> berguna untuk menguji seberapa hafal Anda dengan patokan skor GCS, tanda vital normal, atau rumus intervensi. Cocok untuk perawat klinis baru atau mahasiswa keperawatan yang akan menghadapi Ujian Kompetensi (UKOM) maupun ujian praktik OSCE.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
