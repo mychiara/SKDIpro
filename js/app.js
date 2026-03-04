@@ -853,6 +853,10 @@ function updateAskepCounter() {
 }
 
 function renderAskepList() {
+  if (typeof renderAskepListPro === "function") {
+    renderAskepListPro();
+    return;
+  }
   const cont = document.getElementById("askepItemsContainer");
   if (!askepBasket.length) {
     cont.innerHTML = "<p>Pilih item dari daftar untuk membuat asuhan.</p>";
@@ -916,22 +920,41 @@ async function downloadPDF() {
     }
   };
 
-  const tgl = new Date().toLocaleDateString("id-ID", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const namaPasien =
+    document.getElementById("askepNamaPasien")?.value ||
+    "................................";
+  const noRM =
+    document.getElementById("askepNoRM")?.value ||
+    "................................";
+  const ruangan =
+    document.getElementById("askepRuangan")?.value ||
+    "................................";
+  const tglInput = document.getElementById("askepTanggal")?.value;
+  const catatan = document.getElementById("askepCatatan")?.value || "";
+
+  const tgl = tglInput
+    ? new Date(tglInput).toLocaleDateString("id-ID", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : new Date().toLocaleDateString("id-ID", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
   content.innerHTML = `
     <div style="text-align:center; margin-bottom:24px;">
       <h1 style="color:#2563eb; margin:0; font-size:20px;">RENCANA ASUHAN KEPERAWATAN</h1>
       <p style="margin:4px 0; color:#64748b;">E-SDKI Pro — Dokumentasi Digital</p>
     </div>
     <table style="width:100%; border-collapse:collapse; margin-bottom:20px; font-size:11px;">
-      <tr><td style="padding:6px; border:1px solid #e2e8f0; width:30%;"><strong>Nama Pasien</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">................................</td></tr>
-      <tr><td style="padding:6px; border:1px solid #e2e8f0;"><strong>No. Rekam Medis</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">................................</td></tr>
+      <tr><td style="padding:6px; border:1px solid #e2e8f0; width:30%;"><strong>Nama Pasien</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">${namaPasien}</td></tr>
+      <tr><td style="padding:6px; border:1px solid #e2e8f0;"><strong>No. Rekam Medis</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">${noRM}</td></tr>
+      <tr><td style="padding:6px; border:1px solid #e2e8f0;"><strong>Ruangan / Unit</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">${ruangan}</td></tr>
       <tr><td style="padding:6px; border:1px solid #e2e8f0;"><strong>Tanggal</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">${tgl}</td></tr>
-      <tr><td style="padding:6px; border:1px solid #e2e8f0;"><strong>Perawat</strong></td><td style="padding:6px; border:1px solid #e2e8f0;">................................</td></tr>
     </table>
     <hr style="border:1px solid #2563eb; margin-bottom:16px;">
     ${askepBasket
@@ -944,6 +967,7 @@ async function downloadPDF() {
     `,
       )
       .join("")}
+    ${catatan ? `<div style="margin-top:16px;padding:12px;border:1px solid #e2e8f0;border-radius:8px;"><strong>Catatan Tambahan:</strong><p style="margin:4px 0;">${catatan}</p></div>` : ""}
     <div style="margin-top:40px; padding-top:16px; border-top:1px solid #e2e8f0; display:flex; justify-content:space-between;">
       <div><p style="margin:0;">Tanda Tangan Perawat</p><br><br><p style="border-top:1px solid #333; display:inline-block; padding-top:4px; min-width:200px;">(............................)</p></div>
       <div style="text-align:right;"><p style="font-size:9px; color:#94a3b8;">Dicetak via E-SDKI Pro — ${tgl}</p></div>
@@ -983,6 +1007,7 @@ function renderGlossary(filter = "") {
 }
 
 function startQuiz() {
+  if (typeof updateOsceScoreboard === "function") updateOsceScoreboard();
   const cont = document.getElementById("quizContent");
   const q = QUIZ_DATA[Math.floor(Math.random() * QUIZ_DATA.length)];
   const pct = quizTotal > 0 ? Math.round((quizScore / quizTotal) * 100) : 0;
@@ -1002,9 +1027,21 @@ function startQuiz() {
 window.resetQuizScore = () => {
   quizScore = 0;
   quizTotal = 0;
+  if (typeof quizStreak !== "undefined") {
+    quizStreak = 0;
+    localStorage.setItem("esdki_quiz_streak", "0");
+  }
   localStorage.setItem("esdki_quiz_score", "0");
   localStorage.setItem("esdki_quiz_total", "0");
-  startQuiz();
+  if (typeof updateOsceScoreboard === "function") updateOsceScoreboard();
+  if (typeof currentOsceMode !== "undefined" && currentOsceMode === "kasus")
+    startKasusKlinis();
+  else if (
+    typeof currentOsceMode !== "undefined" &&
+    currentOsceMode === "identifikasi"
+  )
+    startIdentifikasiGejala();
+  else startQuiz();
   showToast("Skor direset!", "info");
 };
 
@@ -1102,6 +1139,7 @@ function initEventListeners() {
   const quizModal = document.getElementById("quizModal");
   document.getElementById("toggleQuiz").onclick = () => {
     startQuiz();
+    if (typeof updateOsceScoreboard === "function") updateOsceScoreboard();
     openModalEl(quizModal);
   };
   document.getElementById("closeQuizModal").onclick = () =>
@@ -1118,6 +1156,14 @@ function initEventListeners() {
     }
   });
   document.getElementById("downloadAskepPdf").onclick = downloadPDF;
+  // Print button
+  const printBtn = document.getElementById("printAskep");
+  if (printBtn) {
+    printBtn.onclick = () => {
+      if (!askepBasket.length) return showToast("Keranjang kosong", "warning");
+      window.print();
+    };
+  }
   document.getElementById("clearAskep").onclick = () => {
     if (confirm("Bersihkan keranjang?")) {
       askepBasket = [];

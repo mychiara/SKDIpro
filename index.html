@@ -66,6 +66,12 @@
                 </div>
             </div>
 
+            <!-- Page Title in Navbar -->
+            <div class="header-intro">
+                <h2 id="pageTitle">Panduan Diagnosa Keperawatan</h2>
+                <p id="pageDesc">Alat Bantu Digital untuk Belajar Diagnosis Keperawatan (SDKI) Berbasis Data.</p>
+            </div>
+
             <div class="header-row-bottom">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -96,11 +102,6 @@
 
     <!-- Main Content -->
     <main class="container" id="mainContent">
-        <section class="intro">
-            <h2 id="pageTitle">Panduan Diagnosa Keperawatan</h2>
-            <p id="pageDesc">Alat Bantu Digital untuk Belajar Diagnosis Keperawatan (SDKI) Berbasis Data.</p>
-            <p class="data-counter" id="dataCounter"></p>
-        </section>
 
         <!-- Loading -->
         <div id="loadingIndicator" class="loading-state">
@@ -232,38 +233,63 @@
     <!-- ASKEP Modal (Generator) -->
     <div id="askepModal" class="modal hidden">
         <div class="modal-overlay"></div>
-        <div class="modal-content glass-card">
+        <div class="modal-content glass-card" style="max-width:900px;">
             <button class="modal-close" id="closeAskepModal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>Rencana Asuhan Keperawatan</h2>
-                <p>Kelola Luaran dan Intervensi yang telah dipilih.</p>
+                <h2><i class="fa-solid fa-clipboard-list"></i> Rencana Asuhan Keperawatan</h2>
+                <p>Dokumentasi asuhan keperawatan berbasis SDKI-SLKI-SIKI</p>
             </div>
             <div class="modal-body">
-                <div id="askepItemsContainer" class="askep-list">
-                    <!-- Items will be injected here -->
-                    <p class="empty-msg">Belum ada item yang dipilih.</p>
+                <div class="askep-patient-section">
+                    <h3 class="askep-section-title"><i class="fa-solid fa-user-injured"></i> Data Pasien</h3>
+                    <div class="askep-patient-grid">
+                        <div class="askep-input-group"><label>Nama Pasien</label><input type="text" id="askepNamaPasien" placeholder="Masukkan nama pasien..." autocomplete="off"></div>
+                        <div class="askep-input-group"><label>No. Rekam Medis</label><input type="text" id="askepNoRM" placeholder="Contoh: 00-12-34-56" autocomplete="off"></div>
+                        <div class="askep-input-group"><label>Ruangan / Unit</label><input type="text" id="askepRuangan" placeholder="Contoh: ICU, Bedah" autocomplete="off"></div>
+                        <div class="askep-input-group"><label>Tanggal Pengkajian</label><input type="date" id="askepTanggal"></div>
+                    </div>
+                </div>
+                <div class="askep-stats-row" id="askepStatsRow">
+                    <div class="askep-stat sdki-stat"><i class="fa-solid fa-stethoscope"></i> Diagnosa: <strong id="askepCountSDKI">0</strong></div>
+                    <div class="askep-stat siki-stat"><i class="fa-solid fa-hand-holding-medical"></i> Intervensi: <strong id="askepCountSIKI">0</strong></div>
+                    <div class="askep-stat slki-stat"><i class="fa-solid fa-bullseye"></i> Luaran: <strong id="askepCountSLKI">0</strong></div>
+                </div>
+                <div id="askepItemsContainer" class="askep-list"><p class="empty-msg">Pilih item dari daftar untuk membuat asuhan.</p></div>
+                <div class="askep-notes-section">
+                    <h3 class="askep-section-title"><i class="fa-solid fa-pen-to-square"></i> Catatan Tambahan</h3>
+                    <textarea id="askepCatatan" rows="3" placeholder="Tuliskan catatan tambahan..." style="width:100%;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-lg);font-family:inherit;font-size:0.9rem;background:var(--bg-alt);color:var(--text);resize:vertical;"></textarea>
                 </div>
                 <div class="askep-actions">
-                    <button id="downloadAskepPdf" class="btn btn-primary">
-                        <i class="fa-solid fa-file-pdf"></i> Ekspor PDF
-                    </button>
-                    <button id="clearAskep" class="btn btn-outline">Kosongkan</button>
+                    <button id="downloadAskepPdf" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Ekspor PDF</button>
+                    <button id="printAskep" class="btn btn-outline"><i class="fa-solid fa-print"></i> Print</button>
+                    <button id="clearAskep" class="btn btn-outline" style="color:var(--danger);border-color:var(--danger);"><i class="fa-solid fa-trash"></i> Kosongkan</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Quiz Modal -->
+    <!-- OSCE / Quiz Modal -->
     <div id="quizModal" class="modal hidden">
         <div class="modal-overlay"></div>
-        <div class="modal-content glass-card">
+        <div class="modal-content glass-card" style="max-width:800px;">
             <button class="modal-close" id="closeQuizModal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>Latihan UKOM / OSCE</h2>
-                <p>Asah kemampuan diagnosa Anda.</p>
+                <h2><i class="fa-solid fa-graduation-cap"></i> Simulasi OSCE & Latihan UKOM</h2>
+                <p>Asah kemampuan klinik dan diagnosa keperawatan Anda</p>
             </div>
-            <div id="quizContent" class="modal-body">
-                <!-- Quiz questions injected here -->
+            <div class="modal-body">
+                <div class="osce-mode-tabs">
+                    <button class="osce-tab active" data-mode="quiz" onclick="switchOsceMode('quiz')"><i class="fa-solid fa-bolt"></i> Quick Quiz</button>
+                    <button class="osce-tab" data-mode="kasus" onclick="switchOsceMode('kasus')"><i class="fa-solid fa-hospital-user"></i> Kasus Klinis</button>
+                    <button class="osce-tab" data-mode="identifikasi" onclick="switchOsceMode('identifikasi')"><i class="fa-solid fa-magnifying-glass-chart"></i> Identifikasi Gejala</button>
+                </div>
+                <div class="osce-score-dashboard" id="osceScoreDashboard">
+                    <div class="osce-score-card"><div class="osce-score-number" id="osceScoreTotal">0</div><div class="osce-score-label">Total Soal</div></div>
+                    <div class="osce-score-card correct"><div class="osce-score-number" id="osceScoreCorrect">0</div><div class="osce-score-label">Benar</div></div>
+                    <div class="osce-score-card"><div class="osce-score-number" id="osceScorePct">0%</div><div class="osce-score-label">Akurasi</div></div>
+                    <div class="osce-score-card streak"><div class="osce-score-number" id="osceScoreStreak">0</div><div class="osce-score-label">Streak</div></div>
+                </div>
+                <div id="quizContent"></div>
             </div>
         </div>
     </div>
@@ -301,20 +327,23 @@
     <footer class="app-footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <i class="fa-solid fa-heart-pulse"></i>
-                <span>E-SDKI Pro</span>
+                <div class="footer-logo-pulse"><i class="fa-solid fa-heart-pulse"></i></div>
+                <span class="footer-brand-text">E-SDKI Pro</span>
             </div>
-            <p class="footer-text">Alat bantu belajar keperawatan. Referensi utama: Buku SDKI, SIKI, SLKI (PPNI).</p>
+            <p class="footer-text">Alat bantu digital belajar keperawatan.<br>Referensi utama: Buku SDKI, SIKI, SLKI — Persatuan Perawat Nasional Indonesia (PPNI).</p>
             <div class="footer-shortcuts">
-                <span><kbd>Ctrl</kbd>+<kbd>K</kbd> Cari</span>
-                <span><kbd>Esc</kbd> Tutup</span>
-                <span><kbd>Alt</kbd>+<kbd>T</kbd> Tema</span>
+                <span class="footer-shortcut"><kbd>Ctrl</kbd>+<kbd>K</kbd> Cari</span>
+                <span class="footer-shortcut"><kbd>Esc</kbd> Tutup</span>
+                <span class="footer-shortcut"><kbd>Alt</kbd>+<kbd>T</kbd> Tema</span>
             </div>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">Copyright &copy; 2026 <a href="https://masandigital.com" target="_blank" rel="noopener noreferrer">masandigital.com</a> — All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/osce-askep.js"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
-const CACHE_NAME = "esdki-pro-v4";
+const CACHE_NAME = "esdki-pro-v5";
 const ASSETS = [
   "./",
   "./index.html",
   "./css/style.css",
   "./js/app.js",
+  "./js/osce-askep.js",
   "./data/sdki.json",
   "./data/siki.json",
   "./data/slki.json",
