@@ -1,4 +1,4 @@
-const CACHE_NAME = "esdki-pro-v5";
+const CACHE_NAME = "esdki-pro-v6";
 const ASSETS = [
   "./",
   "./index.html",

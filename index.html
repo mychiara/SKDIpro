@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚕️</text></svg>">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -19,10 +20,99 @@
     <div class="bg-shape bg-shape-2"></div>
     <div class="bg-shape bg-shape-3"></div>
 
-    <!-- Header -->
+    <!-- HOME SCREEN (Dashboard) -->
+    <div id="homeScreen" class="screen active">
+        <header class="home-topbar">
+            <div class="home-brand">
+                <div class="home-logo-box"><i class="fa-solid fa-briefcase-medical"></i></div>
+                <div class="home-brand-text">
+                    <h1>SDKI <span>PRO</span></h1>
+                    <p>NURSING STANDARDS</p>
+                </div>
+            </div>
+            <div class="home-user-actions">
+                <button class="btn-icon bell-btn"><i class="fa-regular fa-bell"></i></button>
+                <div class="user-avatar"><i class="fa-solid fa-user-nurse"></i></div>
+            </div>
+        </header>
+
+        <main class="home-main">
+            <section class="home-greeting">
+                <h2>Selamat Pagi,</h2>
+                <p>Siap menyusun asuhan keperawatan hari ini?</p>
+            </section>
+
+            <section class="home-search-mock" onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="search-placeholder">Cari diagnosis, intervensi...</span>
+            </section>
+
+            <section class="home-cards">
+                <div class="home-card card-sdki" onclick="goToList('sdki')">
+                    <div class="hc-icon"><i class="fa-solid fa-clipboard-user"></i></div>
+                    <div class="hc-content">
+                        <h3>SDKI</h3>
+                        <p>Diagnosis Keperawatan</p>
+                        <span class="hc-badge">149 Diagnosa</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right hc-arrow"></i>
+                </div>
+                <div class="home-card card-slki" onclick="goToList('slki')">
+                    <div class="hc-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="hc-content">
+                        <h3>SLKI</h3>
+                        <p>Luaran Keperawatan</p>
+                        <span class="hc-badge">139 Luaran</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right hc-arrow"></i>
+                </div>
+                <div class="home-card card-siki" onclick="goToList('siki')">
+                    <div class="hc-icon"><i class="fa-solid fa-syringe"></i></div>
+                    <div class="hc-content">
+                        <h3>SIKI</h3>
+                        <p>Intervensi Keperawatan</p>
+                        <span class="hc-badge">197 Intervensi</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right hc-arrow"></i>
+                </div>
+            </section>
+
+            <section class="quick-actions">
+                <div class="qa-header">
+                    <h3>QUICK ACTIONS</h3>
+                    <button class="btn-link">Lihat Semua</button>
+                </div>
+                <div class="qa-grid">
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('quizModal')); if (typeof updateOsceScoreboard === 'function') updateOsceScoreboard();">
+                        <div class="qa-icon-wrap text-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span>Quiz</span>
+                    </div>
+                    <div class="qa-item" onclick="renderGlossary(); openModalEl(document.getElementById('glossaryModal'));">
+                        <div class="qa-icon-wrap text-emerald"><i class="fa-solid fa-book-medical"></i></div>
+                        <span>Glosarium</span>
+                    </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('askepModal'));">
+                        <div class="qa-icon-wrap text-purple"><i class="fa-solid fa-folder-plus"></i></div>
+                        <span>ASKEP</span>
+                    </div>
+                    <div class="qa-item" onclick="showToast('Fitur Dosis sedang dikembangkan','info')">
+                        <div class="qa-icon-wrap text-amber"><i class="fa-solid fa-calculator"></i></div>
+                        <span>Dosis</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- LIST SCREEN (Existing UI) -->
+    <div id="listScreen" class="screen">
+
     <header class="glass-header" id="appHeader">
         <div class="header-container">
             <div class="header-row-top">
+                <button class="btn-icon back-home-btn" onclick="goToHome()" aria-label="Kembali ke Beranda">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
                 <div class="logo">
                     <div class="logo-icon"><i class="fa-solid fa-notes-medical"></i></div>
                     <h1>E-SDKI <span class="logo-pro">PRO</span></h1>
@@ -127,23 +217,48 @@
             <p>Cobalah kata kunci lain atau periksa filter yang aktif.</p>
         </div>
     </main>
+    </div> <!-- End of listScreen -->
 
-    <!-- Detail Modal -->
+    <!-- Main Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-item active" onclick="goToHome()">
+            <i class="fa-solid fa-house"></i>
+            <span>Beranda</span>
+        </button>
+        <button class="nav-item" onclick="showToast('Fitur Riwayat segera hadir', 'info')">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Riwayat</span>
+        </button>
+        <button class="nav-item" onclick="goToListFav()">
+            <i class="fa-regular fa-heart"></i>
+            <span>Favorit</span>
+        </button>
+        <button class="nav-item" onclick="showToast('Menu Setelan', 'info')">
+            <i class="fa-solid fa-gear"></i>
+            <span>Setelan</span>
+        </button>
+    </nav>
+
     <div id="detailsModal" class="modal hidden">
         <div class="modal-overlay"></div>
-        <div class="modal-content glass-card">
-            <button class="modal-close" id="closeModal" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
-            <div class="modal-header">
-                <span class="diagnosa-kode" id="modalKode">D.0000</span>
-                <h2 id="modalNama">Nama</h2>
+        <div class="modal-content modern-detail">
+            <div class="modern-detail-topbar">
+                <button class="modal-close-new" id="closeModal" aria-label="Tutup"><i class="fa-solid fa-chevron-left"></i></button>
+                <span class="topbar-title">Detail Data</span>
                 <div class="modal-header-actions">
                     <button id="modalFavBtn" class="btn-icon" aria-label="Tambah ke Favorit">
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star" id="modalFavIcon"></i>
                     </button>
-                    <button id="modalCopyBtn" class="btn-icon" aria-label="Salin ke Clipboard" title="Salin">
-                        <i class="fa-regular fa-copy"></i>
+                    <button id="modalCopyBtn" class="btn-icon" aria-label="Bagikan" title="Bagikan">
+                        <i class="fa-solid fa-share-nodes"></i>
                     </button>
                 </div>
+            </div>
+            
+            <div class="modal-header modern-hero" id="modalHeroBg">
+                <span class="diagnosa-kode" id="modalKode">D.0000</span>
+                <h2 id="modalNama">Nama</h2>
+                <div class="modern-subtitle" id="modalSubtitle"><i class="fa-solid fa-sitemap"></i> <span>Kategori Kustom</span></div>
             </div>
 
             <!-- SDKI Detail Body -->
@@ -341,7 +456,37 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <script>
+        function goToHome() {
+            document.getElementById('listScreen').classList.remove('active');
+            document.getElementById('homeScreen').classList.add('active');
+            document.querySelectorAll('.bottom-nav .nav-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.bottom-nav .nav-item')[0].classList.add('active'); // Beranda
+        }
+        function goToList(targetMode) {
+            document.getElementById('homeScreen').classList.remove('active');
+            document.getElementById('listScreen').classList.add('active');
+            // Mock clicking the corresponding tab button in app.js
+            const tab = document.querySelector(`.tab-btn[data-target="${targetMode}"]`);
+            if (tab) tab.click();
+            document.getElementById('searchInput').value = '';
+        }
+        function openSearch() {
+            document.getElementById('homeScreen').classList.remove('active');
+            document.getElementById('listScreen').classList.add('active');
+            document.getElementById('searchInput').focus();
+        }
+        function goToListFav() {
+            document.getElementById('homeScreen').classList.remove('active');
+            document.getElementById('listScreen').classList.add('active');
+            const favBtn = document.getElementById('toggleFavorites');
+            if (favBtn && !favBtn.classList.contains('active')) {
+                favBtn.click();
+            }
+            document.querySelectorAll('.bottom-nav .nav-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.bottom-nav .nav-item')[2].classList.add('active'); // Favorit
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/osce-askep.js"></script>

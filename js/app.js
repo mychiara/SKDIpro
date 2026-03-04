@@ -699,6 +699,21 @@ function openModal(item, mode) {
   document.getElementById("modalKode").textContent = item.Kode;
   document.getElementById("modalNama").textContent = item.Nama;
 
+  const cat = CODE_TO_CAT[item.Kode];
+  const subtitleSpan = document.querySelector("#modalSubtitle span");
+  const modalHeroBg = document.getElementById("modalHeroBg");
+
+  if (cat && mode === "sdki") {
+    subtitleSpan.textContent = cat.name;
+    modalHeroBg.style.background = `linear-gradient(135deg, ${cat.color}, #1d4ed8)`;
+  } else if (mode === "siki") {
+    subtitleSpan.textContent = "Intervensi Keperawatan";
+    modalHeroBg.style.background = "linear-gradient(135deg, #a78bfa, #8b5cf6)";
+  } else {
+    subtitleSpan.textContent = "Luaran Keperawatan";
+    modalHeroBg.style.background = "linear-gradient(135deg, #34d399, #10b981)";
+  }
+
   ["SDKI", "SIKI", "SLKI"].forEach((m) =>
     document.getElementById(`modalBody${m}`).classList.add("hidden"),
   );
@@ -1303,8 +1318,10 @@ function populateCategories() {
   categoryFilter.value = currentCategory;
 }
 function updateUI() {
-  document.getElementById("dataCounter").textContent =
-    `Ditemukan ${filteredData.length} data`;
+  const counterEl = document.getElementById("dataCounter");
+  if (counterEl) {
+    counterEl.textContent = `Ditemukan ${filteredData.length} data`;
+  }
 
   if (loadMoreContainer) {
     const remaining = filteredData.length - displayedCount;
