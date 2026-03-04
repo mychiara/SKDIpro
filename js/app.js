@@ -1776,3 +1776,90 @@ function filterSOP() {
     }
   });
 }
+
+function filterEdu() {
+  const input = document.getElementById("eduSearch").value.toLowerCase();
+  const items = document.querySelectorAll(".edu-item");
+
+  items.forEach((item) => {
+    const text = item.querySelector(".guide-header").textContent.toLowerCase();
+    if (text.includes(input)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+// --- GFR Calculator ---
+function hitungGFR() {
+  const jk = document.getElementById("calc-gfr-jk").value;
+  const umur = parseFloat(document.getElementById("calc-gfr-umur").value);
+  const bb = parseFloat(document.getElementById("calc-gfr-bb").value);
+  const scr = parseFloat(document.getElementById("calc-gfr-scr").value);
+
+  if (!umur || !bb || !scr || scr <= 0 || umur <= 0 || bb <= 0) {
+    showToast("Mohon lengkapi data GFR pasien dengan benar!", "error");
+    return;
+  }
+
+  let gfr = ((140 - umur) * bb) / (72 * scr);
+  if (jk === "wanita") {
+    gfr = gfr * 0.85;
+  }
+
+  let status = "";
+  if (gfr >= 90) status = "G1 - Normal / Tinggi";
+  else if (gfr >= 60) status = "G2 - Penurunan Ringan";
+  else if (gfr >= 45) status = "G3a - Penurunan Ringan-Sedang";
+  else if (gfr >= 30) status = "G3b - Penurunan Sedang-Berat";
+  else if (gfr >= 15) status = "G4 - Penurunan Berat";
+  else status = "G5 - Gagal Ginjal (End-stage)";
+
+  document.getElementById("val-gfr").textContent = gfr.toFixed(1) + " mL/min";
+  document.getElementById("val-gfr-status").textContent =
+    "Kesimpulan: " + status;
+  document.getElementById("res-gfr").classList.remove("hidden");
+}
+
+// --- HPL Calculator ---
+function hitungHPL() {
+  const hphtInput = document.getElementById("calc-hpl-date").value;
+  if (!hphtInput) {
+    showToast("Masukkan tanggal Hari Pertama Haid Terakhir (HPHT)!", "error");
+    return;
+  }
+
+  const hphtDate = new Date(hphtInput);
+  const hplDate = new Date(hphtDate.getTime() + 280 * 24 * 60 * 60 * 1000); // +280 days
+
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  const hplString = hplDate.toLocaleDateString("id-ID", options);
+
+  const today = new Date();
+  const diffTime = today.getTime() - hphtDate.getTime();
+  let statusUsia = "";
+
+  if (diffTime < 0) {
+    statusUsia = "HPHT tidak falid (di masa depan)";
+  } else {
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const weeks = Math.floor(diffDays / 7);
+    const days = diffDays % 7;
+
+    if (weeks >= 42) {
+      statusUsia = weeks + " Minggu " + days + " Hari (Post-term)";
+    } else {
+      statusUsia = weeks + " Minggu " + days + " Hari";
+    }
+  }
+
+  document.getElementById("val-hpl").textContent = hplString;
+  document.getElementById("val-hpl-usia").textContent = statusUsia;
+  document.getElementById("res-hpl").classList.remove("hidden");
+}

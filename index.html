@@ -112,6 +112,10 @@
                         <div class="qa-icon-wrap" style="color:#0ea5e9;"><i class="fa-solid fa-lungs"></i></div>
                         <span>BGA / AGD</span>
                     </div>
+                    <div class="qa-item" onclick="openModalEl(document.getElementById('edukasiModal'))">
+                        <div class="qa-icon-wrap text-amber"><i class="fa-solid fa-person-chalkboard"></i></div>
+                        <span>Edukasi</span>
+                    </div>
                     <div class="qa-item" onclick="openModalEl(document.getElementById('sopModal'))">
                         <div class="qa-icon-wrap text-blue"><i class="fa-solid fa-list-check"></i></div>
                         <span>SOP Klinis</span>
@@ -585,6 +589,8 @@
                     <button class="calc-tab-btn" data-target="calc-dosis" onclick="switchCalcTab('dosis')"><i class="fa-solid fa-baby"></i> Dosis Anak</button>
                     <button class="calc-tab-btn" data-target="calc-bmi" onclick="switchCalcTab('bmi')"><i class="fa-solid fa-weight-scale"></i> BMI & MAP</button>
                     <button class="calc-tab-btn" data-target="calc-baxter" onclick="switchCalcTab('baxter')"><i class="fa-solid fa-fire"></i> Luka Bakar</button>
+                    <button class="calc-tab-btn" data-target="calc-gfr" onclick="switchCalcTab('gfr')"><i class="fa-solid fa-kidneys text-purple"></i> GFR (Ginjal)</button>
+                    <button class="calc-tab-btn" data-target="calc-hpl" onclick="switchCalcTab('hpl')"><i class="fa-solid fa-person-pregnant text-emerald"></i> HPL / Kehamilan</button>
                 </div>
             </div>
 
@@ -731,6 +737,68 @@
                             <div style="display:flex; justify-content:space-between;">
                                 <strong>Kebutuhan Total Tablet (sekali):</strong> <span id="val-dosis-butuh" style="font-weight:700; color:var(--text-primary);">--</span>
                             </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Tab: GFR (Ginjal) -->
+                <div id="calc-gfr" class="calc-section hidden">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-kidneys text-purple"></i> Estimasi Laju Filtrasi Glomerulus</h3>
+                    <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:-0.5rem; margin-bottom:1rem;">Metode Cockcroft-Gault (Klirens Kreatinin)</p>
+                    <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Jenis Kelamin</label>
+                                <select id="calc-gfr-jk">
+                                    <option value="pria">Laki-laki</option>
+                                    <option value="wanita">Perempuan</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Umur (Tahun)</label>
+                                <input type="number" id="calc-gfr-umur" placeholder="Mis: 45">
+                            </div>
+                        </div>
+                        <div class="pengkajian-input-group row-group">
+                            <div>
+                                <label>Berat Badan (kg)</label>
+                                <input type="number" id="calc-gfr-bb" placeholder="Mis: 65">
+                            </div>
+                            <div>
+                                <label>Serum Kreatinin (mg/dL)</label>
+                                <input type="number" id="calc-gfr-scr" step="0.1" placeholder="Mis: 1.2">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem; background:var(--purple); border-color:var(--purple); color:white;" onclick="hitungGFR()"><i class="fa-solid fa-calculator"></i> Hitung GFR</button>
+                                    
+                    <div id="res-gfr" class="calc-result hidden" style="border-top-color:var(--purple);">
+                        <h4>Hasil Estimasi CCr / GFR:</h4>
+                        <div class="calc-res-value" id="val-gfr" style="color:var(--purple); margin-bottom:0.5rem;">--</div>
+                        <div style="font-size:0.9rem; color:var(--text-secondary); font-weight:600;" id="val-gfr-status">Status: --</div>
+                    </div>
+                </div>
+
+                <!-- Tab: HPL (Hari Perkiraan Lahir) -->
+                <div id="calc-hpl" class="calc-section hidden">
+                    <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-person-pregnant text-emerald"></i> HPL & Usia Kehamilan</h3>
+                    <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:-0.5rem; margin-bottom:1rem;">Berdasarkan Rumus Naegele (HPHT)</p>
+                    <div class="pengkajian-grid" style="grid-template-columns: 1fr; margin-bottom:1.5rem;">
+                        <div class="pengkajian-input-group">
+                            <div style="width:100%">
+                                <label>Hari Pertama Haid Terakhir (HPHT)</label>
+                                <input type="date" id="calc-hpl-date" style="padding:0.75rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center; padding:0.8rem; background:var(--emerald); border-color:var(--emerald); color:white;" onclick="hitungHPL()"><i class="fa-solid fa-calculator"></i> Kalkulasi Kehamilan</button>
+                                    
+                    <div id="res-hpl" class="calc-result hidden" style="border-top-color:var(--emerald);">
+                        <h4>Hari Perkiraan Lahir (HPL):</h4>
+                        <div class="calc-res-value" id="val-hpl" style="color:var(--emerald); margin-bottom:0.8rem; font-size:1.15rem;">--</div>
+                        <div style="font-size:0.95rem; color:var(--text-secondary); background:var(--bg-alt); padding:0.75rem; border-radius:var(--radius-md); text-align:center; border:1px dashed var(--emerald);">
+                            <strong>Usia Kehamilan Saat Ini:</strong><br><span id="val-hpl-usia" style="font-weight:700; color:var(--text-primary); font-size:1.1rem;">--</span>
                         </div>
                     </div>
                 </div>
@@ -913,6 +981,253 @@
                                 <li>Tarik sedikit perlahan kateter membelakang untuk memastikan bahwa sisa kateter tertahan oleh balon pengunci (terfiksasi internal di leher vesika urinaria).</li>
                                 <li>Sambungkan ke *Urine Bag*, pastikan klem terkunci, dan fiksasi plester kateter di area paha atas.</li>
                             </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 4 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-mask-ventilator text-blue"></i> Terapi Oksigen (Nasal/Masker) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> Tabung/Sentral O2, Flowmeter, Humidifier isi water for injection/aquadest batas normal, Nasal kanul / Simple Mask / NRM, Plester jika perlu.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Kaji kebutuhan oksigenasi pasien (cek SpO2 dan pola napas).</li>
+                                <li>Bersihkan hidung dari sekret jika ada.</li>
+                                <li>Sambungkan selang O2 ke tabung humidifier.</li>
+                                <li>Putar *flowmeter* sesuai dosis kolaborasi: Nasal Kanul (1-6 LPM), Simple Mask (5-8 LPM), NRM (8-15 LPM pastikan kantong terisi penuh dulu).</li>
+                                <li>Rasakan aliran oksigen dengan punggung tangan perawat.</li>
+                                <li>Pasangkan ke hidung/wajah pasien, sesuaikan tali di belakang kepala/telinga agar tidak terlalu ketat namun tidak lepas.</li>
+                                <li>Cek kembali respon pasien tiap 15-30 menit (SpO2, saturasi, mukosa).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 5 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-heart-circle-bolt text-danger"></i> Resusitasi Jantung Paru (RJP/CPR) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Panduan:</strong> Protokol AHA (American Heart Association) terbaru untuk dewasa.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur Terarah (DRSCAB):</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li><strong>Danger:</strong> Pastikan aman penolong, aman pasien, aman lingkungan.</li>
+                                <li><strong>Response:</strong> Tepuk bahu kuat "Pak/Bu, bangun!". Jika tidak ada respon/tidak bernapas/napas gasping.</li>
+                                <li><strong>Shout for Help:</strong> Aktifkan Code Blue/hubungi tim emergensi, minta dibawakan AED (Defibrilator).</li>
+                                <li><strong>Circulation:</strong> Cek nadi karotis (leher) maksimal 10 detik. Jika TAK TERABA nadi, mulai kompresi.</li>
+                                <li><strong>Compression:</strong> Letakkan tangah di pertengahan lower sternum. Kompresi dengan kecepatan 100-120x/menit. Kedalaman 5-6 cm. Beri kelonggaran *chest recoil* (dada mengembang penuh).</li>
+                                <li><strong>Airway:</strong> Bebaskan jalan napas (*Head tilt-chin lift* / *Jaw thrust* jika curiga trauma servikal).</li>
+                                <li><strong>Breathing:</strong> Berikan 2x bantuan napas setiap 30 kompresi dada (Rasio 30:2) memakai *Bag Valve Mask*. Jika terintubasi, kompresi non-stop, napas berikan 1x tiap 6 detik.</li>
+                                <li>Lakukan 5 siklus (sekitar 2 menit), cek nadi dan irama kembali. Jika AED datang, segera pasang padel ikuti komando alat.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 6 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-wind text-purple"></i> Pengisapan Lendir (Suctioning) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> Mesin suction, Kateter suction steril (ukuran dewasa #12-16), Sarung tangan steril 1 sisi & sarung tangan bersih, Kom kecil + cairan NaCl steril, Masker hidung/mulut perawat.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur (Prinsip Steril):</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Cuci tangan, pasang apron/masker, nyalakan mesin suction (dewasa: 100-120 mmHg).</li>
+                                <li>Hyper-oksigenasi pasien (berikan Oksigen 100% sebentar).</li>
+                                <li>Pakai sarung tangan steril di tangan dominan (tangan penyedot), dan bersih/non-steril di dominan lain (tangan pengatur mesin).</li>
+                                <li>Ukur kedalaman perkiraan dan masukkan kateter tanpa menekan lubang katup vakum (jangan menyedot dulu saat masuk).</li>
+                                <li>Saat sudah mencapai ujung area jalan napas, tekan perlahan katup hisap, tarik putar secara sirkular. <strong>Tindakan menyedot tak boleh > 10-15 detik</strong>.</li>
+                                <li>Bilas selang suction dengan menyedot NaCl.</li>
+                                <li>Evaluasi frekuensi napas dan auskultasi (suara ronchi berkurang). Ulangi maksimal 3x jika masih banyak lendir, beri re-oksigenasi di jeda antar tindakan.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 7 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-heart-pulse text-emerald"></i> Perekaman EKG (Elektrokardiogram) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan Alat:</strong> Mesin EKG, Kertas EKG, Jelly EKG, Kasa/tisu, Alkohol swab.</p>
+                            <p style="margin-top:0.5rem;"><strong>Lokasi Elektroda (Prekordial):</strong></p>
+                            <ul style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li><strong>V1:</strong> Ruang interkostal ke-4 kanan dari sternum. (Warna Merah)</li>
+                                <li><strong>V2:</strong> Ruang interkostal ke-4 kiri dari sternum. (Warna Kuning)</li>
+                                <li><strong>V3:</strong> Di tengah antara V2 dan V4. (Warna Hijau)</li>
+                                <li><strong>V4:</strong> Ruang interkostal ke-5 di garis mid-klavikula kiri. (Warna Coklat)</li>
+                                <li><strong>V5:</strong> Sejajar horizontal dengan V4 di garis aksila anterior kiri. (Warna Hitam)</li>
+                                <li><strong>V6:</strong> Sejajar horizontal dengan V4 dan V5 di garis mid-aksila kiri. (Warna Ungu)</li>
+                            </ul>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong> Bersihkan dada dan pergelangan klien, oleskan jelly tipis, pasang sadapan ekstremitas (Merah-Kanan atas, Kuning-Kiri atas, Hijau-Kiri Bawah, Hitam-Kanan Bawah), pasang elektroda V1-V6, minta klien rileks, dan mulai rekam.</p>
+                        </div>
+                    </div>
+
+                    <!-- SOP 8 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-droplet text-danger"></i> Pemberian Transfusi Darah <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Persiapan:</strong> *Informed Consent*, cek silang (Gologan Darah, Rhesus, RM) ganda oleh 2 perawat (*Double Check*). Siapkan *Blood Set*, NaCl 0.9%.</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Ukur tanda-tanda vital (TTV) *baseline* pasien sebelum mulai.</li>
+                                <li>Bilas selang *blood set* yang terpasang dengan NaCl 0.9% murni (jangan dicampur obat lain).</li>
+                                <li>Sambungkan kantong darah secara aseptik. Buka klem perlahan.</li>
+                                <li>Atur tetesan awal **lambat (sekitar 2 mL/menit atau 10-15 tts/mnt)** selama 15 menit pertama.</li>
+                                <li>Perawat WAJIB mengobservasi tanda reaksi transfusi (gatal, menggigil, kemerahan, sesak, demam, nyeri pinggang) dalam 15 menit pertama.</li>
+                                <li>Jika aman, tingkatkan tetesan sesuai anjuran medis. Pantau TTV setiap jam.</li>
+                                <li>Setelah habis, bilas kembali jalur IV dengan sisa NaCl 0.9%.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- SOP 9 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-band-aid text-amber"></i> Perawatan Luka Modern (Modern Dressing) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Prinsip:</strong> *Moist Wound Healing* (Menjaga kelembapan luka yang ideal). Menggantikan kompres betadin sistem kuno.</p>
+                            <p style="margin-top:0.5rem;"><strong>Pilihan Dressing:</strong></p>
+                            <ul style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li><strong>Hydrogel:</strong> Melembapkan luka kering (nekrotik eskar/hitam) / kuning (sloughy) agar melunak.</li>
+                                <li><strong>Calcium Alginate:</strong> Dari rumput laut, untuk luka *banyak eksudat* (cairan/nanah) & berdarah. Berubah gel saat basah.</li>
+                                <li><strong>Hydrocolloid:</strong> Luka dangkal dengan eksudat ringan-sedang. *Waterproof*.</li>
+                                <li><strong>Foam:</strong> Spons penyerab tinggi eksudat sangat banyak / penecegah ulkus dekubitus.</li>
+                                <li><strong>Silver Dressing:</strong> Luka terinfeksi akut (bau, nanah persisten, bakteri).</li>
+                            </ul>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur Cuci:</strong> Cuci luka HANYA dengan sabun khusus/PHMB atau NaCl 0.9%. JANGAN pakai alkohol/povidon iodine rutin (toksik bagi epitel baru) kecuali sangat kotor.</p>
+                        </div>
+                    </div>
+
+                    <!-- SOP 10 -->
+                    <div class="guide-item sop-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-user-nurse text-blue"></i> Pemasangan OPA / Mayo (Guedel) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <p><strong>Fungsi:</strong> Menahan lidah yang jatuh ke belakang menutupi jalan napas pada pasien *tidak sadar* (kurang/hilang refleks gag).</p>
+                            <p style="margin-top:0.5rem;"><strong>Prosedur:</strong></p>
+                            <ol style="margin-left:2.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.4rem;">
+                                <li>Ukur ukuran OPA yang pas: Dari sudut mulut pasien ke sudut rahang bawah/angulus mandibula.</li>
+                                <li>Buka mulut (cross-finger technique).</li>
+                                <li>Masukkan OPA dengan ujung lengkungan menghadap ke <strong>atas</strong> (ke arah telinga/palatum bgn atas).</li>
+                                <li>Saat OPA masuk setengah jalan, sentuh palatum molle posterior, putar 180 derajat ke bawah ikuti kelengkungan kerongkongan.</li>
+                                <li>Pastikan kepatenan napas (suara *snoring* mendehem hilang). <strong>Jangan fiksasi dengan plester keras </strong> agar mudah dimuntahkan saat pasien kembali sadar.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edukasi / Intervensi Mandiri Modal -->
+    <div id="edukasiModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModalEl(document.getElementById('edukasiModal'))"></div>
+        <div class="modal-content glass-card" style="max-width:800px; padding: 0; background: var(--bg);">
+            <div class="calc-header modern-hero" style="background: linear-gradient(135deg, #f59e0b, #d97706); margin: 0; border-radius: 24px 24px 0 0; padding: 2rem 2.5rem !important;">
+                <button class="modal-close" onclick="closeModalEl(document.getElementById('edukasiModal'))" style="background: rgba(255,255,255,0.2); color:white;"><i class="fa-solid fa-xmark"></i></button>
+                <h2 style="color:white !important; margin:0;"><i class="fa-solid fa-person-chalkboard"></i> Modul Edukasi Pasien</h2>
+                <p style="color:rgba(255,255,255,0.9); margin-top:0.5rem; font-size:0.95rem;">Template penjelasan medis siap-pakai untuk Edukasi dan Discharge Planning.</p>
+                
+                <div class="search-box" style="margin-top: 1.5rem; max-width: 100%;">
+                    <i class="fa-solid fa-magnifying-glass search-icon" style="color: var(--text-muted);"></i>
+                    <input type="text" id="eduSearch" placeholder="Cari topik edukasi (mis. Hipertensi, DM, Nyeri)..." autocomplete="off" onkeyup="filterEdu()" style="background:white; color:var(--text-primary);">
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 1.5rem 2rem;">
+                <div class="guide-accordion" id="eduList">
+                    <!-- Edukasi 1 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-carrot text-emerald"></i> Diit Rendah Garam (Hipertensi) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Panduan Diet Hipertensi (DASH)</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li><strong>Batasan Garam:</strong> Maksimal 1 sendok teh (5 gram) per hari dari semua makanan/bumbu dapur.</li>
+                                    <li><strong>Hindari Makanan Olahan:</strong> Stop makanan kaleng (sarden, kornet), makanan instan (mie, bumbu instan), kerupuk-keropok, dan ikan asin/telur asin. Mengandung pengawet Natrium benzoat tinggi.</li>
+                                    <li><strong>Anjuran Perbanyak Kalium:</strong> Konsumsi buah segar (pisang, melon, alpukat) dan sayuran hijau.</li>
+                                    <li><strong>Gunakan Bumbu Alami:</strong> Ganti micin (MSG)/Royco dengan kaldu jamur alami, bawang putih, bawang merah, lada, jeruk nipis untuk rasa.</li>
+                                </ul>
+                                <button class="btn btn-sm btn-outline mt-3" onclick="showToast('Fitur Copy Teks belum berjalan di mode preview', 'info')"><i class="fa-solid fa-copy"></i> Salin Teks Edukasi</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Edukasi 2 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-syringe text-blue"></i> Penyuntikan Insulin Mandiri (Keluarga/Pasien) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Cara Menyuntik Insulin di Rumah</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li>Cuci tangan dengan sabun. Siapkan Pen Insulin, pastikan obat tidak kedaluwarsa dan warna cairan tidak keruh (kecuali jenis NPH).</li>
+                                    <li>Gunakan jarum baru, buang 1-2 unit pertama ke udara terbuka (priming) untuk cek kelancaran.</li>
+                                    <li><strong>Area Cubitan (Subkutan):</strong> Lengan atas bagian luar, paha sisi luar, abdomen sebelah pusar (jarak 2 jari dari pusar). **Rotasi area rotasi**, jangan selau di titik yang sama!</li>
+                                    <li>Usap titik dengan alkohol swab, tunggu kering. Cubit lemah lemak kulit, suntikkan tegak lurus (90 derajat) atau 45 derajat (jika lemak sangat tipis).</li>
+                                    <li>Tekan tombol sampai habis (angka 0 kembali). Biarkan jarum tertusuk menghitung dalam hati 1 sampai 10 detik agar obat meresap sempurna.</li>
+                                    <li>Cabut jarum perlahan. Jangan dipijat!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edukasi 3 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-bolt text-danger"></i> Manajemen Nyeri Non-Farmakologi <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                             <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Latihan Relaksasi & Distraksi Nyeri</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li><strong>Napas Dalam:</strong> Ajarkan menghirup udara lambat dan dalam memlalui hidung (rasakan perut terangkat), tahan 2 detik, buang pelan-pelan lewat mulut bagai meniup sedotan. Ulangi 3-5 kali.</li>
+                                    <li><strong>Terapi Panas/Dingin:</strong> Kompres area yang ngilu dengan botol air panas beralas handuk (untuk otot tegang) atau kompres es batu (untuk trauma/memar memar paru akut).</li>
+                                    <li><strong>Distraksi Imajinasi:</strong> Pandu pasien untuk menutup mata membayangkan tempat atau memori membahagiakan, sambil mendengarkan muratal/musik klasik lembut yang disukainya.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edukasi 4 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-lungs-virus text-blue"></i> Latihan Batuk Efektif & Fisioterapi (Pneumonia/TBC) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Cara Mengeluarkan Dahak yang Benar</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li>Posisi duduk tegak (bersandar) rileks sambil memeluk bantal kecil di dada jika ada nyeri. Angkat bahu sedikit.</li>
+                                    <li>Minum secangkir air hangat (jahe/air mineral) 10-15 menit sebelum latihan untuk mengencerkan sputum.</li>
+                                    <li>Tarik napas panjang dari hidung, rasakan perut membesar. Tahan selama 3 detik.</li>
+                                    <li>Hembuskan napas perlahan lewat bibir monyong (<em>pursed lip</em>) sebanyak 2 kali siklus relaksasi paru.</li>
+                                    <li>Pada tarikan napas ke-3 (yang paling dalam), hembuskan <strong>dengan cara membatukkan dua lapis tekanan serentak</strong> ("Hah, HUKK!"). Batuk pertama melepas dahak, batuk kedua mendorongnya keluar.</li>
+                                    <li>Kumur-kumur pakai pencuci mulut & minum air hangat kembali.</li>
+                                </ul>
+                                <button class="btn btn-sm btn-outline mt-3" onclick="showToast('Fitur Copy Teks belum berjalan di mode preview', 'info')"><i class="fa-solid fa-copy"></i> Salin Teks Edukasi</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edukasi 5 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-baby text-purple"></i> Perawatan Bayi Baru Lahir (Tali Pusat/Kuning) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                            <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Edukasi Pasca-Salin Ibu/Keluarga Terbatas</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li><strong>Perawatan Tali Pusat (Ikterus):</strong> Biarkan KERING dan terbuka. Saat dilap basah pinggir badannya / dimandikan kena air sabun lembut, keringkan sisa dengan kasa steril utuh. JANGAN DIBERI cairan antiseptik merah (Betadin), bedak, koin, kencur atau rempah-rempah basah (resiko besar penyakit Tetanus!).</li>
+                                    <li><strong>Pampers/Popok:</strong> Lipat sedikit ujung ikat pinggang pampers di bawah batas pusar sehingga sisa tunggul pusar tidak tercelup cairan tinja bayinya.</li>
+                                    <li><strong>Waspada Infeksi (Gawat Darurat):</strong> Segera bawa ke IGD Rumah Sakit / Bidan jika pusar bengkak merah melingkar di perut, berbau gas yang amis busuk menjengkelkan, ada nanah aktif, bayi sangat kurus tak mau ASI, hipotermi (dingin) berlebih.</li>
+                                    <li><strong>Penjemuran Matahari:</strong> Berjemur sangat penting (jam 7-8 pagi maksimal) ~15 menit rutin menghindari penyakit kulit mematikan dan mencegah Jaundice parah. Lindungi bola matanya memakai topi mungil atau tameng pelindung khusus.</li>
+                                </ul>
+                                <button class="btn btn-sm btn-outline mt-3" onclick="showToast('Fitur Copy Teks belum berjalan di mode preview', 'info')"><i class="fa-solid fa-copy"></i> Salin Teks Edukasi</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edukasi 6 -->
+                    <div class="guide-item edu-item">
+                        <div class="guide-header" onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor:pointer;"><i class="fa-solid fa-person-walking-with-cane text-amber"></i> Mobilisasi Stroke & Latihan Rentang Gerak (ROM) <i class="fa-solid fa-chevron-down" style="margin-left:auto; font-size:0.8rem; opacity:0.5;"></i></div>
+                        <div class="guide-content hidden" style="margin-top:1rem;">
+                             <div style="background: var(--surface-opaque); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border);">
+                                <h4 style="color:var(--text-primary); margin-bottom:0.8rem;">Panduan Pergerakan Mandiri Pasien Post-Stroke di Ranjang</h4>
+                                <ul style="margin-left:1.5rem; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
+                                    <li><strong>Posisi Baring & Balik Arah:</strong> Ubah posisi tubuh pasien Miring Kanan - Telentang - Miring Kiri SETIAP MAKSIMAL 2 JAM sekali. Ganjal tonjolan tulang/punggung dengan bantal empuk tebal mencegah ulkus meradang/dekubitus menempel di kulit punggung dan pangkal panggulnya.</li>
+                                    <li><strong>Gerakan Sendi Lemah (ROM Pasif Harian):</strong> Bantu tangan & kaki bagian yang menderita kelumpuhan pasif (plegia) digerakkan senam setiap sore/pagi. Ayunkan tangannya lurus melebar menyamping lalu menutup, raih lutut telapak merentak seperti solat pelan-pelan 10 repetisi (jangan di paksakan sakit/lepas sendi pundaknya).</li>
+                                    <li><strong>Ganjalan Telapak (Foot drop):</strong> Ganjal sendi engkel pada kaki lumpuh di balik selimut paka guling rol agar tapaknya selalu tegak menatap loteng rata dengan 90 derajat tidak ke samping nglempreh merusak anatomi otot jangka lama.</li>
+                                    <li><strong>Terapi Bicara/Menelan Mudah:</strong> Mulai latihan ngobrol benda favorit keluarga dengan senyum perlahan. Kasih makan selalu setengah duduk minimal sudut 45-90 derajat menjauhi bahaya tersedak pneumonia aspirasi.</li>
+                                </ul>
+                                <button class="btn btn-sm btn-outline mt-3" onclick="showToast('Fitur Copy Teks belum berjalan di mode preview', 'info')"><i class="fa-solid fa-copy"></i> Salin Teks Edukasi</button>
+                            </div>
                         </div>
                     </div>
                 </div>
