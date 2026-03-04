@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SDKI Pro — Panduan Keperawatan Indonesia</title>
+    <meta name="description" content="Aplikasi panduan lengkap Standar Diagnosis (SDKI), Intervensi (SIKI), dan Luaran (SLKI) Keperawatan Indonesia.">
+    <meta name="keywords" content="SDKI, SIKI, SLKI, keperawatan, diagnosa, intervensi, luaran, nursing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    <div class="bg-shape bg-shape-3"></div>
+
+    <!-- Header -->
+    <header class="glass-header" id="appHeader">
+        <div class="header-container">
+            <div class="header-row-top">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                    <h1>E-SDKI <span class="logo-pro">PRO</span></h1>
+                </div>
+
+                <nav class="main-tabs" id="mainTabs" role="tablist">
+                    <button class="tab-btn active" data-target="sdki" role="tab" aria-selected="true">
+                        <i class="fa-solid fa-notes-medical"></i>
+                        <span class="tab-label">SDKI</span>
+                        <span class="tab-count" id="countSDKI">0</span>
+                    </button>
+                    <button class="tab-btn" data-target="slki" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="tab-label">SLKI</span>
+                        <span class="tab-count" id="countSLKI">0</span>
+                    </button>
+                    <button class="tab-btn" data-target="siki" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                        <span class="tab-label">SIKI</span>
+                        <span class="tab-count" id="countSIKI">0</span>
+                    </button>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="toggleGlossary" class="btn btn-outline" title="Glosarium Medis">
+                        <i class="fa-solid fa-book"></i>
+                        <span class="btn-text">Glosarium</span>
+                    </button>
+                    <button id="toggleQuiz" class="btn btn-outline" title="Latihan UKOM">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="btn-text">Quiz</span>
+                    </button>
+                    <button id="toggleAskep" class="btn btn-primary" title="Lihat Keranjang ASKEP">
+                        <i class="fa-solid fa-file-medical"></i>
+                        <span class="btn-text">ASKEP</span>
+                        <span class="badge" id="askepCounter">0</span>
+                    </button>
+                    <button id="themeToggle" class="btn-icon" title="Ganti Tema (Alt+T)" aria-label="Ganti Tema">
+                        <i class="fa-solid fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-row-bottom">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Cari kode, nama, atau konten..." autocomplete="off">
+                    <kbd class="search-kbd">Ctrl+K</kbd>
+                </div>
+
+                <div class="filter-group">
+                    <select id="categoryFilter" class="category-select" title="Filter Kategori">
+                        <option value="all">Semua Kategori</option>
+                    </select>
+                    <button id="symptomModeToggle" class="btn-icon" title="Mode Cari Gejala (Smart Assessment)">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </button>
+                </div>
+
+                <button id="toggleFavorites" class="btn btn-outline" aria-label="Tampilkan Favorit">
+                    <i class="fa-regular fa-star"></i>
+                    <span class="btn-text">Favorit</span>
+                </button>
+
+                <button id="viewToggle" class="btn-icon view-toggle-btn" title="Ganti Tampilan">
+                    <i class="fa-solid fa-list" id="viewIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" id="mainContent">
+        <section class="intro">
+            <h2 id="pageTitle">Panduan Diagnosa Keperawatan</h2>
+            <p id="pageDesc">Alat Bantu Digital untuk Belajar Diagnosis Keperawatan (SDKI) Berbasis Data.</p>
+            <p class="data-counter" id="dataCounter"></p>
+        </section>
+
+        <!-- Loading -->
+        <div id="loadingIndicator" class="loading-state">
+            <div class="spinner"></div>
+            <p>Memuat Data...</p>
+        </div>
+
+        <!-- Card Grid -->
+        <div id="diagnosisGrid" class="diagnosis-grid hidden"></div>
+
+        <!-- Load More -->
+        <div id="loadMoreContainer" class="load-more-container hidden">
+            <button id="loadMoreBtn" class="btn btn-primary">
+                <i class="fa-solid fa-angles-down"></i>
+                Muat Lebih Banyak (<span id="remainingCount">0</span> tersisa)
+            </button>
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="empty-state hidden">
+            <div class="empty-icon"><i class="fa-solid fa-box-open"></i></div>
+            <h3>Tidak ada data ditemukan</h3>
+            <p>Cobalah kata kunci lain atau periksa filter yang aktif.</p>
+        </div>
+    </main>
+
+    <!-- Detail Modal -->
+    <div id="detailsModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeModal" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <span class="diagnosa-kode" id="modalKode">D.0000</span>
+                <h2 id="modalNama">Nama</h2>
+                <div class="modal-header-actions">
+                    <button id="modalFavBtn" class="btn-icon" aria-label="Tambah ke Favorit">
+                        <i class="fa-regular fa-star"></i>
+                    </button>
+                    <button id="modalCopyBtn" class="btn-icon" aria-label="Salin ke Clipboard" title="Salin">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SDKI Detail Body -->
+            <div class="modal-body" id="modalBodySDKI">
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-book-medical"></i> Definisi</h3>
+                    <p id="modalDefinisi">-</p>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-virus"></i> Penyebab</h3>
+                    <ul id="modalPenyebab"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-thermometer"></i> Gejala Mayor</h3>
+                    <ul id="modalGejalaMayor"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-head-side-cough"></i> Gejala Minor</h3>
+                    <ul id="modalGejalaMinor"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-bed-pulse"></i> Kondisi Klinis Terkait</h3>
+                    <ul id="modalKondisi"></ul>
+                </div>
+                <!-- Triad: Related SLKI -->
+                <div class="related-section" id="relatedSLKISection">
+                    <h3 class="related-title slki-accent">
+                        <i class="fa-solid fa-list-check"></i> Luaran Terkait (SLKI)
+                    </h3>
+                    <div class="related-items" id="relatedSLKIList"></div>
+                </div>
+                <!-- Triad: Related SIKI -->
+                <div class="related-section" id="relatedSIKISection">
+                    <h3 class="related-title siki-accent">
+                        <i class="fa-solid fa-hand-holding-medical"></i> Intervensi Terkait (SIKI)
+                    </h3>
+                    <div class="related-items" id="relatedSIKIList"></div>
+                </div>
+            </div>
+
+            <!-- SIKI Detail Body -->
+            <div class="modal-body hidden" id="modalBodySIKI">
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-eye"></i> Observasi</h3>
+                    <ul id="modalObservasi"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-capsules"></i> Terapeutik</h3>
+                    <ul id="modalTerapeutik"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Edukasi</h3>
+                    <ul id="modalEdukasi"></ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-user-doctor"></i> Kolaborasi</h3>
+                    <ul id="modalKolaborasi"></ul>
+                </div>
+                <div class="detail-section alert-link">
+                    <h3><i class="fa-solid fa-link"></i> Terkait Diagnosa (SDKI)</h3>
+                    <div id="modalTautan" class="crosslink-container">-</div>
+                </div>
+            </div>
+
+            <!-- SLKI Detail Body -->
+            <div class="modal-body hidden" id="modalBodySLKI">
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-book-medical"></i> Definisi</h3>
+                    <p id="modalDefinisiSLKI">-</p>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-bullseye"></i> Ekspektasi</h3>
+                    <p id="modalEkspektasiSLKI" class="ekspektasi-badge">-</p>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-list-ol"></i> Kriteria Hasil</h3>
+                    <ul id="modalKriteriaSLKI"></ul>
+                </div>
+                <div class="detail-section alert-link">
+                    <h3><i class="fa-solid fa-link"></i> Terkait Diagnosa (SDKI)</h3>
+                    <div id="modalTautanSLKI" class="crosslink-container">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ASKEP Modal (Generator) -->
+    <div id="askepModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeAskepModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Rencana Asuhan Keperawatan</h2>
+                <p>Kelola Luaran dan Intervensi yang telah dipilih.</p>
+            </div>
+            <div class="modal-body">
+                <div id="askepItemsContainer" class="askep-list">
+                    <!-- Items will be injected here -->
+                    <p class="empty-msg">Belum ada item yang dipilih.</p>
+                </div>
+                <div class="askep-actions">
+                    <button id="downloadAskepPdf" class="btn btn-primary">
+                        <i class="fa-solid fa-file-pdf"></i> Ekspor PDF
+                    </button>
+                    <button id="clearAskep" class="btn btn-outline">Kosongkan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeQuizModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Latihan UKOM / OSCE</h2>
+                <p>Asah kemampuan diagnosa Anda.</p>
+            </div>
+            <div id="quizContent" class="modal-body">
+                <!-- Quiz questions injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Glossary Modal -->
+    <div id="glossaryModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeGlossaryModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Glosarium Medis</h2>
+                <p>Istilah medis yang sering muncul dalam SDKI/SIKI/SLKI.</p>
+            </div>
+            <div class="modal-body">
+                <div class="search-box" style="max-width: none; margin-bottom: 1.5rem;">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="glossarySearch" placeholder="Cari istilah..." autocomplete="off">
+                </div>
+                <div id="glossaryItems" class="askep-list">
+                    <!-- Glossary items injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>E-SDKI Pro</span>
+            </div>
+            <p class="footer-text">Alat bantu belajar keperawatan. Referensi utama: Buku SDKI, SIKI, SLKI (PPNI).</p>
+            <div class="footer-shortcuts">
+                <span><kbd>Ctrl</kbd>+<kbd>K</kbd> Cari</span>
+                <span><kbd>Esc</kbd> Tutup</span>
+                <span><kbd>Alt</kbd>+<kbd>T</kbd> Tema</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

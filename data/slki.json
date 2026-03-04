@@ -1,0 +1,482 @@
+﻿    [
+    {
+        "Kode": "L.01001",
+        "Nama": "Bersihan Jalan Napas",
+        "Definisi": "Kemampuan membersihkan sekret atau obstruksi jalan napas untuk mempertahankan jalan napas tetap paten.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Batuk efektif meningkat; Produksi sputum menurun; Mengi menurun; Wheezing menurun; Sianosis menurun; Gelisah menurun; Frekuensi napas membaik; Pola napas membaik.",
+        "Tautan Diagnosa": "D.0001"
+    },
+    {
+        "Kode": "L.01002",
+        "Nama": "Penyapihan Ventilator",
+        "Definisi": "Kemampuan beradaptasi dengan pengurangan bantuan ventilator mekanik.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Keselarasan dengan ventilator meningkat; Gagal napas menurun; Gelisah menurun; Napas dangkal menurun; Takikardia menurun.",
+        "Tautan Diagnosa": "D.0002"
+    },
+    {
+        "Kode": "L.01003",
+        "Nama": "Pertukaran Gas",
+        "Definisi": "Kelebihan atau kekurangan oksigenasi dan/atau eliminasi karbondioksida pada membran alveolus-kapiler.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Tingkat kesadaran meningkat; PCO2 membaik; PO2 membaik; pH arteri membaik; Bunyi napas tambahan menurun.",
+        "Tautan Diagnosa": "D.0003"
+    },
+    {
+        "Kode": "L.01004",
+        "Nama": "Pola Napas",
+        "Definisi": "Inspirasi dan/atau ekspirasi yang memberikan ventilasi adekuat.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Dispnea menurun; Penggunaan otot bantu napas menurun; Ortopnea menurun; Pernapasan cuping hidung menurun; Frekuensi napas membaik; Kedalaman napas membaik.",
+        "Tautan Diagnosa": "D.0004, D.0005"
+    },
+    {
+        "Kode": "L.01005",
+        "Nama": "Ventilasi Spontan",
+        "Definisi": "Kemampuan melakukan dan mempertahankan pernapasan yang adekuat.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Volume tidal meningkat; Dispnea menurun; Penggunaan otot bantu napas menurun; Gelisah menurun; PCO2 membaik; PO2 membaik; Saturasi oksigen membaik.",
+        "Tautan Diagnosa": "D.0004"
+    },
+    {
+        "Kode": "L.01006",
+        "Nama": "Tingkat Aspirasi",
+        "Definisi": "Masuknya partikel cairan atau padatan ke dalam saluran trakeobronkial.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Kebersihan mulut meningkat; Kelemahan otot menurun; Refleks menelan meningkat; Kemampuan menelan meningkat; Akumulasi sekret menurun; Wheezing menurun.",
+        "Tautan Diagnosa": "D.0006"
+    },
+    {
+        "Kode": "L.02008",
+        "Nama": "Curah Jantung",
+        "Definisi": "Adekuatnya jantung memompa darah untuk memenuhi kebutuhan metabolisme tubuh.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kekuatan nadi perifer meningkat; Ejection fraction meningkat; Lelah menurun; Edema menurun; Distensi vena jugularis menurun; Tekanan darah membaik; CRT membaik.",
+        "Tautan Diagnosa": "D.0008, D.0011"
+    },
+    {
+        "Kode": "L.02011",
+        "Nama": "Perfusi Perifer",
+        "Definisi": "Keadekuatan aliran darah pembuluh darah distal untuk mempertahankan jaringan.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Denyut nadi perifer meningkat; Penyembuhan luka meningkat; Sensasi meningkat; Warna kulit pucat menurun; Edema perifer menurun; Nyeri ekstremitas menurun; Parastesia menurun.",
+        "Tautan Diagnosa": "D.0009, D.0015"
+    },
+    {
+        "Kode": "L.02012",
+        "Nama": "Sirkulasi Spontan",
+        "Definisi": "Kemampuan mempertahankan sirkulasi yang adekuat untuk menunjang kehidupan.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Tingkat kesadaran meningkat; Denyut nadi teraba meningkat; Tekanan darah sistolik meningkat; Tekanan darah diastolik meningkat; Saturasi oksigen meningkat; ETCO2 membaik; Frekuensi napas membaik.",
+        "Tautan Diagnosa": "D.0007, D.0010"
+    },
+    {
+        "Kode": "L.02015",
+        "Nama": "Perfusi Serebral",
+        "Definisi": "Keadekuatan aliran darah serebral untuk menunjang fungsi otak.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Tingkat kesadaran meningkat; Kognitif meningkat; Tekanan intrakranial menurun; Sakit kepala menurun; Gelisah menurun; Kecemasan menurun; Refleks saraf membaik; Tekanan darah sistolik membaik; Tekanan darah diastolik membaik.",
+        "Tautan Diagnosa": "D.0017, D.0066, D.0068"
+    },
+    {
+        "Kode": "L.02017",
+        "Nama": "Perfusi Miokard",
+        "Definisi": "Keadekuatan aliran darah arteri koroner untuk mempertahankan fungsi jantung.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Gambaran EKG aritmia menurun; Nyeri dada menurun; Diaforesis menurun; Mual menurun; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0014"
+    },
+    {
+        "Kode": "L.02018",
+        "Nama": "Perfusi Gastrointestinal",
+        "Definisi": "Keadekuatan aliran darah untuk mempertahankan fungsi gastrointestinal.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Tinja berwarna tar menurun; Nyeri abdomen menurun; Distensi abdomen menurun; Mual menurun.",
+        "Tautan Diagnosa": "D.0013"
+    },
+    {
+        "Kode": "L.02019",
+        "Nama": "Perfusi Renal",
+        "Definisi": "Keadekuatan aliran darah pembuluh darah ginjal untuk mempertahankan fungsi ginjal.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Jumlah urine meningkat; Kadar urea nitrogen darah membaik; Kadar kreatinin plasma membaik; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0016"
+    },
+    {
+        "Kode": "L.02020",
+        "Nama": "Status Perdarahan",
+        "Definisi": "Tingkat kehilangan darah secara internal maupun eksternal.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Kelembapan membran mukosa meningkat; Kelembapan kulit meningkat; Hemoptisis menurun; Hematemesis menurun; Hematuria menurun; Perdarahan vagina menurun; Distensi abdomen menurun; Hemoglobin membaik; Hematokrit membaik; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0012"
+    },
+    {
+        "Kode": "L.03020",
+        "Nama": "Status Cairan",
+        "Definisi": "Kecukupan volume cairan intravaskular, interstisial, dan/atau intraselular.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Kekuatan nadi meningkat; Turgor kulit meningkat; Output urin meningkat; Pengisian vena meningkat; Haus menurun; Konsentrasi urin membaik.",
+        "Tautan Diagnosa": "D.0022, D.0023, D.0034, D.0036"
+    },
+    {
+        "Kode": "L.03021",
+        "Nama": "Keseimbangan Cairan",
+        "Definisi": "Ekuilibrium antara volume cairan di ruang intraselular dan ekstraselular tubuh.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Asupan cairan meningkat; Haluaran urin meningkat; Kelembapan membran mukosa meningkat; Asupan makanan meningkat; Edema menurun; Dehidrasi menurun; Tekanan darah membaik; Denyut nadi radial membaik; Tekanan arteri rata-rata membaik; Membran mukosa membaik; Mata cekung membaik; Turgor kulit membaik; Berat badan membaik.",
+        "Tautan Diagnosa": "D.0022, D.0023, D.0025, D.0034, D.0036"
+    },
+    {
+        "Kode": "L.03022",
+        "Nama": "Keseimbangan Elektrolit",
+        "Definisi": "Keseimbangan kadar serum ion-ion yang diperlukan tubuh.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Serum natrium membaik; Serum kalium membaik; Serum klorida membaik; Serum kalsium membaik; Serum magnesium membaik; Serum fosfor membaik.",
+        "Tautan Diagnosa": "D.0037"
+    },
+    {
+        "Kode": "L.03028",
+        "Nama": "Status Nutrisi",
+        "Definisi": "Keadekuatan asupan nutrisi untuk memenuhi kebutuhan metabolisme.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Porsi makanan yang dihabiskan meningkat; Kekuatan otot menelan meningkat; Nyeri abdomen menurun; Diare menurun; Berat badan membaik; Indeks Massa Tubuh (IMT) membaik.",
+        "Tautan Diagnosa": "D.0019, D.0032"
+    },
+    {
+        "Kode": "L.03030",
+        "Nama": "Berat Badan",
+        "Definisi": "Kesesuaian berat badan terhadap tinggi badan dan usia.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Berat badan membaik; Indeks massa tubuh (IMT) membaik; Tebal lipatan kulit trisep membaik; Lingkar lengan atas membaik.",
+        "Tautan Diagnosa": "D.0018, D.0030, D.0031"
+    },
+    {
+        "Kode": "L.03031",
+        "Nama": "Status Menelan",
+        "Definisi": "Kemampuan proses makanan dari mulut ke lambung secara aman.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Mempertahankan makanan di mulut meningkat; Refleks menelan meningkat; Kemampuan mengosongkan mulut meningkat; Batuk menurun; Tersedak menurun.",
+        "Tautan Diagnosa": "D.0029"
+    },
+    {
+        "Kode": "L.03033",
+        "Nama": "Kadar Glukosa Darah",
+        "Definisi": "Kadar glukosa dalam darah.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Kadar glukosa dalam darah membaik; Kadar glukosa dalam urin membaik; Keluhan pusing menurun; Lelah/lesu menurun; Berkeringat menurun; Gemetar menurun; Kesadaran meningkat.",
+        "Tautan Diagnosa": "D.0027, D.0038"
+    },
+    {
+        "Kode": "L.04033",
+        "Nama": "Eliminasi Urin",
+        "Definisi": "Disfungsi pada eliminasi urin.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Sensasi berkemih meningkat; Desakan berkemih (urgensi) menurun; Distensi kandung kemih menurun; Disuria menurun; Anuria menurun; Karakteristik urin membaik.",
+        "Tautan Diagnosa": "D.0040, D.0043"
+    },
+    {
+        "Kode": "L.04034",
+        "Nama": "Kontinensia Urin",
+        "Definisi": "Kemampuan mengendalikan pengeluaran urin.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kemampuan berkemih meningkat; Interval berkemih meningkat; Nokturia menurun; Keluhan inkontinensia menurun; Residu volume urin setelah berkemih menurun; Frekuensi berkemih membaik.",
+        "Tautan Diagnosa": "D.0041, D.0042, D.0044, D.0045, D.0046, D.0048"
+    },
+    {
+        "Kode": "L.04035",
+        "Nama": "Kontinensia Fekal",
+        "Definisi": "Kemampuan mengendalikan pengeluaran feses.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kemampuan menunda pengeluaran feses meningkat; Frekuensi defekasi membaik.",
+        "Tautan Diagnosa": "D.0053"
+    },
+    {
+        "Kode": "L.04036",
+        "Nama": "Eliminasi Fekal",
+        "Definisi": "Proses defekasi normal yang disertai dengan pengeluaran feses sulit dan tidak tuntas.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Kontrol pengeluaran feses meningkat; Konsistensi feses membaik; Frekuensi defekasi membaik; Peristaltik usus membaik.",
+        "Tautan Diagnosa": "D.0049, D.0053"
+    },
+    {
+        "Kode": "L.04037",
+        "Nama": "Fungsi Gastrointestinal",
+        "Definisi": "Kemampuan saluran gastrointestinal dalam memasukkan dan mencerna makanan serta menyerap nutrisi dan mengeliminasi sisa pencernaan.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Mual menurun; Muntah menurun; Diare menurun; Nyeri abdomen menurun; Distensi abdomen menurun; Peristaltik usus membaik.",
+        "Tautan Diagnosa": "D.0020, D.0021, D.0033"
+    },
+    {
+        "Kode": "L.05042",
+        "Nama": "Mobilitas Fisik",
+        "Definisi": "Kemampuan dalam gerakan fisik dari satu atau lebih ekstremitas secara mandiri.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Pergerakan ekstremitas meningkat; Kekuatan otot meningkat; Rentang gerak (ROM) meningkat; Nyeri menurun; Kaku sendi menurun; Kelemahan fisik menurun.",
+        "Tautan Diagnosa": "D.0054"
+    },
+    {
+        "Kode": "L.05045",
+        "Nama": "Pola Tidur",
+        "Definisi": "Kualitas dan kuantitas waktu tidur akibat faktor eksternal.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Keluhan sulit tidur menurun; Keluhan sering terjaga menurun; Keluhan tidak puas tidur menurun; Keluhan istirahat tidak cukup menurun; Kemampuan beraktivitas meningkat.",
+        "Tautan Diagnosa": "D.0055, D.0058"
+    },
+    {
+        "Kode": "L.05047",
+        "Nama": "Toleransi Aktivitas",
+        "Definisi": "Respons fisiologis terhadap aktivitas yang membutuhkan tenaga.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Frekuensi nadi meningkat; Saturasi oksigen meningkat; Kemudahan dalam melakukan aktivitas sehari-hari meningkat; Keluhan lelah menurun; Dispnea saat aktivitas menurun; Dispnea setelah aktivitas menurun; Perasaan lemah menurun; Aritmia saat aktivitas menurun; Aritmia setelah aktivitas menurun; Sianosis menurun; Warna kulit membaik; EKG iskemia membaik; Frekuensi napas membaik; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0056, D.0060"
+    },
+    {
+        "Kode": "L.05046",
+        "Nama": "Tingkat Keletihan",
+        "Definisi": "Kapasitas kerja fisik dan mental yang tidak pulih dengan istirahat.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Verbalisasi kepulihan energi meningkat; Kemampuan melakukan aktivitas rutin meningkat; Motivasi meningkat; Lesu menurun; Lelah menurun; Gangguan konsentrasi menurun; Sakit kepala menurun.",
+        "Tautan Diagnosa": "D.0057"
+    },
+    {
+        "Kode": "L.06053",
+        "Nama": "Memori",
+        "Definisi": "Kemampuan mengingat informasi atau perilaku tertentu secara akurat.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Verbalisasi kemampuan mempelajari hal baru meningkat; Verbalisasi kemampuan mengingat informasi faktual meningkat; Verbalisasi kemampuan mengingat peristiwa meningkat; Verbalisasi pengalaman lupa menurun.",
+        "Tautan Diagnosa": "D.0062"
+    },
+    {
+        "Kode": "L.06054",
+        "Nama": "Komunikasi Verbal",
+        "Definisi": "Kemampuan menerima, memproses, mengirim, dan/atau menggunakan sistem simbol.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kemampuan berbicara meningkat; Kemampuan mendengar meningkat; Kesesuaian ekspresi wajah/tubuh meningkat; Kontak mata meningkat; Pelo menurun; Gagap menurun; Respons perilaku membaik; Pemahaman komunikasi membaik.",
+        "Tautan Diagnosa": "D.0063"
+    },
+    {
+        "Kode": "L.06055",
+        "Nama": "Tingkat Konfusi",
+        "Definisi": "Gangguan kesadaran, perhatian, kognisi, dan persepsi secara reversibel.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Fungsi kognitif meningkat; Tingkat kesadaran meningkat; Aktivitas psikomotor menurun; Halusinasi menurun; Gelisah menurun.",
+        "Tautan Diagnosa": "D.0064, D.0065, D.0067"
+    },
+    {
+        "Kode": "L.06056",
+        "Nama": "Kapasitas Adaptif Intrakranial",
+        "Definisi": "Kemampuan mekanisme dinamika intrakranial dalam melakukan kompensasi terhadap stimulus.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Tingkat kesadaran meningkat; Fungsi kognitif meningkat; Tekanan darah membaik; Tekanan nadi membaik; Pola napas membaik; Respons pupil membaik; Refleks neurologis membaik.",
+        "Tautan Diagnosa": "D.0066"
+    },
+    {
+        "Kode": "L.07063",
+        "Nama": "Fungsi Seksual",
+        "Definisi": "Kemampuan melakukan aktivitas seksual.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Verbalisasi aktivitas seksual yang berubah menurun; Verbalisasi eksitasi seksual yang berubah menurun; Verbalisasi peran seksual yang berubah menurun; Verbalisasi hasrat seksual yang berubah menurun.",
+        "Tautan Diagnosa": "D.0069, D.0070, D.0071"
+    },
+    {
+        "Kode": "L.08063",
+        "Nama": "Status Kenyamanan",
+        "Definisi": "Keseluruhan rasa nyaman dan aman secara fisik, psikologis, spiritual, sosial, budaya, dan lingkungan.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kesejahteraan fisik meningkat; Keluhan tidak nyaman menurun; Gelisah menurun; Merintih menurun; Pola tidur membaik.",
+        "Tautan Diagnosa": "D.0074, D.0077, D.0078"
+    },
+    {
+        "Kode": "L.08066",
+        "Nama": "Tingkat Nyeri",
+        "Definisi": "Pengalaman sensorik atau emosional yang berkaitan dengan kerusakan jaringan aktual.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Keluhan nyeri menurun; Meringis menurun; Sikap protektif menurun; Gelisah menurun; Kesulitan tidur menurun; Frekuensi nadi membaik.",
+        "Tautan Diagnosa": "D.0077, D.0078, D.0079"
+    },
+    {
+        "Kode": "L.08068",
+        "Nama": "Tingkat Mual",
+        "Definisi": "Perasaan tidak nyaman pada bagian belakang tenggorokan atau lambung yang dapat merangsang refleks muntah.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Nafsu makan meningkat; Keluhan mual menurun; Perasaan ingin muntah menurun; Perasaan asam di mulut menurun; Sensasi panas menurun; Diare menurun; Frekuensi menelan membaik; Pucat membaik; Takikardia membaik.",
+        "Tautan Diagnosa": "D.0076"
+    },
+    {
+        "Kode": "L.09093",
+        "Nama": "Tingkat Ansietas",
+        "Definisi": "Kondisi emosi dan pengalaman subyektif terhadap objek yang tidak jelas.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Verbalisasi kebingungan menurun; Verbalisasi khawatir akibat kondisi yang dihadapi menurun; Perilaku gelisah menurun; Perilaku tegang menurun; Pusing menurun; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0080"
+    },
+    {
+        "Kode": "L.09095",
+        "Nama": "Tingkat Berduka",
+        "Definisi": "Respons psikososial terhadap kehilangan yang bermakna.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Verbalisasi menerima kehilangan meningkat; Verbalisasi harapan meningkat; Verbalisasi perasaan sedih menurun; Verbalisasi perasaan depresi menurun; Ketidakmampuan mengekspresikan kehilangan menurun; Pola tidur membaik.",
+        "Tautan Diagnosa": "D.0081"
+    },
+    {
+        "Kode": "L.09096",
+        "Nama": "Status Spiritual",
+        "Definisi": "Rasa kedamaian, tujuan, keterhubungan, kekuatan, keharmonisan, aktualisasi diri terkait dengan cara pandang hidup.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Verbalisasi makna dan tujuan hidup meningkat; Verbalisasi hubungan yang bersifat spiritual meningkat; Perasaan tenang meningkat; Kemampuan ibadah meningkat; Perasaan bersalah menurun; Ketidakmampuan beribadah menurun.",
+        "Tautan Diagnosa": "D.0082"
+    },
+    {
+        "Kode": "L.09067",
+        "Nama": "Citra Tubuh",
+        "Definisi": "Persepsi tentang penampilan, struktur dan fungsi fisik.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Melihat bagian tubuh meningkat; Menyentuh bagian tubuh meningkat; Verbalisasi kecacatan bagian tubuh menurun; Verbalisasi kehilangan bagian tubuh menurun; Verbalisasi perasaan negatif tentang perubahan tubuh menurun; Hubungan sosial membaik.",
+        "Tautan Diagnosa": "D.0083, D.0084"
+    },
+    {
+        "Kode": "L.09069",
+        "Nama": "Harga Diri",
+        "Definisi": "Penilaian terhadap diri sendiri kapabilitas, keberhargaan, dan penghormatan terhadap diri sendiri.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Penilaian diri positif meningkat; Perasaan memiliki kelebihan/kemampuan positif meningkat; Penerimaan penilaian positif terhadap diri sendiri meningkat; Minat mencoba hal baru meningkat; Perasaan malu menurun; Perasaan bersalah menurun; Perasaan tidak mampu melakukan apapun menurun.",
+        "Tautan Diagnosa": "D.0086, D.0087"
+    },
+    {
+        "Kode": "L.09070",
+        "Nama": "Tingkat Keputusasaan",
+        "Definisi": "Perasaan bahwa individu tidak lagi mampu mengubah situasi atau mencapai apa yang diinginkan.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Verbalisasi harapan hidup meningkat; Verbalisasi keputusasaan menurun; Perilaku pasif menurun; Afek datar menurun; Selera makan meningkat; Pola tidur membaik; Inisiatif meningkat.",
+        "Tautan Diagnosa": "D.0088"
+    },
+    {
+        "Kode": "L.09071",
+        "Nama": "Tingkat Ketidakberdayaan",
+        "Definisi": "Persepsi bahwa tindakan seseorang tidak akan mempengaruhi hasil secara bermakna.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Verbalisasi harapan tentang masa depan meningkat; Keterlibatan dalam perencanaan perawatan meningkat; Pernyataan mampu melaksanakan aktivitas meningkat; Minat terhadap bermacam-macam aktivitas meningkat; Pernyataan kurang kontrol menurun; Pernyataan rasa malu menurun.",
+        "Tautan Diagnosa": "D.0089"
+    },
+    {
+        "Kode": "L.09085",
+        "Nama": "Persepsi Sensori",
+        "Definisi": "Kemampuan merasakan dan menginterpretasi stimulus sensori secara akurat.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Respons sesuai stimulus meningkat; Konsentrasi meningkat; Orientasi membaik; Distorsi sensori menurun.",
+        "Tautan Diagnosa": "D.0085"
+    },
+    {
+        "Kode": "L.10101",
+        "Nama": "Pertumbuhan",
+        "Definisi": "Peningkatan ukuran tubuh dan berat badan secara bertahap sesuai usia.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Berat badan sesuai usia meningkat; Panjang/tinggi badan sesuai usia meningkat; Indeks massa tubuh membaik; Lingkar kepala sesuai usia.",
+        "Tautan Diagnosa": "D.0103, D.0104"
+    },
+    {
+        "Kode": "L.10102",
+        "Nama": "Perkembangan",
+        "Definisi": "Peningkatan kemampuan fisik, kognitif, emosional, dan sosial sesuai tahap usia.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Keterampilan/perilaku sesuai usia meningkat; Kemampuan melakukan perawatan diri meningkat; Respons sosial meningkat.",
+        "Tautan Diagnosa": "D.0105, D.0059"
+    },
+    {
+        "Kode": "L.11103",
+        "Nama": "Perawatan Diri",
+        "Definisi": "Kemampuan melakukan atau menyelesaikan aktivitas perawatan diri.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kemampuan mandi meningkat; Kemampuan mengenakan pakaian meningkat; Kemampuan makan meningkat; Kemampuan ke toilet (BAB/BAK) meningkat; Verbalisasi keinginan melakukan perawatan diri meningkat; Minat melakukan perawatan diri meningkat.",
+        "Tautan Diagnosa": "D.0106, D.0107, D.0108, D.0109, D.0110"
+    },
+    {
+        "Kode": "L.12111",
+        "Nama": "Tingkat Pengetahuan",
+        "Definisi": "Kecukupan informasi kognitif berkaitan dengan topik tertentu.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Perilaku sesuai anjuran meningkat; Verbalisasi minat dalam belajar meningkat; Kemampuan menjelaskan pengetahuan meningkat; Perilaku sesuai dengan pengetahuan meningkat.",
+        "Tautan Diagnosa": "D.0110, D.0111, D.0112, D.0113"
+    },
+    {
+        "Kode": "L.13115",
+        "Nama": "Interaksi Sosial",
+        "Definisi": "Kuantitas dan/atau kualitas hubungan sosial.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Perasaan nyaman dengan situasi sosial meningkat; Perasaan mudah menerima atau mendukung meningkat; Responsif pada orang lain meningkat; Minat melakukan kontak emosional meningkat; Perasaan memiliki peran sosial membaik.",
+        "Tautan Diagnosa": "D.0114, D.0115, D.0116, D.0117, D.0118"
+    },
+    {
+        "Kode": "L.13117",
+        "Nama": "Koping Keluarga",
+        "Definisi": "Kapasitas keluarga untuk mengelola stresor yang membebani kemampuan sumber daya keluarga.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Kemampuan memenuhi kebutuhan anggota keluarga meningkat; Komunikasi antar anggota keluarga meningkat; Partisipasi anggota keluarga dalam pengambilan keputusan meningkat; Kolaborasi antar anggota keluarga meningkat.",
+        "Tautan Diagnosa": "D.0119, D.0123, D.0124, D.0125, D.0126, D.0127"
+    },
+    {
+        "Kode": "L.13118",
+        "Nama": "Proses Keluarga",
+        "Definisi": "Fungsi psikososial keluarga.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Adaptasi keluarga terhadap situasi meningkat; Komunikasi verbal antar anggota keluarga meningkat; Saling mendukung meningkat; Kegiatan keluarga bersama membaik.",
+        "Tautan Diagnosa": "D.0120, D.0121, D.0128"
+    },
+    {
+        "Kode": "L.14125",
+        "Nama": "Integritas Kulit dan Jaringan",
+        "Definisi": "Keutuhan kulit (dermis/epidermis) atau jaringan (membran mukosa, otot, tulang, dll).",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Elastisitas meningkat; Hidrasi meningkat; Perfusi jaringan meningkat; Kerusakan jaringan menurun; Kerusakan lapisan kulit menurun; Nyeri menurun; Kemerahan menurun.",
+        "Tautan Diagnosa": "D.0129, D.0137, D.0141"
+    },
+    {
+        "Kode": "L.14130",
+        "Nama": "Termoregulasi",
+        "Definisi": "Pengaturan suhu tubuh agar tetap berada pada rentang normal.",
+        "Ekspektasi": "Membaik",
+        "Kriteria Hasil": "Menggigil menurun; Kulit kemerahan menurun; Kejang menurun; Akrosianosis menurun; Konsumsi oksigen menurun; Suhu tubuh membaik; Tekanan darah membaik.",
+        "Tautan Diagnosa": "D.0130, D.0131, D.0145, D.0147"
+    },
+    {
+        "Kode": "L.14133",
+        "Nama": "Penyembuhan Luka",
+        "Definisi": "Regenerasi sel dan jaringan setelah penutupan luka.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Penyatuan kulit meningkat; Penyatuan tepi luka meningkat; Pembentukan jaringan parut meningkat; Peradangan luka menurun; Drainase purulen menurun; Ukuran luka menurun; Infeksi menurun.",
+        "Tautan Diagnosa": "D.0129, D.0141"
+    },
+    {
+        "Kode": "L.14134",
+        "Nama": "Tingkat Infeksi",
+        "Definisi": "Derajat infeksi berdasarkan observasi dan sumber informasi.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Kebersihan tangan meningkat; Kebersihan badan meningkat; Demam menurun; Kemerahan menurun; Nyeri menurun; Bengkak menurun; Cairan berbau busuk menurun; Sputum berwarna hijau menurun; Drainase purulen menurun; Kadar sel darah putih membaik.",
+        "Tautan Diagnosa": "D.0142"
+    },
+    {
+        "Kode": "L.14136",
+        "Nama": "Tingkat Cedera",
+        "Definisi": "Keparahan cedera yang diamati atau dilaporkan.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Toleransi aktivitas meningkat; Kejadian cedera menurun; Luka/lecet menurun; Ketegangan otot menurun; Fraktur menurun; Perdarahan menurun; Ekspresi wajah kesakitan menurun; Agitasi menurun.",
+        "Tautan Diagnosa": "D.0133, D.0134, D.0135, D.0136, D.0143, D.0144"
+    },
+    {
+        "Kode": "L.14137",
+        "Nama": "Tingkat Jatuh",
+        "Definisi": "Derajat jatuh yang diamati atau dilaporkan.",
+        "Ekspektasi": "Menurun",
+        "Kriteria Hasil": "Jatuh dari tempat tidur menurun; Jatuh saat berdiri menurun; Jatuh saat duduk menurun; Jatuh saat berjalan menurun.",
+        "Tautan Diagnosa": "D.0143"
+    },
+    {
+        "Kode": "L.14138",
+        "Nama": "Keamanan Lingkungan Rumah",
+        "Definisi": "Kesesuaian lingkungan rumah dalam memberikan keamanan dan pencegahan cedera.",
+        "Ekspektasi": "Meningkat",
+        "Kriteria Hasil": "Penggunaan peralatan pelindung meningkat; Penggunaan sistem peringatan bahaya meningkat; Penerangan rumah memadai meningkat; Penataan lingkungan aman meningkat; Pembuangan limbah/sampah sesuai membaik.",
+        "Tautan Diagnosa": "D.0136, D.0138, D.0143, D.0144"
+    }
+]

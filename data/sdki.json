@@ -1,0 +1,1343 @@
+﻿[
+    {
+        "Kode":  "D.0001",
+        "Nama":  "Bersihan Jalan Napas Tidak Efektif",
+        "Definisi":  "Ketidakmampuan membersihkan sekret atau obstruksi jalan napas untuk mempertahankan jalan napas tetap paten.",
+        "Penyebab":  "Spasme jalan napas; Hipersekresi jalan napas; Benda asing",
+        "Gejala Mayor":  "Batuk tidak efektif; Sputum berlebih; Wheezing",
+        "Gejala Minor":  "Gelisah; Sianosis; Frekuensi napas berubah",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0002",
+        "Nama":  "Gangguan Penyapihan Ventilator",
+        "Definisi":  "Ketidakmampuan beradaptasi dengan pengurangan bantuan ventilator mekanik yang menghambat dan memperlama proses penyapihan.",
+        "Penyebab":  "Bersihan jalan napas tidak efektif, Hambatan upaya napas, Ketidakcukupan nutrisi, Nyeri, Kecemasan.",
+        "Gejala Mayor":  "Frekuensi napas meningkat, Penggunaan otot bantu napas, Napas megap-megap (gasping), Nilai gas darah arteri abnormal.",
+        "Gejala Minor":  "Gelisah, Diaforesis, Napas dangkal, Warna kulit abnormal, Penurunan saturasi oksigen.",
+        "Kondisi Klinis Terkait":  "PPOK, Gagal jantung, Cedera kepala, Sindrom Guillain-Barré."
+    },
+    {
+        "Kode":  "D.0003",
+        "Nama":  "Gangguan Pertukaran Gas",
+        "Definisi":  "Kelebihan atau kekurangan oksigenasi dan/atau eliminasi karbondioksida pada membran alveolus-kapiler.",
+        "Penyebab":  "Ketidakseimbangan ventilasi-perfusi, Perubahan membran alveolus-kapiler.",
+        "Gejala Mayor":  "Dispnea, PCO2 meningkat/menurun, PO2 menurun, Takikardia, pH arteri meningkat/menurun, Bunyi napas tambahan.",
+        "Gejala Minor":  "Pusing, Penglihatan kabur, Sianosis, Diaforesis, Gelisah, Napas cuping hidung, Pola napas abnormal, Warna kulit abnormal, Kesadaran menurun.",
+        "Kondisi Klinis Terkait":  "PPOK, Gagal jantung kongestif, Asma, Pneumonia, Tuberkulosis, Penyakit membran hialin."
+    },
+    {
+        "Kode":  "D.0004",
+        "Nama":  "Gangguan Ventilasi Spontan",
+        "Definisi":  "Penurunan cadangan energi yang mengakibatkan ketidakmampuan individu untuk mempertahankan pernapasan yang adekuat untuk menyokong kehidupan.",
+        "Penyebab":  "Gangguan metabolisme, Kelelahan otot pernapasan.",
+        "Gejala Mayor":  "Dispnea, Penggunaan otot bantu napas meningkat, Volume tidal menurun, PCO2 meningkat, PO2 menurun, SaO2 menurun.",
+        "Gejala Minor":  "Gelisah, Takikardia.",
+        "Kondisi Klinis Terkait":  "PPOK, Asma, Gagal napas, Distrofi muskular, Cedera kepala."
+    },
+    {
+        "Kode":  "D.0005",
+        "Nama":  "Pola Napas Tidak Efektif",
+        "Definisi":  "Inspirasi dan/atau ekspirasi yang tidak memberikan ventilasi adekuat.",
+        "Penyebab":  "Depresi pusat pernapasan; Hambatan upaya napas; Deformitas dinding dada",
+        "Gejala Mayor":  "Dispnea; Penggunaan otot bantu napas; Fase ekspirasi memanjang",
+        "Gejala Minor":  "Ortopnea; Pernapasan cuping hidung",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0006",
+        "Nama":  "Risiko Aspirasi",
+        "Definisi":  "Berisiko mengalami masuknya gastrointestinal, orofaringeal, benda padat atau cairan ke dalam saluran trakeobronkial.",
+        "Penyebab":  "Penurunan tingkat kesadaran, Penurunan refleks muntah dan/atau batuk, Gangguan menelan, Disfagia, Kerusakan mobilitas fisik, Peningkatan residu lambung.",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "Stroke, Penyakit Parkinson, Trauma kepala, Cedera medula spinalis."
+    },
+    {
+        "Kode":  "D.0007",
+        "Nama":  "Gangguan Sirkulasi Spontan",
+        "Definisi":  "Berisiko mengalami penurunan sirkulasi jantung (kardiak) yang tidak dapat mempertahankan kehidupan.",
+        "Penyebab":  "Abnormalitas kelistrikan jantung (mis: aritmia), Abnormalitas struktur jantung, Penurunan fungsi ventrikel.",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "Infark miokard akut, Sindrom koroner akut, Gagal jantung, Kardiomiopati, Miokarditis."
+    },
+    {
+        "Kode":  "D.0008",
+        "Nama":  "Penurunan Curah Jantung",
+        "Definisi":  "Ketidakadekuatan jantung memompa darah untuk memenuhi kebutuhan metabolisme tubuh.",
+        "Penyebab":  "Perubahan irama jantung, Perubahan frekuensi jantung, Perubahan kontraktilitas, Perubahan preload, Perubahan afterload.",
+        "Gejala Mayor":  "Perubahan irama jantung: bradikardia/takikardia, Palpitasi. Perubahan preload: lelah, edema, distensi vena jugularis. Perubahan afterload: dispnea, tekanan darah meningkat/menurun, nadi perifer teraba lemah. Perubahan kontraktilitas: paroxysmal nocturnal dyspnea (PND), ortopnea, batuk.",
+        "Gejala Minor":  "Perubahan irama jantung: pusing. Perubahan preload: murmur jantung, berat badan bertambah, PAWP meningkat. Perubahan afterload: pengisian kapiler menurun, hepatomegali, warna kulit pucat/sianosis. Perubahan kontraktilitas: Cardiac Index (CI) menurun, EF menurun, bunyi jantung S3-S4.",
+        "Kondisi Klinis Terkait":  "Gagal jantung kongestif, Sindrom koroner akut, Gangguan katup jantung, Fibrilasi atrium, Gagal jantung."
+    },
+    {
+        "Kode":  "D.0009",
+        "Nama":  "Perfusi Perifer Tidak Efektif",
+        "Definisi":  "Penurunan sirkulasi darah pada level kapiler yang dapat mengganggu metabolisme tubuh.",
+        "Penyebab":  "Hiperglikemia, Penurunan konsentrasi hemoglobin, Peningkatan tekanan darah, Kekurangan volume cairan, Penurunan aliran arteri dan/atau vena, Kurang terpapar informasi tentang faktor pemberat.",
+        "Gejala Mayor":  "Pengisian kapiler > 3 detik, Nadi perifer menurun atau tidak teraba, Akral teraba dingin, Warna kulit pucat, Turgor kulit menurun.",
+        "Gejala Minor":  "Parastesia, Nyeri ekstremitas (klaudikasi intermiten), Edema, Penyembuhan luka lambat, Indeks ankle-brachial < 0.90, Bruit femoral.",
+        "Kondisi Klinis Terkait":  "Tromboflebitis, Diabetes melitus, Anemia, Gagal jantung kongestif, Trombosis arteri, Varises."
+    },
+    {
+        "Kode":  "D.0010",
+        "Nama":  "Risiko Gangguan Sirkulasi Spontan",
+        "Definisi":  "Definisi standar untuk Risiko Gangguan Sirkulasi Spontan (D.0010) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0011",
+        "Nama":  "Risiko Penurunan Curah Jantung",
+        "Definisi":  "Berisiko mengalami penurunan sirkulasi jantung yang tidak dapat mempertahankan kehidupan.",
+        "Penyebab":  "Abnormalitas kelistrikan jantung, Abnormalitas struktur jantung, Penurunan fungsi ventrikel.",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "Sindrom koroner akut, Gagal jantung, Kardiomiopati."
+    },
+    {
+        "Kode":  "D.0012",
+        "Nama":  "Risiko Perdarahan",
+        "Definisi":  "Berisiko mengalami kehilangan darah baik internal maupun eksternal.",
+        "Penyebab":  "Gangguan koagulasi (mis: trombositopenia), Kurang terpapar informasi tentang pencegahan perdarahan, Proses keganasan, Trauma, Efek agen farmakologis, Tindakan pembedahan.",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "Aneurisma, Koagulopati intravaskuler diseminata, Sirosis, Ulkus lambung, Varises, Trombositopenia."
+    },
+    {
+        "Kode":  "D.0013",
+        "Nama":  "Risiko Perfusi Gastrointestinal Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Gastrointestinal Tidak Efektif (D.0013) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0014",
+        "Nama":  "Risiko Perfusi Miokard Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Miokard Tidak Efektif (D.0014) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0015",
+        "Nama":  "Risiko Perfusi Perifer Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Perifer Tidak Efektif (D.0015) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0016",
+        "Nama":  "Risiko Perfusi Renal Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Renal Tidak Efektif (D.0016) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0017",
+        "Nama":  "Risiko Perfusi Serebral Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Serebral Tidak Efektif (D.0017) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0018",
+        "Nama":  "Berat Badan Lebih",
+        "Definisi":  "Definisi standar untuk Berat Badan Lebih (D.0018) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0019",
+        "Nama":  "Defisit Nutrisi",
+        "Definisi":  "Asupan nutrisi tidak cukup untuk memenuhi kebutuhan metabolisme.",
+        "Penyebab":  "Ketidakmampuan menelan makanan, Ketidakmampuan mencerna makanan, Ketidakmampuan mengabsorbsi nutrien, Peningkatan kebutuhan metabolisme, Faktor ekonomi (mis: finansial tidak mencukupi), Faktor psikologis (mis: stres, keengganan untuk makan).",
+        "Gejala Mayor":  "Berat badan menurun minimal 10% di bawah rentang ideal.",
+        "Gejala Minor":  "Cepat kenyang setelah makan, Kram/nyeri abdomen, Nafsu makan menurun, Bising usus hiperaktif, Otot pengunyah lemah, Otot menelan lemah, Membran mukosa pucat, Sariawan, Serum albumin turun, Rambut rontok berlebihan, Diare.",
+        "Kondisi Klinis Terkait":  "Stroke, Penyakit Parkinson, Mobius syndrome, Cerebral palsy, Cleft lip/palate, Kanker, Infeksi, AIDS, Penyakit Crohn, Enterokolitis, Fibrosis kistik."
+    },
+    {
+        "Kode":  "D.0020",
+        "Nama":  "Diare",
+        "Definisi":  "Pengeluaran feses yang sering, lunak dan tidak berbentuk.",
+        "Penyebab":  "Inflamasi gastrointestinal, Iritasi gastrointestinal, Malabsorpsi, Proses infeksi, Ansietas, Tingkat stres tinggi, Efek agen farmakologis, Efek prosedur pembedahan, Penyalahgunaan laksatif.",
+        "Gejala Mayor":  "Defekasi lebih dari tiga kali dalam 24 jam, Feses lembek atau cair.",
+        "Gejala Minor":  "Urgency, Nyeri/kram abdomen, Frekuensi peristaltik meningkat, Bising usus hiperaktif.",
+        "Kondisi Klinis Terkait":  "Kanker kolon, Iritasi usus, Penyakit Crohn, Kolitis ulseratif, Diverticulitis, Gastroenteritis."
+    },
+    {
+        "Kode":  "D.0021",
+        "Nama":  "Disfungsi Motilitas Gastrointestinal",
+        "Definisi":  "Definisi standar untuk Disfungsi Motilitas Gastrointestinal (D.0021) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0022",
+        "Nama":  "Hipervolemia",
+        "Definisi":  "Peningkatan volume cairan intravaskular, interstisial, dan/atau intraselular.",
+        "Penyebab":  "Gangguan mekanisme regulasi, Kelebihan asupan cairan, Kelebihan asupan natrium, Gangguan aliran balik vena, Efek agen farmakologis (mis: kortikosteroid).",
+        "Gejala Mayor":  "Ortopnea, Dispnea, Paroxysmal nocturnal dyspnea (PND), Edema anasarka dan/atau edema perifer, Berat badan meningkat dalam waktu singkat, JVP dan/atau CVP meningkat, Refleks hepatojugular positif.",
+        "Gejala Minor":  "Distensi vena jugularis, Terdengar suara napas tambahan, Hepatomegali, Kadar Hb/Ht turun, Oliguria, Intake lebih banyak dari output, Kongesti paru.",
+        "Kondisi Klinis Terkait":  "Penyakit ginjal: gagal ginjal akut/kronis (GGA/GGK), sindrom nefrotik, Hipoalbuminemia, Gagal jantung kongestif, Kelainan hormone, Penyakit hati (mis: sirosis)."
+    },
+    {
+        "Kode":  "D.0023",
+        "Nama":  "Hipovolemia",
+        "Definisi":  "Penurunan volume cairan intravaskular, interstisial, dan/atau intraselular.",
+        "Penyebab":  "Kehilangan cairan aktif, Kegagalan mekanisme regulasi, Peningkatan permeabilitas kapiler, Kekurangan intake cairan, Evaporasi.",
+        "Gejala Mayor":  "Frekuensi nadi meningkat, Nadi teraba lemah, Tekanan darah menurun, Tekanan nadi menyempit, Turgor kulit menurun, Membran mukosa kering, Volume urin menurun, Hematokrit meningkat.",
+        "Gejala Minor":  "Merasa lemah, Mengeluh haus, Pengisian vena menurun, Status mental berubah, Suhu tubuh meningkat, Konsentrasi urin meningkat, Berat badan turun tiba-tiba.",
+        "Kondisi Klinis Terkait":  "Penyakit Addison, Trauma/perdarahan, Luka bakar, AIDS, Penyakit Crohn, Muntah, Diare, Kolitis ulseratif."
+    },
+    {
+        "Kode":  "D.0024",
+        "Nama":  "Ikterik Neonatus",
+        "Definisi":  "Definisi standar untuk Ikterik Neonatus (D.0024) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0025",
+        "Nama":  "Kesiapan Peningkatan Keseimbangan Cairan",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Keseimbangan Cairan (D.0025) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0026",
+        "Nama":  "Kesiapan Peningkatan Nutrisi",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Nutrisi (D.0026) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0027",
+        "Nama":  "Ketidakstabilan Kadar Glukosa Darah",
+        "Definisi":  "Variasi kadar glukosa darah naik/turun dari rentang normal.",
+        "Penyebab":  "Hiperglikemia: Disfungsi pankreas, Resistensi insulin, Gangguan toleransi glukosa. Hipoglikemia: Penggunaan insulin atau obat glikemik oral, Hiperinsulinemia, Asupan nutrisi tidak adekuat.",
+        "Gejala Mayor":  "Hiperglikemia: Lelah/lesu, Kadar glukosa dalam darah >200mg/dL. Hipoglikemia: Mengantuk, Pusing, Gangguan koordinasi, Kadar glukosa darah rendah.",
+        "Gejala Minor":  "Hiperglikemia: Mulut kering, Haus meningkat, Jumlah urin meningkat. Hipoglikemia: Gemetar, Palpitasi, Berkeringat, Kesadaran menurun, Perilaku aneh.",
+        "Kondisi Klinis Terkait":  "Diabetes melitus, Hipoglikemia, Pankreatitis, Sindrom cushing, Disfungsi adrenal."
+    },
+    {
+        "Kode":  "D.0028",
+        "Nama":  "Menyusui Efektif",
+        "Definisi":  "Definisi standar untuk Menyusui Efektif (D.0028) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0029",
+        "Nama":  "Menyusui Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Menyusui Tidak Efektif (D.0029) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0030",
+        "Nama":  "Obesitas",
+        "Definisi":  "Definisi standar untuk Obesitas (D.0030) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0031",
+        "Nama":  "Risiko Berat Badan Lebih",
+        "Definisi":  "Definisi standar untuk Risiko Berat Badan Lebih (D.0031) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0032",
+        "Nama":  "Risiko Defisit Nutrisi",
+        "Definisi":  "Definisi standar untuk Risiko Defisit Nutrisi (D.0032) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0033",
+        "Nama":  "Risiko Disfungsi Motilitas Gastrointestinal",
+        "Definisi":  "Definisi standar untuk Risiko Disfungsi Motilitas Gastrointestinal (D.0033) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0034",
+        "Nama":  "Risiko Hipovolemia",
+        "Definisi":  "Definisi standar untuk Risiko Hipovolemia (D.0034) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0035",
+        "Nama":  "Risiko Ikterik Neonatus",
+        "Definisi":  "Definisi standar untuk Risiko Ikterik Neonatus (D.0035) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0036",
+        "Nama":  "Risiko Ketidakseimbangan Cairan",
+        "Definisi":  "Definisi standar untuk Risiko Ketidakseimbangan Cairan (D.0036) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0037",
+        "Nama":  "Risiko Ketidakseimbangan Elektrolit",
+        "Definisi":  "Definisi standar untuk Risiko Ketidakseimbangan Elektrolit (D.0037) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0038",
+        "Nama":  "Risiko Ketidakstabilan Kadar Glukosa Darah",
+        "Definisi":  "Definisi standar untuk Risiko Ketidakstabilan Kadar Glukosa Darah (D.0038) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0039",
+        "Nama":  "Risiko Syok",
+        "Definisi":  "Definisi standar untuk Risiko Syok (D.0039) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0040",
+        "Nama":  "Gangguan Eliminasi Urin",
+        "Definisi":  "Disfungsi eliminasi urin.",
+        "Penyebab":  "Penurunan kapasitas kandung kemih, Iritasi kandung kemih, Penurunan kemampuan menyadari tanda-tanda gangguan kandung kemih, Efek tindakan medis dan diagnostik.",
+        "Gejala Mayor":  "Desakan berkemih (urgensi), Urin menetes (dribbling), Sering berkemih, Nokturia, Mengompol, Enuresis.",
+        "Gejala Minor":  "Distensi kandung kemih, Berkemih tidak tuntas (hesitancy), Volume residu urin meningkat.",
+        "Kondisi Klinis Terkait":  "Infeksi saluran kemih, Hiperglikemia, Operasi ginjal/saluran kemih, Penurunan kesadaran."
+    },
+    {
+        "Kode":  "D.0041",
+        "Nama":  "Inkontinensia Urin Berlanjut",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Berlanjut (D.0041) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0042",
+        "Nama":  "Inkontinensia Urin Berlebih",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Berlebih (D.0042) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0043",
+        "Nama":  "Inkontinensia Urin Fungsional",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Fungsional (D.0043) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0044",
+        "Nama":  "Inkontinensia Urin Refleks",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Refleks (D.0044) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0045",
+        "Nama":  "Inkontinensia Urin Stres",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Stres (D.0045) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0046",
+        "Nama":  "Inkontinensia Urin Urgensi",
+        "Definisi":  "Definisi standar untuk Inkontinensia Urin Urgensi (D.0046) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0047",
+        "Nama":  "Kesiapan Peningkatan Eliminasi Urin",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Eliminasi Urin (D.0047) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0048",
+        "Nama":  "Risiko Inkontinensia Urin Urgensi",
+        "Definisi":  "Definisi standar untuk Risiko Inkontinensia Urin Urgensi (D.0048) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0049",
+        "Nama":  "Konstipasi",
+        "Definisi":  "Penurunan defekasi normal yang disertai pengeluaran feses sulit dan tidak tuntas serta feses kering dan banyak.",
+        "Penyebab":  "Penurunan mobilitas gastrointestinal, Ketidakcukupan asupan serat/cairan, Kelemahan otot abdomen, Efek agen farmakologis, Kebiasaan menunda defekasi.",
+        "Gejala Mayor":  "Defekasi kurang dari 2 kali seminggu, Pengeluaran feses lama dan sulit, Feses keras.",
+        "Gejala Minor":  "Mengejan saat defekasi, Distensi abdomen, Teraba massa pada rektum, Peristaltik usus menurun.",
+        "Kondisi Klinis Terkait":  "Impaksi fekal, Hemoroid, Stroke, Cedera medula spinalis."
+    },
+    {
+        "Kode":  "D.0050",
+        "Nama":  "Konstipasi Persepsi",
+        "Definisi":  "Definisi standar untuk Konstipasi Persepsi (D.0050) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0051",
+        "Nama":  "Risiko Konstipasi",
+        "Definisi":  "Definisi standar untuk Risiko Konstipasi (D.0051) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0052",
+        "Nama":  "Risiko Konstipasi",
+        "Definisi":  "Definisi standar untuk Risiko Konstipasi (D.0052) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0053",
+        "Nama":  "Inkontinensia Fekal",
+        "Definisi":  "Definisi standar untuk Inkontinensia Fekal (D.0053) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0054",
+        "Nama":  "Gangguan Mobilitas Fisik",
+        "Definisi":  "Keterbatasan dalam gerakan fisik dari satu atau lebih ekstremitas secara mandiri.",
+        "Penyebab":  "Kerusakan integritas struktur tulang, Perubahan metabolisme, Gangguan muskuloskeletal, Gangguan neuromuskuler, Indeks massa tubuh di atas persentil ke-75 sesuai usia, Penurunan kekuatan otot, Kekakuan sendi, Kontraktur, Kecemasan, Gangguan kognitif.",
+        "Gejala Mayor":  "Mengeluh sulit menggerakkan ekstremitas, Kekuatan otot menurun, Rentang gerak (ROM) menurun.",
+        "Gejala Minor":  "Sendi kaku, Gerakan tidak terkoordinasi, Gerakan terbatas, Enggan melakukan pergerakan.",
+        "Kondisi Klinis Terkait":  "Stroke, Cedera medula spinalis, Trauma, Fraktur, Osteoartritis, Malnutrisi."
+    },
+    {
+        "Kode":  "D.0055",
+        "Nama":  "Gangguan Pola Tidur",
+        "Definisi":  "Gangguan waktu dan kualitas tidur akibat faktor eksternal.",
+        "Penyebab":  "Hambatan lingkungan (mis: kelembapan, suhu, pencahayaan, kebisingan, bau), Kurang kontrol tidur, Kurang privasi, Restraint fisik, Ketiadaan teman tidur, Tidak familiar dengan peralatan tidur.",
+        "Gejala Mayor":  "Mengeluh sulit tidur, Mengeluh sering terjaga, Mengeluh tidak puas tidur, Mengeluh pola tidur berubah, Mengeluh istirahat tidak cukup.",
+        "Gejala Minor":  "Mengeluh kemampuan beraktivitas menurun.",
+        "Kondisi Klinis Terkait":  "Nyeri/kolik, Hipertiroid, Kecemasan, PPOK, Inkontinensia, Kondisi hospitalisasi."
+    },
+    {
+        "Kode":  "D.0056",
+        "Nama":  "Intoleransi Aktivitas",
+        "Definisi":  "Ketidakcukupan energi psikologis atau fisiologis untuk mempertahankan atau menyelesaikan aktivitas kehidupan sehari-hari.",
+        "Penyebab":  "Ketidakseimbangan antara suplai dan kebutuhan oksigen, Tirah baring, Kelemahan, Imobilitas, Gaya hidup monoton.",
+        "Gejala Mayor":  "Mengeluh lelah, Frekuensi jantung meningkat \u003e20% dari kondisi istirahat.",
+        "Gejala Minor":  "Dispnea saat/setelah aktivitas, Merasa tidak nyaman setelah beraktivitas, Merasa lemah, Tekanan darah berubah \u003e20%, EKG menunjukkan aritmia/iskemia, Sianosis.",
+        "Kondisi Klinis Terkait":  "Anemia, Gagal jantung kongestif, Penyakit jantung koroner, Penyakit paru obstruktif kronis (PPOK), Aritmia."
+    },
+    {
+        "Kode":  "D.0057",
+        "Nama":  "Keletihan",
+        "Definisi":  "Kapasitas kerja fisik dan mental yang tidak pulih dengan istirahat.",
+        "Penyebab":  "Gangguan tidur, Gaya hidup monoton, Kondisi fisiologis (mis: penyakit kronis, anemia, malnutrisi, kehamilan), Peningkatan kelelahan fisik, Stres berlebihan, Depresi.",
+        "Gejala Mayor":  "Merasa energi tidak pulih walaupun telah tidur, Merasa kurang tenaga, Mengeluh lelah.",
+        "Gejala Minor":  "Tidak mampu mempertahankan aktivitas rutin, Tampak lesu, Kebutuhan istirahat meningkat.",
+        "Kondisi Klinis Terkait":  "Anemia, Gagal jantung kongestif, PPOK, Kanker, Fibromialgia, Hipotiroid, Depresi, HIV/AIDS."
+    },
+    {
+        "Kode":  "D.0058",
+        "Nama":  "Kesiapan Peningkatan Tidur",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Tidur (D.0058) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0059",
+        "Nama":  "Risiko Disorganisasi Perilaku Bayi",
+        "Definisi":  "Definisi standar untuk Risiko Disorganisasi Perilaku Bayi (D.0059) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0060",
+        "Nama":  "Risiko Intoleransi Aktivitas",
+        "Definisi":  "Definisi standar untuk Risiko Intoleransi Aktivitas (D.0060) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0061",
+        "Nama":  "Disrefleksia Otonom",
+        "Definisi":  "Definisi standar untuk Disrefleksia Otonom (D.0061) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0062",
+        "Nama":  "Gangguan Memori",
+        "Definisi":  "Definisi standar untuk Gangguan Memori (D.0062) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0063",
+        "Nama":  "Gangguan Komunikasi Verbal",
+        "Definisi":  "Penurunan kemampuan menerima, memproses, mengirim, dan/atau menggunakan sistem simbol.",
+        "Penyebab":  "Penurunan sirkulasi serebral, Gangguan neuromuskuler, Gangguan pendengaran, Gangguan muskuloskeletal, Kelainan palatum, Hambatan fisik (mis: trakeostomi, intubasi), Hambatan psikologis, Gangguan emosional.",
+        "Gejala Mayor":  "Tidak mempu berbicara atau mendengar, Menunjukkan respons tidak sesuai.",
+        "Gejala Minor":  "Afasia, Disfasia, Pelo, Gagap, Tidak ada kontak mata, Sulit memahami komunikasi, Sulit mempertahankan komunikasi, Sulit menggunakan ekspresi wajah atau tubuh, Tidak mampu menggunakan ekspresi wajah atau tubuh.",
+        "Kondisi Klinis Terkait":  "Stroke, Cedera kepala, Trauma wajah, Tumor, Pemasangan ventilator mekanik, Autisme, Gangguan saraf kranialis, Laringektomi."
+    },
+    {
+        "Kode":  "D.0064",
+        "Nama":  "Konfusi Akut",
+        "Definisi":  "Definisi standar untuk Konfusi Akut (D.0064) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0065",
+        "Nama":  "Konfusi Kronis",
+        "Definisi":  "Definisi standar untuk Konfusi Kronis (D.0065) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0066",
+        "Nama":  "Penurunan Kapasitas Adaptif Intrakranial",
+        "Definisi":  "Definisi standar untuk Penurunan Kapasitas Adaptif Intrakranial (D.0066) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0067",
+        "Nama":  "Risiko Konfusi Akut",
+        "Definisi":  "Definisi standar untuk Risiko Konfusi Akut (D.0067) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0068",
+        "Nama":  "Risiko Perfusi Serebral Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Perfusi Serebral Tidak Efektif (D.0068) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0069",
+        "Nama":  "Disfungsi Seksual",
+        "Definisi":  "Definisi standar untuk Disfungsi Seksual (D.0069) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0070",
+        "Nama":  "Pola Seksualitas Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Pola Seksualitas Tidak Efektif (D.0070) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0071",
+        "Nama":  "Risiko Disfungsi Seksual",
+        "Definisi":  "Definisi standar untuk Risiko Disfungsi Seksual (D.0071) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0072",
+        "Nama":  "Risiko Kehamilan Tidak Dikehendaki",
+        "Definisi":  "Definisi standar untuk Risiko Kehamilan Tidak Dikehendaki (D.0072) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0073",
+        "Nama":  "Kesiapan Persalinan",
+        "Definisi":  "Definisi standar untuk Kesiapan Persalinan (D.0073) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0074",
+        "Nama":  "Gangguan Rasa Nyaman",
+        "Definisi":  "Definisi standar untuk Gangguan Rasa Nyaman (D.0074) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0075",
+        "Nama":  "Ketidaknyamanan Pasca Partum",
+        "Definisi":  "Definisi standar untuk Ketidaknyamanan Pasca Partum (D.0075) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0076",
+        "Nama":  "Mual",
+        "Definisi":  "Definisi standar untuk Mual (D.0076) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0077",
+        "Nama":  "Nyeri Akut",
+        "Definisi":  "Pengalaman sensorik atau emosional yang berkaitan dengan kerusakan jaringan aktual atau fungsional, dengan onset mendadak atau lambat dan berintensitas ringan hingga berat yang berlangsung kurang dari 3 bulan.",
+        "Penyebab":  "Agen pencedera fisiologis (mis: inflamasi, iskemia, neoplasma), Agen pencedera kimiawi (mis: terbakar, bahan kimia iritan), Agen pencedera fisik (mis: abses, amputasi, terbakar, terpotong, mengangkat berat, prosedur operasi, trauma, latihan fisik berlebihan).",
+        "Gejala Mayor":  "Mengeluh nyeri, Tampak meringis, Bersikap protektif (mis: waspada, posisi menghindari nyeri), Gelisah, Frekuensi nadi meningkat, Sulit tidur.",
+        "Gejala Minor":  "Tekanan darah meningkat, Pola napas berubah, Nafsu makan berubah, Proses berpikir terganggu, Menarik diri, Berfokus pada diri sendiri, Diaforesis.",
+        "Kondisi Klinis Terkait":  "Kondisi pembedahan, Cedera traumatis, Infeksi, Sindrom koroner akut, Glaukoma."
+    },
+    {
+        "Kode":  "D.0078",
+        "Nama":  "Nyeri Kronis",
+        "Definisi":  "Pengalaman sensorik atau emosional yang berkaitan dengan kerusakan jaringan aktual atau fungsional, dengan onset mendadak atau lambat dan berintensitas ringan hingga berat dan konstan, yang berlangsung lebih dari 3 bulan.",
+        "Penyebab":  "Kondisi muskuloskeletal kronis, Kerusakan sistem saraf, Penekanan saraf, Infiltrasi tumor, Ketidakseimbangan neurotransmiter/neuromodulator/reseptor, Gangguan imunitas, Gangguan fungsi metabolisme, Riwayat posisi kerja statis berulang, Peningkatan indeks massa tubuh, Kondisi pasca trauma, Tekanan emosional, Riwayat penganiayaan.",
+        "Gejala Mayor":  "Mengeluh nyeri, Merasa depresi (tertekan), Tampak meringis, Gelisah, Tidak mampu menuntaskan aktivitas.",
+        "Gejala Minor":  "Merasa takut mengalami cedera berulang, Bersikap protektif, Pola tidur berubah, Anoreksia, Fokus menyempit, Berfokus pada diri sendiri.",
+        "Kondisi Klinis Terkait":  "Kondisi kronis (mis: artritis reumatoid), Infeksi kronis, Cedera medula spinalis, Kondisi pasca trauma, Tumor, Fibromialgia."
+    },
+    {
+        "Kode":  "D.0079",
+        "Nama":  "Nyeri Melahirkan",
+        "Definisi":  "Definisi standar untuk Nyeri Melahirkan (D.0079) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0080",
+        "Nama":  "Ansietas",
+        "Definisi":  "Kondisi emosi dan pengalaman subyektif individu terhadap objek yang tidak jelas dan spesifik akibat antisipasi bahaya yang memungkinkan individu melakukan tindakan untuk menghadapi ancaman.",
+        "Penyebab":  "Krisis situasional, Kebutuhan tidak terpenuhi, Krisis maturasional, Ancaman terhadap konsep diri, Ancaman terhadap kematian, Kekhawatiran mengalami kegagalan, Disfungsi sistem keluarga, Hubungan orang tua-anak tidak memuaskan, Faktor keturunan, Penyalahgunaan zat, Terpapar bahaya lingkungan, Kurang terpapar informasi.",
+        "Gejala Mayor":  "Merasa bingung, Merasa khawatir dengan akibat dari kondisi yang dihadapi, Sulit berkonsentrasi, Tampak gelisah, Tampak tegang, Sulit tidur.",
+        "Gejala Minor":  "Mengeluh pusing, Anoreksia, Palpitasi, Merasa tidak berdaya, Frekuensi napas meningkat, Frekuensi nadi meningkat, Tekanan darah meningkat, Diaforesis, Tremor, Muka tampak pucat, Suara bergetar, Kontak mata buruk, Sering berkemih, Berorientasi pada masa lalu.",
+        "Kondisi Klinis Terkait":  "Penyakit kronis progresif (mis: kanker, penyakit autoimun), Penyakit akut, Hospitalisasi, Rencana operasi, Kondisi diagnosis penyakit belum jelas, Penyakit neurologis, Tahap tumbuh kembang."
+    },
+    {
+        "Kode":  "D.0081",
+        "Nama":  "Berduka",
+        "Definisi":  "Definisi standar untuk Berduka (D.0081) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0082",
+        "Nama":  "Distres Spiritual",
+        "Definisi":  "Definisi standar untuk Distres Spiritual (D.0082) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0083",
+        "Nama":  "Gangguan Citra Tubuh",
+        "Definisi":  "Perubahan persepsi tentang tubuh yang diakibatkan oleh perubahan struktur, fungsi atau bentuk tubuh.",
+        "Penyebab":  "Perubahan struktur/bentuk tubuh (mis. amputasi, trauma, kerontokan rambut), Perubahan fungsi tubuh (mis. akibat anomali, penyakit, kehamilan), Perubahan fisiologis (mis. makan berlebih, gangguan metabolisme), Prosedur bedah.",
+        "Gejala Mayor":  "Mengungkapkan kecacatan/kehilangan bagian tubuh, Kehilangan bagian tubuh, Fungsi/struktur tubuh berubah/hilang.",
+        "Gejala Minor":  "Tidak mau melihat/menyentuh bagian tubuh, Menyembunyikan bagian tubuh berlebihan, Hubungan sosial berubah.",
+        "Kondisi Klinis Terkait":  "Mastektomi, Amputasi, Luka bakar, Obesitas, Kehamilan, Stroke."
+    },
+    {
+        "Kode":  "D.0084",
+        "Nama":  "Gangguan Identitas Diri",
+        "Definisi":  "Definisi standar untuk Gangguan Identitas Diri (D.0084) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0085",
+        "Nama":  "Gangguan Persepsi Sensori",
+        "Definisi":  "Definisi standar untuk Gangguan Persepsi Sensori (D.0085) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0086",
+        "Nama":  "Harga Diri Rendah Kronis",
+        "Definisi":  "Definisi standar untuk Harga Diri Rendah Kronis (D.0086) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0087",
+        "Nama":  "Harga Diri Rendah Situasional",
+        "Definisi":  "Definisi standar untuk Harga Diri Rendah Situasional (D.0087) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0088",
+        "Nama":  "Keputusasaan",
+        "Definisi":  "Definisi standar untuk Keputusasaan (D.0088) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0089",
+        "Nama":  "Ketidakberdayaan",
+        "Definisi":  "Definisi standar untuk Ketidakberdayaan (D.0089) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0090",
+        "Nama":  "Kesiapan Peningkatan Konsep Diri",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Konsep Diri (D.0090) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0091",
+        "Nama":  "Kesiapan Peningkatan Koping Keluarga",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Koping Keluarga (D.0091) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0092",
+        "Nama":  "Ketidakmampuan Koping Keluarga",
+        "Definisi":  "Definisi standar untuk Ketidakmampuan Koping Keluarga (D.0092) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0093",
+        "Nama":  "Koping Defensif",
+        "Definisi":  "Definisi standar untuk Koping Defensif (D.0093) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0094",
+        "Nama":  "Koping Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Koping Tidak Efektif (D.0094) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0095",
+        "Nama":  "Penurunan Koping Keluarga",
+        "Definisi":  "Definisi standar untuk Penurunan Koping Keluarga (D.0095) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0096",
+        "Nama":  "Penyangkalan Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Penyangkalan Tidak Efektif (D.0096) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0097",
+        "Nama":  "Risiko Distres Spiritual",
+        "Definisi":  "Definisi standar untuk Risiko Distres Spiritual (D.0097) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0098",
+        "Nama":  "Risiko Harga Diri Rendah Kronis",
+        "Definisi":  "Definisi standar untuk Risiko Harga Diri Rendah Kronis (D.0098) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0099",
+        "Nama":  "Risiko Harga Diri Rendah Situasional",
+        "Definisi":  "Definisi standar untuk Risiko Harga Diri Rendah Situasional (D.0099) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0100",
+        "Nama":  "Risiko Ketidakberdayaan",
+        "Definisi":  "Definisi standar untuk Risiko Ketidakberdayaan (D.0100) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0101",
+        "Nama":  "Risiko Perilaku Kekerasan",
+        "Definisi":  "Definisi standar untuk Risiko Perilaku Kekerasan (D.0101) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0102",
+        "Nama":  "Risiko Bunuh Diri",
+        "Definisi":  "Definisi standar untuk Risiko Bunuh Diri (D.0102) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0103",
+        "Nama":  "Gangguan Tumbuh Kembang",
+        "Definisi":  "Definisi standar untuk Gangguan Tumbuh Kembang (D.0103) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0104",
+        "Nama":  "Risiko Gangguan Perkembangan",
+        "Definisi":  "Definisi standar untuk Risiko Gangguan Perkembangan (D.0104) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0105",
+        "Nama":  "Risiko Gangguan Pertumbuhan",
+        "Definisi":  "Definisi standar untuk Risiko Gangguan Pertumbuhan (D.0105) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0106",
+        "Nama":  "Defisit Perawatan Diri",
+        "Definisi":  "Definisi standar untuk Defisit Perawatan Diri (D.0106) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Gangguan muskuloskeletal, Gangguan neuromuskuler, Kelemahan, Gangguan psikologis dan/atau psikotik, Penurunan motivasi/minat.",
+        "Gejala Mayor":  "Menolak melakukan perawatan diri, Tidak mampu mandi/makan/ke toilet secara mandiri, Minat melakukan perawatan diri kurang.",
+        "Gejala Minor":  "Rambut kotor, Gigi kotor, Kuku panjang dan kotor, Bau badan, Pakaian tidak rapi.",
+        "Kondisi Klinis Terkait":  "Stroke, Cedera medula spinalis, Depresi, Artritis, Demensia."
+    },
+    {
+        "Kode":  "D.0107",
+        "Nama":  "Kesiapan Peningkatan Pengetahuan",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Pengetahuan (D.0107) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0108",
+        "Nama":  "Pemeliharaan Kesehatan Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Pemeliharaan Kesehatan Tidak Efektif (D.0108) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0109",
+        "Nama":  "Defisit Kesehatan Komunitas",
+        "Definisi":  "Ketidakmampuan melakukan atau menyelesaikan aktivitas perawatan diri.",
+        "Penyebab":  "Gangguan muskuloskeletal, Gangguan neuromuskuler, Kelemahan, Gangguan psikologis dan/atau psikotik, Penurunan motivasi/minat.",
+        "Gejala Mayor":  "Menolak melakukan perawatan diri, Tidak mampu mandi/makan/ke toilet secara mandiri, Minat melakukan perawatan diri kurang.",
+        "Gejala Minor":  "Rambut kotor, Gigi kotor, Kuku panjang dan kotor, Bau badan, Pakaian tidak rapi.",
+        "Kondisi Klinis Terkait":  "Stroke, Cedera medula spinalis, Depresi, Artritis, Demensia."
+    },
+    {
+        "Kode":  "D.0110",
+        "Nama":  "Defisit Pengetahuan",
+        "Definisi":  "Ketiadaan atau kurangnya informasi kognitif yang berkaitan dengan topik tertentu.",
+        "Penyebab":  "Keterbatasan kognitif, Gangguan fungsi kognitif, Kurang terpapar informasi, Kekeliruan mengikuti anjuran, Kurang minat dalam belajar.",
+        "Gejala Mayor":  "Menanyakan masalah yang dihadapi, Menunjukkan perilaku tidak sesuai anjuran, Menunjukkan persepsi yang keliru terhadap masalah.",
+        "Gejala Minor":  "Menjalani pemeriksaan yang tidak tepat, Menunjukkan perilaku berlebihan (mis. apatis, bermusuhan, agitasi).",
+        "Kondisi Klinis Terkait":  "Kondisi klinis baru yang dihadapi, Penyakit kronis, Rencana operasi/tindakan."
+    },
+    {
+        "Kode":  "D.0111",
+        "Nama":  "Kepatuhan Program Pengobatan",
+        "Definisi":  "Definisi standar untuk Kepatuhan Program Pengobatan (D.0111) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0112",
+        "Nama":  "Manajemen Kesehatan Keluarga Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Manajemen Kesehatan Keluarga Tidak Efektif (D.0112) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0113",
+        "Nama":  "Manajemen Kesehatan Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Manajemen Kesehatan Tidak Efektif (D.0113) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0114",
+        "Nama":  "Hambatan Interaksi Sosial",
+        "Definisi":  "Definisi standar untuk Hambatan Interaksi Sosial (D.0114) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0115",
+        "Nama":  "Hambatan Komunikasi Verbal",
+        "Definisi":  "Definisi standar untuk Hambatan Komunikasi Verbal (D.0115) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0116",
+        "Nama":  "Isolasi Sosial",
+        "Definisi":  "Definisi standar untuk Isolasi Sosial (D.0116) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0117",
+        "Nama":  "Kesiapan Peningkatan Menjadi Orang Tua",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Menjadi Orang Tua (D.0117) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0118",
+        "Nama":  "Pencapaian Peran Menjadi Orang Tua",
+        "Definisi":  "Definisi standar untuk Pencapaian Peran Menjadi Orang Tua (D.0118) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0119",
+        "Nama":  "Gangguan Interaksi Sosial",
+        "Definisi":  "Definisi standar untuk Gangguan Interaksi Sosial (D.0119) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0120",
+        "Nama":  "Gangguan Komunikasi Verbal",
+        "Definisi":  "Definisi standar untuk Gangguan Komunikasi Verbal (D.0120) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0121",
+        "Nama":  "Isolasi Sosial",
+        "Definisi":  "Definisi standar untuk Isolasi Sosial (D.0121) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0122",
+        "Nama":  "Kesiapan Peningkatan Menjadi Orang Tua",
+        "Definisi":  "Definisi standar untuk Kesiapan Peningkatan Menjadi Orang Tua (D.0122) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0123",
+        "Nama":  "Pencapaian Peran Menjadi Orang Tua",
+        "Definisi":  "Definisi standar untuk Pencapaian Peran Menjadi Orang Tua (D.0123) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0124",
+        "Nama":  "Risiko Gangguan Perlekatan",
+        "Definisi":  "Definisi standar untuk Risiko Gangguan Perlekatan (D.0124) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0125",
+        "Nama":  "Risiko Menjadi Orang Tua Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Menjadi Orang Tua Tidak Efektif (D.0125) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0126",
+        "Nama":  "Risiko Menjadi Orang Tua Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Menjadi Orang Tua Tidak Efektif (D.0126) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0127",
+        "Nama":  "Ketegangan Peran Pemberi Asuhan",
+        "Definisi":  "Definisi standar untuk Ketegangan Peran Pemberi Asuhan (D.0127) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0128",
+        "Nama":  "Risiko Ketegangan Peran Pemberi Asuhan",
+        "Definisi":  "Definisi standar untuk Risiko Ketegangan Peran Pemberi Asuhan (D.0128) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0129",
+        "Nama":  "Gangguan Integritas Kulit/Jaringan",
+        "Definisi":  "Kerusakan kulit (dermis dan/atau epidermis) atau jaringan (membran mukosa, kornea, fasia, otot, tendon, tulang, kartilago, kapsul sendi dan/atau ligamen).",
+        "Penyebab":  "Perubahan sirkulasi, Perubahan status nutrisi, Kelebihan/kekurangan volume cairan, Penurunan mobilitas, Kelembaban, Suhu lingkungan ekstrem, Faktor mekanis (penekanan, gesekan), Efek samping terapi radiasi.",
+        "Gejala Mayor":  "Kerusakan jaringan dan/atau lapisan kulit.",
+        "Gejala Minor":  "Nyeri, Perdarahan, Kemerahan, Hematoma.",
+        "Kondisi Klinis Terkait":  "Imobilisasi, Gagal ginjal, Gagal jantung, Diabetes melitus, Imunodefisiensi (mis. AIDS), Karsinoma sel skuamosa."
+    },
+    {
+        "Kode":  "D.0130",
+        "Nama":  "Hipertermia",
+        "Definisi":  "Suhu tubuh meningkat di atas rentang normal tubuh.",
+        "Penyebab":  "Dehidrasi, Terpapar lingkungan panas, Proses penyakit (mis. infeksi, kanker), Ketidaksesuaian pakaian dengan suhu lingkungan, Peningkatan laju metabolisme, Respon trauma, Aktivitas berlebihan, Penggunaan inkubator.",
+        "Gejala Mayor":  "Suhu tubuh di atas nilai normal.",
+        "Gejala Minor":  "Kulit merah, Kejang, Takikardia, Takipnea, Kulit terasa hangat.",
+        "Kondisi Klinis Terkait":  "Proses infeksi, Hipertiroid, Stroke, Dehidrasi, Trauma, Prematutas."
+    },
+    {
+        "Kode":  "D.0131",
+        "Nama":  "Hipotermia",
+        "Definisi":  "Suhu tubuh berada di bawah rentang normal tubuh.",
+        "Penyebab":  "Kerusakan pusat regulasi suhu, Konsumsi alkohol, Kurangnya lapisan lemak subkutan, Terpapar suhu lingkungan rendah, Malnutrisi, Pemakaian pakaian tipis, Penurunan laju metabolisme, Tindakan pembedahan.",
+        "Gejala Mayor":  "Kulit teraba dingin, Menggigil, Suhu tubuh di bawah nilai normal.",
+        "Gejala Minor":  "Akrosianosis, Bradikardia, Dasar kuku sianotik, Hipoglikemia, Hipoksia, Pengisian kapiler \u003e 3 detik, Konsumsi oksigen meningkat, Kulit pucat, Takikardia.",
+        "Kondisi Klinis Terkait":  "Hipotiroidisme, Cedera medula spinalis, BBLR, Tindakan pembedahan."
+    },
+    {
+        "Kode":  "D.0132",
+        "Nama":  "Perilaku Kesehatan Cenderung Berisiko",
+        "Definisi":  "Definisi standar untuk Perilaku Kesehatan Cenderung Berisiko (D.0132) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0133",
+        "Nama":  "Risiko Alergi",
+        "Definisi":  "Definisi standar untuk Risiko Alergi (D.0133) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0134",
+        "Nama":  "Risiko Cedera",
+        "Definisi":  "Definisi standar untuk Risiko Cedera (D.0134) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0135",
+        "Nama":  "Risiko Cedera Pada Ibu",
+        "Definisi":  "Definisi standar untuk Risiko Cedera Pada Ibu (D.0135) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0136",
+        "Nama":  "Risiko Cedera Pada Janin",
+        "Definisi":  "Definisi standar untuk Risiko Cedera Pada Janin (D.0136) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0137",
+        "Nama":  "Risiko Gangguan Integritas Kulit/Jaringan",
+        "Definisi":  "Definisi standar untuk Risiko Gangguan Integritas Kulit/Jaringan (D.0137) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0138",
+        "Nama":  "Risiko Hipotermia Perioperatif",
+        "Definisi":  "Definisi standar untuk Risiko Hipotermia Perioperatif (D.0138) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0139",
+        "Nama":  "Risiko Infeksi",
+        "Definisi":  "Definisi standar untuk Risiko Infeksi (D.0139) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0140",
+        "Nama":  "Risiko Jatuh",
+        "Definisi":  "Definisi standar untuk Risiko Jatuh (D.0140) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0141",
+        "Nama":  "Risiko Luka Tekan",
+        "Definisi":  "Definisi standar untuk Risiko Luka Tekan (D.0141) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0142",
+        "Nama":  "Risiko Mutilasi Diri",
+        "Definisi":  "Berisiko mengalami peningkatan terserang organisme patogenik.",
+        "Penyebab":  "Penyakit kronis (mis. DM), Efek prosedur invasif, Ketidakadekuatan pertahanan tubuh primer (gangguan peristaltik, kerusakan integritas kulit, rokok), Ketidakadekuatan pertahanan tubuh sekunder (penurunan hemoglobin, imunosupresi, leukopenia).",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "AIDS, Luka bakar, Penyakit paru obstruktif kronis, Gagal ginjal, Tindakan invasif."
+    },
+    {
+        "Kode":  "D.0143",
+        "Nama":  "Risiko Perdarahan",
+        "Definisi":  "Berisiko mengalami kerusakan fisik dan gangguan kesehatan akibat terjatuh.",
+        "Penyebab":  "Usia \u003e= 65 tahun atau \u003c= 2 tahun, Riwayat jatuh, Anggota gerak bawah prostesis, Penggunaan alat bantu jalan, Penurunan tingkat kesadaran, Perubahan fungsi kognitif, Kondisi pasca operasi, Lingkungan tidak aman.",
+        "Gejala Mayor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Gejala Minor":  "Tidak tersedia (Diagnosa Risiko).",
+        "Kondisi Klinis Terkait":  "Osteoporosis, Penyakit serebrovaskular, Kejang, Penyakit Parkinson, Neuropati, Glaukoma/Katarak."
+    },
+    {
+        "Kode":  "D.0144",
+        "Nama":  "Risiko Perlambatan Pemulihan Pascabedah",
+        "Definisi":  "Definisi standar untuk Risiko Perlambatan Pemulihan Pascabedah (D.0144) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0145",
+        "Nama":  "Risiko Termoregulasi Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Risiko Termoregulasi Tidak Efektif (D.0145) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0146",
+        "Nama":  "Risiko Trauma",
+        "Definisi":  "Definisi standar untuk Risiko Trauma (D.0146) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0147",
+        "Nama":  "Termoregulasi Tidak Efektif",
+        "Definisi":  "Definisi standar untuk Termoregulasi Tidak Efektif (D.0147) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0148",
+        "Nama":  "Risiko Kematian Mendadak",
+        "Definisi":  "Definisi standar untuk Risiko Kematian Mendadak (D.0148) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    },
+    {
+        "Kode":  "D.0149",
+        "Nama":  "Risiko Reaksi Alergi",
+        "Definisi":  "Definisi standar untuk Risiko Reaksi Alergi (D.0149) berdasarkan pedoman SDKI.",
+        "Penyebab":  "Faktor fisiologis, psikologis, atau situasional terkait.",
+        "Gejala Mayor":  "Tanda atau gejala mayor yang ditemukan.",
+        "Gejala Minor":  "Tanda atau gejala minor yang mendukung.",
+        "Kondisi Klinis Terkait":  "Kondisi klinis terkait."
+    }
+]

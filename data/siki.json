@@ -1,0 +1,497 @@
+﻿[
+  {
+    "Kode": "I.01001",
+    "Nama": "Dukungan Ventilasi",
+    "Observasi": "Monitor status respirasi dan oksigenasi (frekuensi, kedalaman, bunyi napas); Monitor tanda-tanda kelelahan otot bantu napas.",
+    "Terapeutik": "Posisikan semi-fowler atau fowler; Fasilitasi mengubah posisi senyaman mungkin; Berikan bantal untuk menyangga perut saat batuk.",
+    "Edukasi": "Ajarkan teknik pernapasan (mis: pursed-lip breathing, diafragma); Ajarkan teknik batuk efektif.",
+    "Kolaborasi": "Kolaborasi pemberian oksigen (mis: kanul nasal, masker, ventilator).",
+    "Tautan Diagnosa": "D.0001, D.0004, D.0005"
+  },
+  {
+    "Kode": "I.01011",
+    "Nama": "Manajemen Jalan Napas",
+    "Observasi": "Monitor pola napas; Monitor bunyi napas tambahan; Monitor sputum.",
+    "Terapeutik": "Pertahankan kepatenan jalan napas; Lakukan penghisapan lendir (suction) < 15 detik; Berikan oksigen, jika perlu.",
+    "Edukasi": "Anjurkan asupan cairan 2000 ml/hari (jika tidak kontraindikasi); Ajarkan teknik batuk efektif.",
+    "Kolaborasi": "Kolaborasi pemberian bronkodilator, ekspektoran, mukolitik, jika perlu.",
+    "Tautan Diagnosa": "D.0001, D.0005, D.0006"
+  },
+  {
+    "Kode": "I.01014",
+    "Nama": "Pemantauan Respirasi",
+    "Observasi": "Monitor frekuensi, irama, kedalaman dan upaya napas; Monitor adanya sumbatan jalan napas; Auskultasi bunyi napas.",
+    "Terapeutik": "Atur interval pemantauan respirasi sesuai kondisi pasien; Dokumentasikan hasil pemantauan.",
+    "Edukasi": "Jelaskan tujuan dan prosedur pemantauan.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0001, D.0003, D.0005"
+  },
+  {
+    "Kode": "I.01019",
+    "Nama": "Manajemen Ventilasi Mekanik",
+    "Observasi": "Monitor efek ventilator terhadap status oksigenasi; Monitor status cairan dan elektrolit; Monitor gangguan mukosa oral, nasal, trakea dan laring.",
+    "Terapeutik": "Atur posisi kepala 45-60 derajat; Lakukan perawatan mulut secara rutin; Lakukan fisioterapi dada jika perlu.",
+    "Edukasi": "Jelaskan tujuan dan prosedur ventilasi mekanik kepada pasien dan keluarga.",
+    "Kolaborasi": "Kolaborasi pemilihan mode ventilator; Kolaborasi pemberian agen pelumpuh otot, sedatif, analgesik sesuai kebutuhan.",
+    "Tautan Diagnosa": "D.0002, D.0004"
+  },
+  {
+    "Kode": "I.01026",
+    "Nama": "Terapi Oksigen",
+    "Observasi": "Monitor kecepatan aliran oksigen; Monitor posisi alat terapi oksigen; Monitor efektivitas terapi oksigen (mis: oksimetri, AGD).",
+    "Terapeutik": "Bersihkan sekret pada mulut, hidung dan trakea, jika perlu; Pertahankan kepatenan jalan napas; Siapkan dan atur peralatan pemberian oksigen.",
+    "Edukasi": "Ajarkan pasien dan keluarga cara menggunakan oksigen di rumah.",
+    "Kolaborasi": "Kolaborasi penentuan dosis oksigen; Kolaborasi penggunaan oksigen saat aktivitas dan/atau tidur.",
+    "Tautan Diagnosa": "D.0003, D.0004, D.0005"
+  },
+  {
+    "Kode": "I.02020",
+    "Nama": "Perawatan Jantung",
+    "Observasi": "Identifikasi tanda/gejala primer penurunan curah jantung; Identifikasi tanda/gejala sekunder penurunan curah jantung; Monitor tekanan darah; Monitor intake dan output cairan; Monitor saturasi oksigen.",
+    "Terapeutik": "Posisikan pasien semi-fowler atau fowler; Berikan diet jantung yang sesuai; Fasilitasi pasien untuk modifikasi gaya hidup sehat.",
+    "Edukasi": "Anjurkan beraktivitas fisik sesuai toleransi; Anjurkan beraktivitas fisik secara bertahap; Ajarkan pasien dan keluarga mengukur berat badan dan intake output harian.",
+    "Kolaborasi": "Kolaborasi pemberian antiaritmia, jika perlu; Rujuk ke program rehabilitasi jantung.",
+    "Tautan Diagnosa": "D.0008, D.0011"
+  },
+  {
+    "Kode": "I.02035",
+    "Nama": "Manajemen Gagal Jantung",
+    "Observasi": "Identifikasi tanda/gejala primer penurunan curah jantung (mis: dispnea, kelelahan, edema); Monitor tekanan darah; Monitor berat badan harian; Monitor intake dan output cairan.",
+    "Terapeutik": "Posisikan pasien semi-fowler atau fowler; Berikan oksigen untuk mempertahankan saturasi oksigen >94%.",
+    "Edukasi": "Anjurkan beraktivitas sesuai toleransi; Anjurkan berhenti merokok.",
+    "Kolaborasi": "Kolaborasi pemberian diuretik, jika perlu.",
+    "Tautan Diagnosa": "D.0008, D.0011"
+  },
+  {
+    "Kode": "I.02042",
+    "Nama": "Perawatan Sirkulasi",
+    "Observasi": "Periksa sirkulasi perifer (mis: nadi perifer, edema, pengisian kapiler, warna, suhu); Identifikasi faktor risiko gangguan sirkulasi; Monitor panas, kemerahan, nyeri atau bengkak pada ekstremitas.",
+    "Terapeutik": "Hindari pemasangan infus atau pengambilan darah di area keterbatasan perfusi; Hindari pengukuran tekanan darah pada ekstremitas yang terganggu; Lakukan pencegahan infeksi.",
+    "Edukasi": "Anjurkan berolahraga rutin; Anjurkan mengecek air mandi untuk menghindari kulit terbakar; Anjurkan menggunakan obat penurun tekanan darah, antikoagulan, dan penurun kolesterol jika perlu; Ajarkan program diet untuk memperbaiki sirkulasi.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0009, D.0015"
+  },
+  {
+    "Kode": "I.02050",
+    "Nama": "Manajemen Syok",
+    "Observasi": "Monitor status kardiopulmonal (frekuensi dan kekuatan nadi, frekuensi napas, TD, MAP); Monitor status oksigenasi; Monitor status cairan (masukan dan haluaran, turgor kulit, CRT).",
+    "Terapeutik": "Pertahankan jalan napas paten; Berikan oksigen untuk mempertahankan saturasi oksigen >94%; Pasang jalur IV berukuran besar; Pasang kateter urine untuk menilai produksi urine.",
+    "Edukasi": "Jelaskan penyebab/faktor risiko syok; Jelaskan tanda dan gejala awal syok.",
+    "Kolaborasi": "Kolaborasi pemberian IV fluid; Kolaborasi pemberian transfusi darah; Kolaborasi pemberian vasopresor/inotropik.",
+    "Tautan Diagnosa": "D.0039, D.0023"
+  },
+  {
+    "Kode": "I.02079",
+    "Nama": "Pencegahan Perdarahan",
+    "Observasi": "Monitor tanda dan gejala perdarahan; Monitor nilai hemoglobin/hematokrit.",
+    "Terapeutik": "Pertahankan bed rest selama perdarahan; Gunakan kasur pencegah dekubitus.",
+    "Edukasi": "Jelaskan tanda dan gejala perdarahan; Anjurkan segera melapor jika terjadi perdarahan.",
+    "Kolaborasi": "Kolaborasi pemberian obat pengontrol perdarahan, jika perlu.",
+    "Tautan Diagnosa": "D.0012, D.0143"
+  },
+  {
+    "Kode": "I.03116",
+    "Nama": "Manajemen Hipovolemia",
+    "Observasi": "Periksa tanda dan gejala hipovolemia; Monitor intake dan output cairan.",
+    "Terapeutik": "Hitung kebutuhan cairan; Berikan posisi modified Trendelenburg; Berikan asupan cairan oral.",
+    "Edukasi": "Anjurkan memperbanyak asupan cairan oral.",
+    "Kolaborasi": "Kolaborasi pemberian cairan IV isotonis (NaCl, RL); Kolaborasi pemberian cairan koloid (Albumin).",
+    "Tautan Diagnosa": "D.0022, D.0023, D.0034"
+  },
+  {
+    "Kode": "I.03119",
+    "Nama": "Manajemen Nutrisi",
+    "Observasi": "Identifikasi status nutrisi; Identifikasi alergi dan intoleransi makanan; Monitor asupan makanan; Monitor berat badan.",
+    "Terapeutik": "Lakukan oral hygiene sebelum makan; Sajikan makanan secara menarik dan suhu sesuai; Berikan makanan tinggi protein dan tinggi kalori.",
+    "Edukasi": "Ajarkan diet yang diprogramkan.",
+    "Kolaborasi": "Kolaborasi dengan ahli gizi untuk menentukan jumlah kalori dan nutrien.",
+    "Tautan Diagnosa": "D.0019, D.0032"
+  },
+  {
+    "Kode": "I.03121",
+    "Nama": "Manajemen Cairan",
+    "Observasi": "Monitor status hidrasi (mis: frekuensi nadi, kekuatan nadi, akral, pengisian kapiler, kelembapan mukosa, turgor kulit, tekanan darah); Monitor berat badan harian; Monitor hasil pemeriksaan laboratorium.",
+    "Terapeutik": "Catat intake-output dan hitung balans cairan 24 jam; Berikan asupan cairan sesuai kebutuhan; Berikan cairan intravena jika perlu.",
+    "Edukasi": "Anjurkan memperbanyak asupan cairan oral.",
+    "Kolaborasi": "Kolaborasi pemberian diuretik, jika perlu.",
+    "Tautan Diagnosa": "D.0022, D.0023, D.0036"
+  },
+  {
+    "Kode": "I.03125",
+    "Nama": "Manajemen Elektrolit",
+    "Observasi": "Identifikasi tanda dan gejala ketidakseimbangan kadar elektrolit; Monitor kadar elektrolit serum.",
+    "Terapeutik": "Berikan cairan, jika perlu; Berikan diet yang tepat (mis: tinggi kalium untuk hipokalemia).",
+    "Edukasi": "Jelaskan jenis, penyebab dan penanganan ketidakseimbangan elektrolit; Anjurkan memenuhi asupan yang dianjurkan.",
+    "Kolaborasi": "Kolaborasi pemberian suplemen elektrolit, jika perlu.",
+    "Tautan Diagnosa": "D.0037"
+  },
+  {
+    "Kode": "I.03128",
+    "Nama": "Manajemen Hiperglikemia",
+    "Observasi": "Identifikasi kemungkinan penyebab hiperglikemia; Monitor kadar glukosa darah; Monitor tanda dan gejala hiperglikemia (mis: poliuri, polidipsi, polifagi, kelemahan, malaise, pandangan kabur, sakit kepala).",
+    "Terapeutik": "Berikan asupan cairan oral; Konsultasi dengan medis jika tanda dan gejala hiperglikemia tetap ada atau memburuk.",
+    "Edukasi": "Anjurkan kepatuhan terhadap diet dan olahraga; Ajarkan pengelolaan diabetes (mis: penggunaan insulin, obat oral, monitor asupan cairan, penggantian karbohidrat).",
+    "Kolaborasi": "Kolaborasi pemberian insulin, jika perlu; Kolaborasi pemberian cairan IV, jika perlu.",
+    "Tautan Diagnosa": "D.0027, D.0038"
+  },
+  {
+    "Kode": "I.03130",
+    "Nama": "Manajemen Mual",
+    "Observasi": "Identifikasi pengalaman mual; Identifikasi faktor penyebab mual; Monitor mual (mis: frekuensi, durasi, dan tingkat keparahan).",
+    "Terapeutik": "Kendalikan faktor lingkungan penyebab mual (mis: bau tak sedap, suara, rangsangan visual yang tidak menyenangkan); Kurangi atau hilangkan keadaan penyebab mual; Berikan makanan dalam jumlah kecil dan menarik.",
+    "Edukasi": "Anjurkan istirahat dan tidur yang cukup; Anjurkan sering membersihkan mulut; Ajarkan penggunaan teknik nonfarmakologis untuk mengatasi mual.",
+    "Kolaborasi": "Kolaborasi pemberian antiemetik, jika perlu.",
+    "Tautan Diagnosa": "D.0076"
+  },
+  {
+    "Kode": "I.03131",
+    "Nama": "Pemantauan Cairan",
+    "Observasi": "Monitor frekuensi dan kekuatan nadi; Monitor frekuensi napas; Monitor tekanan darah; Monitor berat badan; Monitor elastisitas atau turgor kulit; Monitor jumlah, warna, dan berat jenis urine; Monitor kadar albumin dan protein total.",
+    "Terapeutik": "Atur interval waktu pemantauan sesuai dengan kondisi pasien; Dokumentasikan hasil pemantauan.",
+    "Edukasi": "Jelaskan tujuan dan prosedur pemantauan; Informasikan hasil pemantauan jika perlu.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0022, D.0023, D.0034, D.0036"
+  },
+  {
+    "Kode": "I.03136",
+    "Nama": "Manajemen Diare",
+    "Observasi": "Identifikasi penyebab diare; Identifikasi riwayat pemberian makanan; Monitor warna, volume, frekuensi, dan konsistensi tinja; Monitor tanda dan gejala hypovolemia.",
+    "Terapeutik": "Berikan asupan cairan oral; Pasang jalur intravena jika perlu; Berikan cairan intravena (mis: ringer asetat, ringer laktat) jika perlu.",
+    "Edukasi": "Anjurkan makan porsi kecil dan sering secara bertahap; Anjurkan menghindari makanan yang berbumbu pedas, mengandung laktosa dan kafein, mengandung gas, mengandung serat berlebih.",
+    "Kolaborasi": "Kolaborasi pemberian obat antimotilitas; Kolaborasi pemberian obat antidiare.",
+    "Tautan Diagnosa": "D.0020"
+  },
+  {
+    "Kode": "I.04155",
+    "Nama": "Manajemen Konstipasi",
+    "Observasi": "Identifikasi masalah usus dan penggunaan obat pencahar; Identifikasi diet rendah serat; Monitor buang air besar (warna, konsistensi, frekuensi, volume); Monitor tanda dan gejala ruptur usus dan/atau peritonitis; Monitor bising usus.",
+    "Terapeutik": "Berikan air hangat setelah makan; Jadwalkan waktu defekasikan bersama pasien; Berikan enema atau irigasi, jika perlu.",
+    "Edukasi": "Jelaskan etiologi masalah dan alasan tindakan; Anjurkan diet tinggi serat; Anjurkan peningkatan asupan cairan; Latih buang air besar secara rutin.",
+    "Kolaborasi": "Konsultasi dengan tim medis tentang penurunan/peningkatan frekuensi bising usus; Kolaborasi pemberian pencahar, jika perlu.",
+    "Tautan Diagnosa": "D.0049, D.0050, D.0051"
+  },
+  {
+    "Kode": "I.04159",
+    "Nama": "Manajemen Eliminasi Urin",
+    "Observasi": "Identifikasi tanda dan gejala retensi atau inkontinensia urin; Identifikasi faktor yang menyebabkan retensi atau inkontinensia urin; Monitor eliminasi urin (mis: frekuensi, konsistensi, aroma, volume, warna).",
+    "Terapeutik": "Catat waktu-waktu dan haluaran berkemih; Batasi asupan cairan jika perlu; Ambil sampel urin tengah (midstream) atau kultur.",
+    "Edukasi": "Ajarkan tanda dan gejala infeksi saluran kemih; Ajarkan mengukur asupan cairan dan haluaran urin; Ajarkan mengenali tanda berkemih dan waktu yang tepat untuk berkemih.",
+    "Kolaborasi": "Kolaborasi pemberian obat supositoria uretra, jika perlu.",
+    "Tautan Diagnosa": "D.0040, D.0041, D.0042, D.0043, D.0044, D.0045, D.0046"
+  },
+  {
+    "Kode": "I.04161",
+    "Nama": "Kateterisasi Urin",
+    "Observasi": "Periksa kondisi pasien; Monitor tanda dan gejala infeksi saluran kemih; Monitor intake dan output cairan.",
+    "Terapeutik": "Siapkan peralatan, bahan-bahan dan ruangan tindakan; Siapkan pasien; Pasang kateter urin sesuai prosedur; Sambungkan kateter urin dengan urine bag.",
+    "Edukasi": "Jelaskan tujuan dan prosedur pemasangan kateter urin; Anjurkan menarik napas saat pemasangan kateter.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0040, D.0043"
+  },
+  {
+    "Kode": "I.05170",
+    "Nama": "Manajemen Energi",
+    "Observasi": "Identifikasi gangguan fungsi tubuh yang mengakibatkan kelelahan; Monitor kelelahan fisik dan emosional; Monitor pola dan jam tidur; Monitor lokasi dan ketidaknyamanan selama melakukan aktivitas.",
+    "Terapeutik": "Sediakan lingkungan nyaman dan rendah stimulus (mis: cahaya, suara, kunjungan); Lakukan latihan rentang gerak pasif dan/atau aktif; Berikan aktivitas distraksi yang menenangkan; Fasilitasi duduk di sisi tempat tidur jika tidak dapat berpindah atau berjalan.",
+    "Edukasi": "Anjurkan tirah baring; Anjurkan melakukan aktifitas secara bertahap; Ajarkan strategi koping untuk mengurangi kelelahan.",
+    "Kolaborasi": "Kolaborasi dengan ahli gizi tentang cara meningkatkan asupan makanan.",
+    "Tautan Diagnosa": "D.0056, D.0057, D.0060"
+  },
+  {
+    "Kode": "I.05173",
+    "Nama": "Dukungan Mobilisasi",
+    "Observasi": "Identifikasi adanya nyeri atau keluhan fisik lainnya; Monitor frekuensi jantung dan tekanan darah sebelum memulai mobilisasi.",
+    "Terapeutik": "Fasilitasi aktivitas mobilisasi dengan alat bantu; Libatkan keluarga untuk membantu pasien meningkatkan pergerakan.",
+    "Edukasi": "Jelaskan tujuan dan prosedur mobilisasi; Ajarkan mobilisasi sederhana (mis: miring kanan-miring kiri, duduk di sisi tempat tidur).",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0054, D.0057"
+  },
+  {
+    "Kode": "I.05176",
+    "Nama": "Dukungan Tidur",
+    "Observasi": "Identifikasi pola aktivitas dan tidur; Identifikasi faktor pengganggu tidur (fisik dan/atau psikologis); Identifikasi makanan dan minuman yang mengganggu tidur.",
+    "Terapeutik": "Modifikasi lingkungan (mis: pencahayaan, suhu, kebisingan); Batasi waktu tidur siang jika perlu; Fasilitasi menghilangkan stres sebelum tidur; Tetapkan jadwal tidur rutin.",
+    "Edukasi": "Jelaskan pentingnya tidur cukup selama sakit; Anjurkan menepati kebiasaan waktu tidur; Ajarkan relaksasi otot autogenik atau cara nonfarmakologis lainnya.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0055, D.0058"
+  },
+  {
+    "Kode": "I.06191",
+    "Nama": "Pemantauan Neurologis",
+    "Observasi": "Monitor ukuran, bentuk, kesimetrisan dan reaktivitas pupil; Monitor tingkat kesadaran (mis: menggunakan GCS); Monitor tanda-tanda vital; Monitor status pernapasan.",
+    "Terapeutik": "Tingkatkan frekuensi pemantauan neurologis jika perlu; Hindari aktivitas yang dapat meningkatkan tekanan intrakranial; Dokumentasikan hasil pemantauan.",
+    "Edukasi": "Jelaskan tujuan dan prosedur pemantauan; Informasikan hasil pemantauan jika perlu.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0066, D.0067, D.0068"
+  },
+  {
+    "Kode": "I.06194",
+    "Nama": "Manajemen Peningkatan Tekanan Intrakranial",
+    "Observasi": "Identifikasi penyebab peningkatan TIK (mis: lesi, gangguan metabolisme, edema serebral); Monitor tanda/gejala peningkatan TIK (mis: tekanan darah meningkat, tekanan nadi melebar, bradikardia, pola napas ireguler, kesadaran menurun); Monitor MAP; Monitor CVP.",
+    "Terapeutik": "Minimalkan stimulus dengan menyediakan lingkungan yang tenang; Berikan posisi semi-fowler; Pertahankan suhu tubuh normal; Cegah terjadinya kejang.",
+    "Edukasi": "Jelaskan tujuan dan prosedur perawatan; Jelaskan batasan aktivitas.",
+    "Kolaborasi": "Kolaborasi pemberian sedasi dan anti konvulsan, jika perlu; Kolaborasi pemberian diuretik osmosis, jika perlu.",
+    "Tautan Diagnosa": "D.0066, D.0017"
+  },
+  {
+    "Kode": "I.06198",
+    "Nama": "Orientasi Realita",
+    "Observasi": "Monitor perubahan orientasi; Monitor perubahan kognitif dan perilaku.",
+    "Terapeutik": "Perkenalkan nama saat interaksi; Orientasikan orang, tempat, dan waktu; Hadirkan realita (mis: gelap = malam); Sediakan lingkungan yang tenang dan tidak mengancam.",
+    "Edukasi": "Anjurkan perawatan diri secara mandiri; Anjurkan penggunaan alat bantu (mis: kacamata, alat bantu dengar).",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0062, D.0064, D.0065"
+  },
+  {
+    "Kode": "I.07214",
+    "Nama": "Konseling Seksualitas",
+    "Observasi": "Identifikasi masalah seksualitas dan dampaknya terhadap pola hubungan; Identifikasi tingkat pengetahuan tentang seksualitas.",
+    "Terapeutik": "Ciptakan lingkungan yang nyaman; Sediakan privasi dan kerahasiaan; Fasilitasi komunikasi antara pasien dan pasangan.",
+    "Edukasi": "Ajarkan keterampilan realistis terkait seksualitas; Jelaskan efek terapi atau pengobatan terhadap seksualitas; Berikan informasi tentang seksualitas secara akurat.",
+    "Kolaborasi": "Rujuk ke spesialis seksologi, jika perlu.",
+    "Tautan Diagnosa": "D.0069, D.0070, D.0071"
+  },
+  {
+    "Kode": "I.08238",
+    "Nama": "Manajemen Nyeri",
+    "Observasi": "Identifikasi lokasi, karakteristik, durasi, frekuensi, kualitas, intensitas nyeri; Identifikasi skala nyeri.",
+    "Terapeutik": "Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri (mis: kompres hangat/dingin, relaksasi imajinasi terbimbing); Fasilitasi istirahat dan tidur.",
+    "Edukasi": "Jelaskan strategi meredakan nyeri; Ajarkan teknik nonfarmakologis untuk mengurangi rasa nyeri.",
+    "Kolaborasi": "Kolaborasi pemberian analgetik, jika perlu.",
+    "Tautan Diagnosa": "D.0077, D.0078, D.0079"
+  },
+  {
+    "Kode": "I.08243",
+    "Nama": "Pemberian Analgesik",
+    "Observasi": "Identifikasi karakteristik nyeri (mis: pencetus, pereda, kualitas, lokasi, intensitas, frekuensi, durasi); Identifikasi riwayat alergi obat; Monitor tanda-tanda vital sebelum dan sesudah pemberian analgesik.",
+    "Terapeutik": "Tetapkan target efektifitas analgesik untuk mengoptimalkan respons pasien; Dokumentasikan respons terhadap efek analgesik dan efek yang tidak diinginkan.",
+    "Edukasi": "Jelaskan efek terapi dan efek samping obat.",
+    "Kolaborasi": "Kolaborasi pemberian dosis dan jenis analgesik, sesuai indikasi.",
+    "Tautan Diagnosa": "D.0077, D.0078"
+  },
+  {
+    "Kode": "I.08245",
+    "Nama": "Terapi Relaksasi",
+    "Observasi": "Identifikasi penurunan tingkat energi, kemampuan berkonsentrasi, atau gejala lain yang mengganggu kemampuan kognitif; Periksa ketegangan otot, frekuensi nadi, tekanan darah, dan suhu sebelum dan sesudah latihan.",
+    "Terapeutik": "Ciptakan lingkungan tenang dan tanpa gangguan; Gunakan pakaian longgar; Gunakan nada suara lembut dengan irama lambat dan berirama; Gunakan relaksasi sebagai strategi penunjang dengan analgesik.",
+    "Edukasi": "Jelaskan tujuan, manfaat, batasan dan jenis relaksasi yang tersedia; Anjurkan mengambil posisi nyaman; Anjurkan rileks dan merasakan sensasi relaksasi.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0074, D.0077, D.0078"
+  },
+  {
+    "Kode": "I.09314",
+    "Nama": "Reduksi Ansietas",
+    "Observasi": "Identifikasi saat tingkat ansietas berubah; Monitor tanda-tanda ansietas.",
+    "Terapeutik": "Ciptakan suasana terapeutik untuk menumbuhkan kepercayaan; Temani pasien untuk mengurangi kecemasan; Gunakan pendekatan yang tenang dan meyakinkan.",
+    "Edukasi": "Jelaskan prosedur, termasuk sensasi yang mungkin dialami; Anjurkan mengungkapkan perasaan dan persepsi; Ajarkan teknik relaksasi.",
+    "Kolaborasi": "Kolaborasi pemberian obat antiansietas, jika perlu.",
+    "Tautan Diagnosa": "D.0080"
+  },
+  {
+    "Kode": "I.09318",
+    "Nama": "Dukungan Proses Berduka",
+    "Observasi": "Identifikasi kehilangan yang dihadapi; Identifikasi proses berduka yang dialami; Identifikasi reaksi awal terhadap kehilangan.",
+    "Terapeutik": "Tunjukkan sikap menerima dan empati; Fasilitasi mengungkapkan perasaan dengan cara yang nyaman; Fasilitasi mengidentifikasi pola koping yang biasa digunakan.",
+    "Edukasi": "Anjurkan mengidentifikasi ketakutan terbesar terhadap kehilangan; Anjurkan mengekspresikan perasaan tentang kehilangan; Ajarkan mekanisme koping yang baru.",
+    "Kolaborasi": "Rujuk pada kelompok pendukung, jika perlu.",
+    "Tautan Diagnosa": "D.0081"
+  },
+  {
+    "Kode": "I.09322",
+    "Nama": "Promosi Citra Tubuh",
+    "Observasi": "Identifikasi harapan citra tubuh berdasarkan tahap perkembangan; Identifikasi budaya, agama, jenis kelamin, dan umur terkait citra tubuh; Monitor frekuensi pernyataan mengkritik diri.",
+    "Terapeutik": "Diskusikan perubahan tubuh dan fungsinya; Diskusikan perbedaan penampilan fisik terhadap harga diri; Diskusikan kondisi stres yang mempengaruhi citra tubuh.",
+    "Edukasi": "Jelaskan pada keluarga tentang perawatan perubahan citra tubuh; Anjurkan mengungkapkan gambaran diri terhadap citra tubuh; Ajarkan cara mengenali perubahan tubuh yang positif.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0083, D.0084"
+  },
+  {
+    "Kode": "I.09326",
+    "Nama": "Promosi Harga Diri",
+    "Observasi": "Identifikasi penilaian diri terhadap harga diri; Monitor verbalisasi yang merendahkan diri sendiri.",
+    "Terapeutik": "Motivasi terlibat dalam verbalisasi positif untuk diri sendiri; Diskusikan pernyataan tentang harga diri; Fasilitasi lingkungan dan aktivitas yang meningkatkan harga diri.",
+    "Edukasi": "Jelaskan kepada keluarga pentingnya dukungan dalam perkembangan konsep positif diri pasien; Anjurkan mengidentifikasi kekuatan yang dimiliki; Ajarkan keterampilan berinteraksi sosial.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0086, D.0087"
+  },
+  {
+    "Kode": "I.09330",
+    "Nama": "Dukungan Spiritual",
+    "Observasi": "Identifikasi perasaan khawatir, kesepian, dan ketidakberdayaan; Identifikasi pandangan tentang hubungan antara spiritual dan kesehatan; Identifikasi harapan dan kekuatan pasien.",
+    "Terapeutik": "Berikan kesempatan mengekspresikan perasaan tentang penyakit dan kematian; Berikan kesempatan berdoa; Berikan privasi dan waktu tenang untuk aktivitas spiritual; Fasilitasi pasien dengan meditasi, ibadah, dan kegiatan spiritual lainnya.",
+    "Edukasi": "Anjurkan berinteraksi dengan keluarga, teman, dan/atau orang lain; Anjurkan berpartisipasi dalam kelompok pendukung.",
+    "Kolaborasi": "Atur kunjungan rohaniwan, jika perlu.",
+    "Tautan Diagnosa": "D.0082, D.0088, D.0089"
+  },
+  {
+    "Kode": "I.09335",
+    "Nama": "Promosi Koping",
+    "Observasi": "Identifikasi kegiatan jangka pendek dan panjang sesuai tujuan; Identifikasi kemampuan yang dimiliki; Identifikasi sumber daya yang tersedia untuk memenuhi tujuan.",
+    "Terapeutik": "Diskusikan perubahan peran yang dialami; Gunakan pendekatan yang tenang dan meyakinkan; Motivasi untuk mengidentifikasi sistem pendukung yang tersedia; Motivasi keterlibatan keluarga.",
+    "Edukasi": "Anjurkan menjalin hubungan yang memiliki kepentingan dan tujuan yang sama; Anjurkan penggunaan sumber spiritual; Anjurkan mengungkapkan perasaan dan persepsi; Ajarkan cara memecahkan masalah secara konstruktif.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0088, D.0089, D.0090, D.0091"
+  },
+  {
+    "Kode": "I.10335",
+    "Nama": "Perawatan Perkembangan",
+    "Observasi": "Identifikasi pencapaian tugas perkembangan anak; Identifikasi isyarat perilaku dan fisiologis yang diperlihatkan bayi (mis: lapar, tidak nyaman).",
+    "Terapeutik": "Pertahankan sentuhan seminimal mungkin pada bayi prematur; Berikan perawatan yang mendukung perkembangan; Minimalkan nyeri; Minimalkan kebisingan ruangan.",
+    "Edukasi": "Ajarkan orang tua dan pengasuh berinteraksi dengan anak sesuai usia; Jelaskan tahap perkembangan anak pada orang tua dan pengasuh.",
+    "Kolaborasi": "Rujuk untuk konseling, jika perlu.",
+    "Tautan Diagnosa": "D.0103, D.0104, D.0105, D.0059"
+  },
+  {
+    "Kode": "I.11349",
+    "Nama": "Dukungan Perawatan Diri",
+    "Observasi": "Identifikasi kebiasaan aktivitas perawatan diri sesuai usia; Monitor tingkat kemandirian; Identifikasi kebutuhan alat bantu kebersihan diri, berpakaian, berhias, dan makan.",
+    "Terapeutik": "Sediakan lingkungan yang terapeutik (mis: suasana hangat, rileks, privasi); Siapkan keperluan pribadi (mis: parfum, sikat gigi, sabun mandi); Dampingi dalam melakukan perawatan diri; Fasilitasi untuk menerima keadaan ketergantungan.",
+    "Edukasi": "Anjurkan melakukan perawatan diri secara konsisten sesuai kemampuan.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0106, D.0107, D.0108, D.0109, D.0110"
+  },
+  {
+    "Kode": "I.11350",
+    "Nama": "Dukungan Perawatan Diri: Mandi",
+    "Observasi": "Identifikasi usia dan budaya dalam membantu kebersihan diri; Identifikasi jenis bantuan yang dibutuhkan; Monitor kebersihan tubuh; Monitor integritas kulit.",
+    "Terapeutik": "Sediakan peralatan mandi; Sediakan lingkungan yang aman dan nyaman; Fasilitasi menggosok gigi; Fasilitasi mandi, sesuai kebutuhan; Pertahankan kebiasaan kebersihan diri.",
+    "Edukasi": "Jelaskan manfaat mandi dan dampak tidak mandi terhadap kesehatan; Ajarkan kepada keluarga cara memandikan pasien, jika perlu.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0106, D.0109"
+  },
+  {
+    "Kode": "I.11353",
+    "Nama": "Perawatan Integritas Kulit",
+    "Observasi": "Identifikasi penyebab gangguan integritas kulit (mis: perubahan sirkulasi, penurunan mobilitas).",
+    "Terapeutik": "Ubah posisi tiap 2 jam (miring kanan, miring kiri) jika tirah baring; Bersihkan perineal dengan air hangat; Gunakan produk berbahan minyak pada kulit kering.",
+    "Edukasi": "Anjurkan menggunakan pelembab (lotion); Anjurkan minum air yang cukup; Anjurkan meningkatkan asupan nutrisi.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0129, D.0137"
+  },
+  {
+    "Kode": "I.11356",
+    "Nama": "Perawatan Luka",
+    "Observasi": "Monitor karakteristik luka (mis: drainase, warna, ukuran, bau); Monitor tanda-tanda infeksi.",
+    "Terapeutik": "Lepaskan balutan dan plester secara perlahan; Cukur rambut di sekitar daerah luka, jika perlu; Bersihkan dengan cairan NaCl; Bersihkan jaringan nekrotik; Berikan balutan sesuai jenis luka; Pertahankan teknik steril saat perawatan luka.",
+    "Edukasi": "Jelaskan tanda dan gejala infeksi; Anjurkan mengonsumsi makanan tinggi kalori dan protein; Ajarkan prosedur perawatan luka secara mandiri.",
+    "Kolaborasi": "Kolaborasi prosedur debridement, jika perlu; Kolaborasi pemberian antibiotik, jika perlu.",
+    "Tautan Diagnosa": "D.0129, D.0141"
+  },
+  {
+    "Kode": "I.12392",
+    "Nama": "Promosi Komunikasi: Defisit Bicara",
+    "Observasi": "Monitor kecepatan, tekanan, kuantitas, volume dan diksi bicara; Monitor proses kognitif, anatomis, dan fisiologis yang berkaitan dengan bicara; Identifikasi perilaku emosional dan fisik sebagai bentuk komunikasi.",
+    "Terapeutik": "Gunakan metode komunikasi alternatif (mis: menulis, mata berkedip, papan komunikasi dengan gambar dan huruf, bahasa isyarat); Sesuaikan gaya komunikasi dengan kebutuhan; Ulangi apa yang disampaikan pasien.",
+    "Edukasi": "Anjurkan bicara perlahan; Ajarkan pasien dan keluarga proses kognitif, anatomis, dan fisiologis yang berhubungan dengan kemampuan bicara.",
+    "Kolaborasi": "Rujuk ke ahli patologi bicara atau terapis, jika perlu.",
+    "Tautan Diagnosa": "D.0063"
+  },
+  {
+    "Kode": "I.12383",
+    "Nama": "Edukasi Kesehatan",
+    "Observasi": "Identifikasi kesiapan dan kemampuan menerima informasi; Identifikasi faktor-faktor yang dapat meningkatkan dan menurunkan motivasi perilaku hidup bersih dan sehat.",
+    "Terapeutik": "Sediakan materi dan media pendidikan kesehatan; Jadwalkan pendidikan kesehatan sesuai kesepakatan; Berikan kesempatan untuk bertanya.",
+    "Edukasi": "Jelaskan faktor risiko yang dapat mempengaruhi kesehatan; Ajarkan perilaku hidup bersih dan sehat; Ajarkan strategi yang dapat digunakan untuk meningkatkan perilaku hidup bersih dan sehat.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0110, D.0111, D.0112"
+  },
+  {
+    "Kode": "I.12386",
+    "Nama": "Edukasi Proses Penyakit",
+    "Observasi": "Identifikasi kesiapan dan kemampuan menerima informasi.",
+    "Terapeutik": "Sediakan materi dan media pendidikan kesehatan; Jadwalkan pendidikan kesehatan sesuai kesepakatan; Berikan kesempatan untuk bertanya.",
+    "Edukasi": "Jelaskan penyebab dan faktor risiko penyakit; Jelaskan proses patofisiologi munculnya penyakit; Jelaskan tanda dan gejala yang ditimbulkan oleh penyakit; Jelaskan kemungkinan terjadinya komplikasi; Ajarkan cara meminimalkan efek samping dari intervensi/pengobatan.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0111, D.0112, D.0113"
+  },
+  {
+    "Kode": "I.13469",
+    "Nama": "Promosi Hubungan Interpersonal",
+    "Observasi": "Identifikasi perilaku interpersonal yang perlu diperbahui dan kelebihan/kekuatan diri; Monitor perilaku dan ekspresi pasien.",
+    "Terapeutik": "Motivasi untuk mengembangkan hubungan; Motivasi untuk berpartisipasi dalam kelompok; Diskusikan hubungan secara terbuka; Berikan umpan balik positif pada perilaku kolaboratif.",
+    "Edukasi": "Ajarkan keterampilan sosial yang dibutuhkan; Anjurkan kejujuran dan transparansi dalam hubungan; Anjurkan fungsi anggota kelompok.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0114, D.0115, D.0118, D.0120"
+  },
+  {
+    "Kode": "I.13477",
+    "Nama": "Promosi Sosialisasi",
+    "Observasi": "Identifikasi kemampuan melakukan interaksi dengan orang lain; Identifikasi hambatan melakukan interaksi dengan orang lain.",
+    "Terapeutik": "Motivasi meningkatkan keterlibatan dalam suatu hubungan; Motivasi kesabaran dalam mengembangkan suatu hubungan; Motivasi berpartisipasi dalam aktivitas baru dan kegiatan kelompok; Motivasi berinteraksi di luar lingkungan (mis: jalan-jalan ke toko buku).",
+    "Edukasi": "Anjurkan berinteraksi dengan orang lain yang memiliki ketertarikan dan tujuan yang sama; Anjurkan merencanakan kegiatan kecil dalam kelompok; Anjurkan berbagi pengalaman dengan orang lain.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0116, D.0117, D.0121, D.0122"
+  },
+  {
+    "Kode": "I.13480",
+    "Nama": "Dukungan Keluarga Merencanakan Perawatan",
+    "Observasi": "Identifikasi kebutuhan dan harapan keluarga tentang kesehatan; Identifikasi kemampuan dan kesiapan keluarga dalam merawat pasien.",
+    "Terapeutik": "Diskusikan prioritas perawatan dengan keluarga; Hargai dan dukung mekanisme koping adaptif yang digunakan; Fasilitasi anggota keluarga dalam mengidentifikasi dan menyelesaikan konflik nilai.",
+    "Edukasi": "Informasikan fasilitas perawatan kesehatan yang tersedia; Ajarkan keluarga cara merawat yang tepat.",
+    "Kolaborasi": "Rujuk pada kelompok pendukung keluarga, jika perlu.",
+    "Tautan Diagnosa": "D.0119, D.0123, D.0124, D.0125, D.0126, D.0127, D.0128"
+  },
+  {
+    "Kode": "I.14539",
+    "Nama": "Pencegahan Infeksi",
+    "Observasi": "Monitor tanda dan gejala infeksi lokal dan sistemik.",
+    "Terapeutik": "Batasi jumlah pengunjung; Cuci tangan sebelum dan sesudah kontak dengan pasien; Pertahankan teknik aseptik pada pasien berisiko tinggi.",
+    "Edukasi": "Jelaskan tanda dan gejala infeksi; Ajarkan cara mencuci tangan dengan benar; Ajarkan etika batuk.",
+    "Kolaborasi": "Kolaborasi pemberian imunisasi, jika perlu.",
+    "Tautan Diagnosa": "D.0142"
+  },
+  {
+    "Kode": "I.14540",
+    "Nama": "Pencegahan Jatuh",
+    "Observasi": "Identifikasi faktor risiko jatuh; Identifikasi risiko jatuh menggunakan skala (mis: Morse, Humpty Dumpty).",
+    "Terapeutik": "Pastikan roda tempat tidur dan kursi roda terkunci; Pasang handrail tempat tidur; Gunakan lantai rendah untuk pasien berisiko tinggi.",
+    "Edukasi": "Anjurkan memanggil perawat jika butuh bantuan berpindah; Anjurkan menggunakan alas kaki yang tidak licin.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0143"
+  },
+  {
+    "Kode": "I.14578",
+    "Nama": "Manajemen Hipertermia",
+    "Observasi": "Identifikasi penyebab hipertermia (mis: dehidrasi, terpapar lingkungan panas); Monitor suhu tubuh; Monitor kadar elektrolit; Monitor haluaran urin.",
+    "Terapeutik": "Sediakan lingkungan yang dingin; Longgarkan atau lepaskan pakaian; Berikan kompres hangat pada dahi, aksila atau lipat paha; Berikan cairan oral.",
+    "Edukasi": "Anjurkan tirah baring.",
+    "Kolaborasi": "Kolaborasi pemberian cairan dan elektrolit intravena, jika perlu.",
+    "Tautan Diagnosa": "D.0130, D.0147"
+  },
+  {
+    "Kode": "I.14582",
+    "Nama": "Manajemen Hipotermia",
+    "Observasi": "Monitor suhu tubuh; Identifikasi penyebab hipotermia (mis: terpapar suhu lingkungan rendah, pakaian tipis, kerusakan hipotalamus); Monitor tanda dan gejala akibat hipotermia.",
+    "Terapeutik": "Sediakan lingkungan yang hangat (mis: atur suhu ruangan); Ganti pakaian dan/atau linen yang basah; Lakukan penghangatan pasif (mis: selimut, menutup kepala, pakaian tebal); Lakukan penghangatan aktif eksternal (mis: kompres hangat, selimut hangat); Lakukan penghangatan aktif internal (mis: infus cairan hangat).",
+    "Edukasi": "-",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0131, D.0145"
+  },
+  {
+    "Kode": "I.14586",
+    "Nama": "Manajemen Keselamatan Lingkungan",
+    "Observasi": "Identifikasi kebutuhan keselamatan (mis: kondisi fisik, fungsi kognitif dan riwayat perilaku); Monitor perubahan status keselamatan lingkungan.",
+    "Terapeutik": "Hilangkan bahaya keselamatan lingkungan (mis: fisik, biologi, kimia) jika memungkinkan; Modifikasi lingkungan untuk meminimalkan bahaya dan risiko; Sediakan alat bantu keamanan lingkungan (mis: pegangan tangan).",
+    "Edukasi": "Ajarkan individu, keluarga, dan kelompok risiko tinggi bahaya lingkungan.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0136, D.0138, D.0143, D.0144"
+  },
+  {
+    "Kode": "I.14590",
+    "Nama": "Pencegahan Luka Tekan",
+    "Observasi": "Identifikasi faktor risiko terjadinya luka tekan; Monitor status kulit secara rutin; Monitor suhu kulit yang tertekan.",
+    "Terapeutik": "Gunakan kasur khusus pencegah luka tekan; Ubah posisi setiap 1-2 jam jika tirah baring; Buat jadwal perubahan posisi; Minimalkan gesekan dan gaya ketika mengubah posisi, saat pasien berbaring; Bersihkan kulit dengan air hangat, keringkan, beri pelembab; Pastikan asupan nutrisi adekuat.",
+    "Edukasi": "Ajarkan cara mengenali tanda dan gejala luka tekan.",
+    "Kolaborasi": "-",
+    "Tautan Diagnosa": "D.0129, D.0139, D.0140"
+  },
+  {
+    "Kode": "I.14594",
+    "Nama": "Manajemen Cedera",
+    "Observasi": "Identifikasi area cedera; Monitor tanda-tanda vital.",
+    "Terapeutik": "Bersihkan dan balut area cedera; Pemberian es selama 15-20 menit setiap jam pertama setelah cedera; Imobilisasi area cedera.",
+    "Edukasi": "Jelaskan proses penyembuhan cedera; Anjurkan menghindari aktivitas yang memperberat cedera.",
+    "Kolaborasi": "Kolaborasi pemberian analgesik, jika perlu; Rujuk ke rehabilitasi medik, jika perlu.",
+    "Tautan Diagnosa": "D.0133, D.0134, D.0135"
+  }
+]
