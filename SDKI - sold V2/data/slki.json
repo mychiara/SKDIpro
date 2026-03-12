@@ -1,0 +1,1098 @@
+﻿[
+    {
+        "Kode":  "L.01001",
+        "Nama":  "Bersihan Jalan Napas",
+        "Definisi":  "Kemampuan membersihkan sekret atau obstruksi jalan napas untuk mempertahankan jalan napas tetap paten.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Batuk efektif; Produksi sputum; Mengi; Wheezing; Mekonium (pada neonatus); Dispnea; Ortopnea; Sulit bicara; Sianosis; Gelisah; Frekuensi nafas; Pola nafas.",
+        "Tautan Diagnosa":  "D.0001"
+    },
+    {
+        "Kode":  "L.01002",
+        "Nama":  "Penyapihan Ventilator",
+        "Definisi":  "Kemampuan beradaptasi dengan pengurangan bantuan ventilator mekanik. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kesinkronan bantuan ventilator; Penggunaan otot bantu napas; Napas megap-megap (gasping); Napas dangkal; Agitasi; Lelah; Perasaan kuatir mesin rusak; Fokus pada pernapasan; Napas paradoks abdominal; Diaforesis; Frekuensi napas; Nilai gas darah arteri; Upaya napas; Aukultasi suara inspirasi; Warna kulit.",
+        "Tautan Diagnosa":  "D.0002"
+    },
+    {
+        "Kode":  "L.01003",
+        "Nama":  "Pertukaran Gas",
+        "Definisi":  "Oksigenasi dan / atau eliminasi karbondioksida pada membran alveolus kapiler dalam batas normal. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Tingkat kesadaran; Dispnea; Bunyi napas tambahan; Pusing; Penglihatan kabur; Diaforesis; Gelisah; Napas cuping hidung; PCO2; PO2; Takikardia; pH arteri; Sianosis; Pola napas; Warna kulit.",
+        "Tautan Diagnosa":  "D.0003"
+    },
+    {
+        "Kode":  "L.01004",
+        "Nama":  "Pola Napas",
+        "Definisi":  "Inspirasi dan / atau ekspirasi yang memberikan ventilasi adekuat. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Ventilasi semenit; Kapasitas vital; Kapasitas thoraks anterior-posteilor; Tekanan ekspirasi; Tekanan inspirasi; Dispnea; Penggunaan alat bantu napas; Pemanjangan fase ekspirasi; Ortopnea; Pernapasan pursed-tip; Pernapasan cuping hidung; Frekuensi napas; Kedalaman napas; Ekskursi dada.",
+        "Tautan Diagnosa":  "D.0004, D.0005"
+    },
+    {
+        "Kode":  "L.01005",
+        "Nama":  "Respons Ventilasi Mekanik",
+        "Definisi":  "Efektifitas pertukaran alveolar dan perfusi jaringan yang di dukung oleh ventilasi secara mekanik. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "FIO2 memenuhi kebutuhan; Tingkat kesadaran; Satu rasi oksigen; Kesimetrisan gerakan dinding dada; Sekresi jalan napas; Suara napas tambahan; Infeksi paru; Kesulitan bernapas dengan ventilator; Atelektasis; Kegelisahan; Kurang istirahat; Kesulitan mengutarakan kebutuhan; Dosis sedasi.",
+        "Tautan Diagnosa":  "D.0004"
+    },
+    {
+        "Kode":  "L.01006",
+        "Nama":  "Tingkat Aspirasi",
+        "Definisi":  "Kondisi masuknya partikel cair atau padat ke dalam paru-paru.",
+        "Ekspektasi":  "Menurun.",
+        "Kriteria Hasil":  "Tingkat kesadaran; Kemampuan menelan; Kebersihkan mulut; Dispnea; Kelemahan otot; Akumulasi sekret; Wheezing; Batuk; Penggunaan otot aksesori; Sianosis; Gelisah; Frekuensi napas.",
+        "Tautan Diagnosa":  "D.0006, D.0063"
+    },
+    {
+        "Kode":  "L.01007",
+        "Nama":  "Ventilasi Spontan",
+        "Definisi":  "Keadekuatan cadangan energi untuk mendukung individu mampu bernafas secara adekuat. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Volume Tidal; Dispnea; Penggunan otot bantu napas; Gelisah; PCO2; PO2; Takikardia.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.02008",
+        "Nama":  "Curah Jantung",
+        "Definisi":  "Keadekuatan jantung memompa darah untuk memenuhi kebutuhan metabolisme tubuh. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kekuatan nadi perifer; EJection fractian (EF); Cardiec todex (CI); Left Ventricular stroke work index (LVSWI); Stroke volume index (SVI); Palpitasi; Bradikardia; Takikardla; Gambaran EKG aritmia; Lelah; Edema; Distensi vema Jugularis; Dispnea; Oligurla; Pucat/sianosis; Paroxysmal nocturnal dyspnea (PND); Ortopnea; Batuk; Suara jantung S3; Suara jantung S4; Murmur jantung; Berat badan; Hepatomegali; Pulmonary vascular resistance (PVR); Systernic vascular resitance; Tekanan darah; Capillary refill time (CPT); Pulmonary artery wedge pressure (PAWP); Central venous pressure.",
+        "Tautan Diagnosa":  "D.0008, D.0011"
+    },
+    {
+        "Kode":  "L.02010",
+        "Nama":  "Perfusi Gastrointestinal",
+        "Definisi":  "Keadekuatan aliran darah pada gastrointestinal untuk mempertahankan fungsi organ. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Nafsu makan; Muat; Nyeri abdomen; Asites; Konstipasi Diare; Bising usus.",
+        "Tautan Diagnosa":  "D.0016, D.0007, D.0013"
+    },
+    {
+        "Kode":  "L.02011",
+        "Nama":  "Perfusi Miokard",
+        "Definisi":  "Keadekuatan aliran darah arteri koronaria untuk mempertahankan fungsi jantung. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Gambaran EKG aritmia; Nyeri dada; Diaforesis; Mual; Muntah; Arteri apikal; Tekanan arteri rata-rata; Takikardi; Bradikardi; Denyut nadi radial; Tekanan darah; Fraksi ejeksi; Tekanan baji arteri pulmonal; Cardiac Index (CI).",
+        "Tautan Diagnosa":  "D.0009, D.0015"
+    },
+    {
+        "Kode":  "L.02011B",
+        "Nama":  "Perfusi Perifer",
+        "Definisi":  "Keadekuatan aliran darah pembuluh darah distal untuk menunjang fungsi jaringan. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Denyut nadi perifer; Penyembuhan luka; Sensasi; Warna kulit pucat; Edama perifer; Nyeri ekstremitas; Parastesia; Kelemahan otot; Kram otot; Bruit femoralis; Nekrosis; Pengisian kapiler; Akral; Turgor kulit; Tekanan darah sistolik; Tekanan darah diastolik; Tekanan arteri rata-rata; Indeks ankie-brachial.",
+        "Tautan Diagnosa":  "D.0007"
+    },
+    {
+        "Kode":  "L.02013",
+        "Nama":  "Perfusi Renal",
+        "Definisi":  "Keadekuatan aliran darah arteri renalis untuk menunjang fungsi ginjal. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Jumlah Urine; Nyeri abdomen; Mual; Muntah; Distensi abdomen; Tekanan arteri rata0rata; Kadar urea nitrogrn darah; Kadar kreatinin plasma; Tekanan erteri rata-rata; Kadar urea nitrogen darah; kadar kreatinin plasma; Tekanan darah sistolik; Tekanan darah diastolik; Kadar elektrolit; Keseimbangan asadm basa; Bising usus; Fungsi hati.",
+        "Tautan Diagnosa":  "D.0017, D.0066, D.0007"
+    },
+    {
+        "Kode":  "L.02014",
+        "Nama":  "Perfusi Serebral",
+        "Definisi":  "Keadekuatan aliran darah serebral untuk menunjang fungsi otak. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Tingkat kesadaran; Kognitif; Tekanan intra kranial; Sakit kepala; Gelisah; Kecemasan; Agitasi; Demam; Nilai rata-rata tekanan darah; Kesadaran; Tekanan darah sistonik; Tekanan darah diastonik; Refleks saraf.",
+        "Tautan Diagnosa":  "D.0018, D.0030, D.0031, D.0007"
+    },
+    {
+        "Kode":  "L.02015",
+        "Nama":  "Sirkulasi Spontan",
+        "Definisi":  "Kemampuan untuk mempertahankan sirkulasi yang adekuat unruk menunjang kehidupan. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Tingkat Kesadaran; Frekuensi nadi; Tekanan darah; Frekuensi napas; Saturasi oksigen; Gambaran EKG aritmia; ETCO2; Produksi urine.",
+        "Tautan Diagnosa":  "D.0017, D.0066, D.0007, D.0010"
+    },
+    {
+        "Kode":  "L.02016",
+        "Nama":  "Status Sirkulasi",
+        "Definisi":  "Pengedaran berbagai zat yang diperlukan ke seluruh tubuh dan pengambilan zat yang tidak diperlukan untuk dikeluarkan dan tubuh. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kekuatan Nadi; Output urine; Saturasi oksigen; PaO2; Pucat; Akral dingin; PaCO2; Pitting edema; Edema perifer; Hipotensi orloslatik; Bunyi napas tambahan; Bruit pembuluh darah; Distensi vena jugularis; Asistes; Fatigue; Klaudikasio intermiten; Parestesia; Sinkop; Ulkus ekstremitasi; Tekanan darah sistolik; Tekanan darah diastolik; Tekanan nadi; Mean arteriat pressure; Pengisi kapiler; Tekanan vena sentral; Berat badan.",
+        "Tautan Diagnosa":  "D.0026, D.0028, D.0029, D.0007"
+    },
+    {
+        "Kode":  "L.02017",
+        "Nama":  "Tingkat Pendarahan",
+        "Definisi":  "Kehilangan darah baik internal (terjadi di dalam tubuh) maupun eksternal (terjadi hingga keluar tubuh). Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kelembapan membran mukosa; Kelembapan kulit; Kognitif; Hemoptisis; Hematemesis; Hematuria; Pendarahan Anus; Distensi abdomen; Pendarahan anus; Distensi abdomen; Pendarahan vagina; Pendarahan pasca operasi; Hemoglobin; Hematokrit; Tekanan darah; Denyut nadi apikal; Suhu tubuh.",
+        "Tautan Diagnosa":  "D.0014"
+    },
+    {
+        "Kode":  "L.03018",
+        "Nama":  "Berat Badan",
+        "Definisi":  "Akumulasi bobot tubuh dengan usia dan jenis kelamin. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Berat badan; Tebal lipatan kulit; Indeks massa tubuh.",
+        "Tautan Diagnosa":  "D.0028, D.0029"
+    },
+    {
+        "Kode":  "L.03019",
+        "Nama":  "Fungsi Gastrointestinal",
+        "Definisi":  "Kemampuan saluran cerna untuk memasukan dan mencerna makanan serta menyerap nutrisi dan membuang zat sisa",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Toleransi terhadap makanan; Nafsu makan; Mual; Muntah; Dispepsia; Nyeri abdomen; Distensi abdomen; Regurgitasi; Jumlah residu cairan lambung satt aspirasi; Darah pada feses; Hematemesis; Frekuensi bab; Konsistensi usus; Jumlah feses; Warna feses.",
+        "Tautan Diagnosa":  "D.0013"
+    },
+    {
+        "Kode":  "L.03020",
+        "Nama":  "Keseimbangan Cairan",
+        "Definisi":  "Keseimbangan cairan di dalam ruang intraseluler dan ekstraseluler tubuh.",
+        "Ekspektasi":  "Meningkatkan",
+        "Kriteria Hasil":  "Asupan cairan; Haluaran urin; Kelembapan membran mukosa; Asupan makan; Edema; Dehidrasi; Asistes; Konfusi; Tekanan; Denyut nadi radial; Tekanan arteri rata-rata; Membran mukosa; Mata cekung; Turgor kulit; Berat badan.",
+        "Tautan Diagnosa":  "D.0022, D.0023, D.0034, D.0036, D.0020"
+    },
+    {
+        "Kode":  "L.03021",
+        "Nama":  "Keseimbangan Elektrolit",
+        "Definisi":  "Kadar serum elektrolit dalam batas normal.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Serum natrium; Serum kalium; Serum klorida; Serum kalsium; Serum magnesium; Serum fosfor.",
+        "Tautan Diagnosa":  "D.0022, D.0023, D.0025, D.0034, D.0036"
+    },
+    {
+        "Kode":  "L.03022",
+        "Nama":  "Kestabilan Kadar Glukosa Darah",
+        "Definisi":  "Kadar glukosa darah berada pada rentang normal.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Koordinasi; Kesadaran; Mengantuk; Pusing; Lelah/lesu; Keluhan lapar; Gemetar; Berkeringat; Mulut kering; Rasa haus; Perilaku aneh; Kesulitan bicara; Kadar glukosa dalam darah; Kadar glukosa dalam urine; Palpitasi; Perilaku; Jumlah urine.",
+        "Tautan Diagnosa":  "D.0037, D.0038, D.0027"
+    },
+    {
+        "Kode":  "L.03023",
+        "Nama":  "Motilitas Gastrointestinal",
+        "Definisi":  "Aktivitas peristaltik gastrointestinal",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "D.0021, D.0033"
+    },
+    {
+        "Kode":  "L.03024",
+        "Nama":  "Nafsu Makan",
+        "Definisi":  "Keinginan untuk makan.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Keinginan makna; Asupan makan; Asupan cairan; Energi untuk makan; Kemampuan merasakan makanan; Kemampuan menikmati makanan; Asupan nutrisi; Stimulus untuk makan; Kelaparan.",
+        "Tautan Diagnosa":  "D.0048, D.0050, D.0051"
+    },
+    {
+        "Kode":  "L.03025",
+        "Nama":  "Perilaku Mempertahankan Berat Badan",
+        "Definisi":  "Tindakan-Tindakan yang dilakukan utnuk mempertahankan berat badan optimal.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Memantau berat badan; Menjaga asupan kalori harian sesuai kebutuhan; Menyeimbangkan latihan dengan asupan kalori; Memilih makanan bernutrisi; Meminum airputih sesuai kebutuhan tubuh; Mempertahankan keseimbangan cairan; Mengekspresikan citra tubuh yang realistis; Mempertahankan kecukupan tidur.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.03026",
+        "Nama":  "Perilaku Meningkatkan Berat Badan",
+        "Definisi":  "Tindakan-tindakan yang dilakukan untuk menambahkan berat badab. Ekspresi : Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Mengidentifikasi penyebab penurunan berat bacian; Menetapkan target berat yang sehat; Mengidentifikasi kebutuhan kalori; Mengidentifikasi makanan yang disukai dan tidak disukai; Mengidentifikasi makanan dan minuman yang berprotein dan berkalori tinggi; Mempertahankan asupan makanan dan minuman bernutrisi; Memonitor IMT; Memonitor berat badan; Mendapatkan perawatan gigi yang sesuai; Memperoleh bantuan keuangan untuk membeli makanan; Mengidentifikasi makanan yang timbul alergi; Meminum air putih sesuai kebutuhan air putih sesuai kebutuhan tubuh; Mengosumsi suplemen nutrisi; Memakan makanan dan minuman selingan anter waktu makan yang bergizi; Mempertahankan tidur cukup; Memberikan selang makanan sesuai rekomendasi memeberikan nutrisi parenteral sesuai rekomendasi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.03027",
+        "Nama":  "Perilaku Menurunkan Berat Badan",
+        "Definisi":  "Tindakan-Tindakan yang dilakukan untuk mengurangi berat badan",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Menentukan taerget berat badan dalam rentang normal; Memiliki komitemen pada rencana makan yang sehat; Menghindari makanan dan minuman tinggi kalori; Memilih makanan minuman bergizi; Mengontrol porsi makan; Menetapkan latihan rutin; Memonitor berat badan; Memonitor IMT; Mendapatkan informasi mengenai strategi menurunkan berat badan dan ahli kesehatan; Mengidentifkasi kondisi emosional yang dapat mempengaruhi asupan  makanan dan minuman; Menggunakan strategi modifikasi perilaku; Memotivasi diri sendiri; Meminum air putih sesuai kebutuhan tubuh; Menggunakan obat sesuai intruksi (jika ada).",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.03028",
+        "Nama":  "Status Cairan",
+        "Definisi":  "Kondisi volume cairan intravakuler,interstisiel,dan/atau intraseluler.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kekuatan nadi; Turgor kulit; Output urine; Pengisi vena; Ortopnea; Dispnea; Paroxysmal nocturnal dyspnea (PND); Ederna anarsarka; Edema perifer; Berat badan; Distensi vena jugularis; Suara napas tambahan; Kongesti paru; Perasaan lemah; Keluhan haus; Konsentrasi urine; Frekuensi nadi; Tekanan darah; Tekanan nadi; Membran mukosa; Jugular Venous Pressure (JVP); Kadar Hb; Kadar Ht; Cenral Venous Pressure; Refluks hepatojugular; Berat badan; Hepatomegall; Oligura; Intake cairan; Status mental; Suhu tubuh.",
+        "Tautan Diagnosa":  "D.0019, D.0032, D.0013"
+    },
+    {
+        "Kode":  "L.03029",
+        "Nama":  "Status Menyusui",
+        "Definisi":  "Kemampuan memberikan ASI secara langsung dari payudara kepada bayi dan anak untuk memenuhi kebutuhan nutrisi",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Perlekatan bayi pada payudara ibu; kemampuan ibu memposisikan bayi dengan benar; Miksi bayi lebih dari 8 kali/24 jam; Berat badan bayi; Tetesan/pancaran ASI; Suplai ASI adekuat; Putting tidak lecet setelah 2 minggu melahirkan; Kepercayaan diri ibu; Bayi tidur setelah menyusu; Payudara ibu kosng setelah menyusui; Intake bayi; Hisapan bayi; Lecet pada putting; Kelelahan maternal; Kecemasan maternal; Bayi rewel; Bayi menangis setelah menyusu.",
+        "Tautan Diagnosa":  "D.0024, D.0035"
+    },
+    {
+        "Kode":  "L.03030",
+        "Nama":  "Status Nutrisi",
+        "Definisi":  "Keadekuatan asupan nutrisi untuk memenuhi kebutuhan metabolisme",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Porsi makanan yang dihabiskan; Kekuatan otot penguyah; Kekuatan otot menelan; Serum albumin; Verbalisasi keinginan untuk meningkatkan nutrisi; Pengetahuan tentang pilihan makanan yang sehat; Pengetahuan tentang pilihan minuman yang sehat; Pengetahuan tentang asupan nutrisi yang sehat; Penyiapan dari penyimpanan makanan yang sehat; Penyiapan dari penyimpanan minuman yang sehat; Sikap terhadap makanan/minuman sesuai dengan tujuan kesehatan; Perasaan cepat kenyang; Nyeri abdomen; Sariawan; Rambut rontok; Diare; Berat badan; Indeks masa tubuh (IMT); Frekuensi makan; Nafsu makan; Bising usus; Tebal lipatan kulit trisep; Membran mukosa.",
+        "Tautan Diagnosa":  "D.0018, D.0030, D.0031"
+    },
+    {
+        "Kode":  "L.03031",
+        "Nama":  "Status Nutrisi Bayi",
+        "Definisi":  "Keadekutan asupan nutrisi untuk memenuhi kebutuhan,metabolisme pada bayi",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Berat badan; Panjang badan; Kulit kuning; Sklera kuning; Membran mukosa kuning; Prematuritas; Bayi cengeng; Pucat; Kesulitan makan; Alergi makan; Pola makan; Tebal lipatan kulit; Proses tumbuh kembang; Lapisan lemak.",
+        "Tautan Diagnosa":  "D.0029"
+    },
+    {
+        "Kode":  "L.03032",
+        "Nama":  "Tingkat Syok",
+        "Definisi":  "Ketidakcukupan aliran darah ke jaringan tubuh, yang dapat mengakibatkan defungsi seluler yang mengancam jiwa.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kekuatan Nadi; Ourput Urine; Tingkat kesadaran; Saturnasi oksigen; Karal dingin; Pucat; Haus; Konfusi; Letargi; Asiaosis metabolik; Mean arterial presseure; Tekanan darah sisitolik; Tekanan darah diastolik; Tekanan nadi; Pengisi kepiler; Frekuensi nadi; Pengisian kapiler; Frekuensi nadi; Frekuensi napas.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.04033",
+        "Nama":  "Eliminasi Fekal",
+        "Definisi":  "Proses defekasi normal yang disetai dengan pengeluaran feses mudah dan kosistensi,frekuensi serta bentuk,feses normal.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kontrol pengeluarab feses; Keluhan defekasi kama dan sulit; Mengejan saat defekasi; Urgency; Nyeri abdomen; Kram abdomen; Kosistensi feses; Frekuensi defekasi; Peristaltik usus.",
+        "Tautan Diagnosa":  "D.0040, D.0044, D.0021, D.0052, D.0033, D.0020"
+    },
+    {
+        "Kode":  "L.04034",
+        "Nama":  "Eliminasi Urine",
+        "Definisi":  "Pengosongan kandung kemih yang lengkap Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Sensasi berkemih; Desakan berkemih (urgensi); Distensi kandung kemih; Berkemih tidak tuntas (hesitancy); Volume residu urine; Urin menetes (dribbling); Nokturia; Mengompol; Enuresis; Disuria; Anuna; Frekuensi BAK; Karakteristik urino.",
+        "Tautan Diagnosa":  "D.0042, D.0043, D.0045, D.0046, D.0047, D.0051"
+    },
+    {
+        "Kode":  "L.04034R",
+        "Nama":  "Keseimbangan Asam Basa",
+        "Definisi":  "Ekuilibrium antara ion hidroden di ruang irttraselular dan ekstraselular tubuh Ekspektasi : Meningkat",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Tingkat kesadaran; Istirahat; Mual; Keram Otot; Kelemahan otot; Frekuensi nafas; Irama nafas; pH; Kadar Co2; Kadar bikarbonat; Kadar fosfat; Kadar natrium; Kadar klorida; Kadar protein; Kadar hemoglobin.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.04035",
+        "Nama":  "Kontinensia Fekal",
+        "Definisi":  "Pola Normal kebiasaan buang air besar. Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Pengontrolan pengeluaran feses; Defekasi; Frekuensi buang air besar; Kondisi kulit perianal.",
+        "Tautan Diagnosa":  "D.0041"
+    },
+    {
+        "Kode":  "L.04036",
+        "Nama":  "Kontinensia Urine",
+        "Definisi":  "Pola kebiasaan buang air kecil Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kemampuan berkemih; Nokturia; Residu volume urin setelah berkemih; Distensi kandung kemih; Dribbling; Hesitancy; Enuresis; Verbalisasi pengeluaran urin tdak tuntas; Frekuensi berkemih; Sensasi berkemih.",
+        "Tautan Diagnosa":  "D.0049, D.0041"
+    },
+    {
+        "Kode":  "L.05037",
+        "Nama":  "Adaptasi Disabilitas",
+        "Definisi":  "Respon menyesuaikan diri dengan disabilitas fisik atau kognitif.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.05038",
+        "Nama":  "Ambulasi",
+        "Definisi":  "Aktivitas berjalan dari satu tempat ke tempat lainnya secara mandiri baik dengan atau tanpa bantuan alat. Ekspektasi : Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Menopang berat badan; Berjalan dengan langkah yang efektif; Berjalan dengan langkah pelan; Berjalan dengan langkah sedang; Berjalan dengan langkah cepat; Berjalan menanjak; Berjalan menurun; Berjalan jarak pendek; Berjalan jarak desitng; Berjalan jarak jauh; Berjalan mengitari ruangan; Bwjaluri meliwati rintangan; Nyeri saat berjalan; Kaku pada persedian; Keenganan berjalan; Perasaan khawatir saat berjalan.",
+        "Tautan Diagnosa":  "D.0131"
+    },
+    {
+        "Kode":  "L.05039",
+        "Nama":  "Keseimbangan",
+        "Definisi":  "Kemampuan mempertahankan ekuilibrium tubuh. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kemampuan duduk tanpa sandaran; Kemampuan bangkit dari posisi duduk; Keseimbangan saat berdiri; Keseimbangan saat berjalan; Keseimbangan saat berdiri dengan satu kaki; Pusing; Perasaan bergoncang; Tersandung; Postur.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.05040",
+        "Nama":  "Konservasi Energi",
+        "Definisi":  "Kemampuan menggunakan energi secara efektif dan efisien Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Aktivitas fisik yang direkomendasikan; Aktifitas  yang tepat; Strategi untuk menyeimbangkan aktivitas dan istirahat; Teknik konfersi energi; Teknik pernapasan yang efektif; Pembatasan energi; Mekanika tubuh yang tepat; Teknik menyedehanakan pekerjaan; Penggunaan alat bantu yang benar; Pembatasan aktivitas; Faktor faktor yang meningkatkan pengeluaran energi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.05041",
+        "Nama":  "Koordinasi Pergerakan",
+        "Definisi":  "Kemampuan otot untuk bekerjasama dengan gerakan tubuh yang sesuai dan terarah. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kekuatan otot; Kontrol gerakan; Keseimbangan gerakan; Kemantapan gerakan; Kehalusan gerakan; Gerakan ke arah yang di inginkan; Gerakan dengan waktu yang diinginkan; Gerakan dengan kecepatan yang diinginkan; Gerakan dengan ketepatan yang diinginkan; Tegangan otot; Kram otot; Bentuk otot; Kecepatan gerakan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.05042",
+        "Nama":  "Mobilitas Fisik",
+        "Definisi":  "Kemampuan dalam gerakan fisik dari satu atau lebih ekstremitas secara mandiri.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Pergerakan ekstremitas; Kekuatan otot; Rentang gerak (ROM); Nyeri; Kecemasan; Kaku sendi; Gerakan tidak terkoordinasi; Gerakan terbatas; Kelemahan fisik.",
+        "Tautan Diagnosa":  "D.0054, D.0131"
+    },
+    {
+        "Kode":  "L.05043",
+        "Nama":  "Organisasi Perilaku Bayi",
+        "Definisi":  "Kemampuan integrasi respon fisiologis dan neurobehaviour bayi terhadap lingkungan.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Gerakan pada ekstermitas; Kemampuan jari menggenggam; Gerakan terkoordinasi; Respon normal terhadap stimulus sensorik; Menangis; Mampu berespon kejut; Irritabilitas; Refleks; Tonus motorik; Saturnasi; Gelisah; Tremor; Tersentak; Aritmia; Bradikardi; Takikardia; Kemampuan menyusu; Warna kulit.",
+        "Tautan Diagnosa":  "D.0061, D.0067, D.0053"
+    },
+    {
+        "Kode":  "L.05044",
+        "Nama":  "Pergerakan Sendi",
+        "Definisi":  "Kemampuan melakukan pergerakan Sendi pada semua sandi tubuh secara mandiri",
+        "Ekspektasi":  "Meningkatkan",
+        "Kriteria Hasil":  "Rahang; Leher; Punggung; Ibu jari (kanan); Ibu jari (kiri); Pergelangan tangan (kanan); Pergelangan tangan (kiri); Siku (kanan); Siku (kiri); Bahu (kanan); Bahu (kiri); Pergelangan kaki (kanan); Pergelangan kaki(kiri); Lutut (kanan); Lutut (kiri); Panggul (kanan); Panggul (kiri).",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.05045",
+        "Nama":  "Pola Tidur",
+        "Definisi":  "Keadekuatan kualitas dan kuantitas tidur.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Keluhan sulit tidur; Keluhan sering terjaga; Keluhan tidak puas tidur; keluhan pola tidur berubah; Keluhan istirahat tidak cukup.",
+        "Tautan Diagnosa":  "D.0055, D.0058"
+    },
+    {
+        "Kode":  "L.05046",
+        "Nama":  "Tingkat Keletihan",
+        "Definisi":  "Kapasitas kerja fisik dan mental yang tidak pulih dengan istirahat",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Verbalisai kepulihan energi; Tenaga; Kemampuan melakukan aktivitas rutin; Motivasi; Verbalisasi lelah; Lesu; Gangguan konsentrasi; Sakit kepala; Sakit tenggorokan; Mengi; Sianosis; Gelisah; Frekuensi napas; Perasaan bersalah; Selerah makan polo napas; Libido; Pola istirahat.",
+        "Tautan Diagnosa":  "D.0057, D.0060"
+    },
+    {
+        "Kode":  "L.05047",
+        "Nama":  "Toleransi Aktivitas",
+        "Definisi":  "Respon fisiologis terhadap aktivitas yang membutuhkan tenaga",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Frekuensi nadi; Kemudahan dalam melakukan aktivitas sehari-hari; Kecepatan berjalan; Jarak berjalan; Kekuatan tubuh bagian atas; Kekkuatan tubuh bagian bwah; Toleransi dalam menaiki tangga; Keluhan lelah; Dispnea saat aktivitas; Dispnea setelah aktifitas; Perasaan lemah; Aritmia saat aktivitas; Aritmia setelah aktivitas; Sianosis; Warna kulit; Tekanan darah; Frekuensi napas; EKG lskemia.",
+        "Tautan Diagnosa":  "D.0056, D.0060"
+    },
+    {
+        "Kode":  "L.06048",
+        "Nama":  "Fungsi Sensori",
+        "Definisi":  "Kemampuan untuk merasakan stimulasi suara,rasa,raba,aroma, dan gambar visual",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Ketajaman pendengaran; Ketajaman penglihatan; Persepsi stimulasi kulit; Persepsi dosis 1 kepala; Persepsi posisi tubuh; Perbedaan bau; Perbedaan rasa.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.06049",
+        "Nama":  "Kapasitas Adaptif Intrakranial",
+        "Definisi":  "Kestabilan mekanisme dinamika intraknial dalam melakukan kompensasi terhadap stimulasi yang dapat menurunkan kapasitas intraknial.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Tingkat kesadaran; Fungsi kognitif; Sakit kepala; Gelisah; Agitasi; Postur deserebrasi (ekstensi); Papiledema; Tekanan darah; Tekanan nadi (pulse pressure); Bradikardia; Pola nafas; Respon pupil; Reflek neurologis; Tekanan intrakranial.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.06050",
+        "Nama":  "Kontrol Kejang",
+        "Definisi":  "kemampuan untuk mengendalikan mengurangi munculnya episode kejang",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.06051",
+        "Nama":  "Neurovaskuler Perifer",
+        "Definisi":  "Sirkulasi dan sensasi pergerakan ekstremitas adekuat.",
+        "Ekspektasi":  "Meningkat.",
+        "Kriteria Hasil":  "Sikulasi arteri; Sirkulasi vena; Pergerakan sendi; Pergerakan ekstremitas; Nyeri; Pendarahan; Nadi; Suhu tubuh; Warnna kulit; Tekanan darah; Luka Tekan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.06052",
+        "Nama":  "Status Menelan",
+        "Definisi":  "Jalan makanan dari mulut sampai abomen adekuat Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Mempertahankan makanan; Reflek menelan; Kemampuan megosongkan mulut; Kemampuan mengunyah; Usaha menelan; Pembentukan bolus; Frekuensi tersedak; Batuk; Muntah; Refluks lambung; Gelisah; Regurgltasi; Produk saliva; Penerimaan makanan; Kualitas suara.",
+        "Tautan Diagnosa":  "D.0063"
+    },
+    {
+        "Kode":  "L.06053",
+        "Nama":  "Status Neurologis",
+        "Definisi":  "Kemampuan sistem saraf perifer dan pusat untuk menerima, mengolah, dan merespon stimulus internal dan eksternal. Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Dari menurut s/d meningkat : Tingkat kesadaran; Reaksi pupil; Orientasi kognitif; Status kognitif; Kontrol motorik pusat; Fungsi sensorik kranial; Fungsi sensorik spinal Fungsi motorik kranial Fungsi motorik spinal Fungsi otonom; Komunikasi.",
+        "Tautan Diagnosa":  "D.0062"
+    },
+    {
+        "Kode":  "L.06054",
+        "Nama":  "Tingkat Konfusi",
+        "Definisi":  "Kesadaran, perhatian, kognitif dan persepsi yang terganggu. Ekspektasi : Menurun",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Fungsi kognitif; Tingkat kesadaran; Aktivitas psikomotorik; Motivasi memulai/menyelesaikan perilaku terarah; Memori jangka panjang.",
+        "Tautan Diagnosa":  "D.0119, D.0064, D.0068, D.0065"
+    },
+    {
+        "Kode":  "L.07055",
+        "Nama":  "Fungsi Seksual",
+        "Definisi":  "Integrasi aspek fisik dan sosioemosional terkait penyaluran dan kinerja seksual Ekspektasi : Membaik",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kepuasan hubungan seksual; Mencari informasi untuk mencapai kepuasan seksual; Verbalisasi aktivitas seksual berubah; Verbalisasi eksitasi seksual berubah; Verbalisasi peran seksual berubah; Verbalisasi fungsi seksual berubah; Keluhan nyeri saat berhubungan seksual (dispareunia); Keluhan hubungan seksual terbatas; Keluhan sulit melakukan aktivitas seksual; Verbalisasi aktivitas seksual berubah; Verbalisasi perilaku seksual berubah; Konflik nilai.",
+        "Tautan Diagnosa":  "D.0071, D.0072, D.0069"
+    },
+    {
+        "Kode":  "L.07057",
+        "Nama":  "Penerimaan Kehamilan",
+        "Definisi":  "Upaya untuk rekonsiliasi perubanan terhadap situasi/masalah kehamilan. Ekspektasi : Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi penerimaan kehamilan; Verbalisasi perasaan yang dialami; Perilaku mencari perawatan kehamilan; Menyusun perencanaan kehamilan; Kemampuan menghargai diri sendiri; Hubungan positif; Kemampuan menyesuaikan diri dengan kehamilan; Verbalisasi perasaan tenang; Upaya mencari informasi kehamilan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.07059",
+        "Nama":  "Status Antepartum",
+        "Definisi":  "Kondisi pada periode kehamilan yang dihitung sejak hari pertama haid terakhir hingga dimulainyanya persalinan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kelekatan emosional dengan janin; Koping dengan ketidaknyamanan kehamilan; Nausea; Muntah; Edema; Nyeri abdomen; Nyeri epigastrik; Pendarahan vagina; Konstipasi; Sakit kepala; Kejang; Mood labil; Protein urine; Glukosa urine; Glukosa darah; Berat badan; Tekanan darah; Hemoglobin; Reflek neurologis; Frekuensi nadi; Frekuensi napas; Suhu tubuh; Enzim liver; Hitung darah lengkap; Status kognitif.",
+        "Tautan Diagnosa":  "D.0070"
+    },
+    {
+        "Kode":  "L.07060",
+        "Nama":  "Status Intrapartum",
+        "Definisi":  "Kondisi pada periode persalinan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Koping terhadap ketidaknyamanan persalinan; Memanfaatkan teknik untuk memfasilitasi persalinan; Dilatasi serviks; Pendarahan vagina; Sakit kepala; Nyeri dengan kontraksi; Kejang; Nyeri punggung; Frekuensi kontraksi uterus; Periode kontraksi uterus; Intensitas kontraksi uterus; Tekanan darah; Frekuensi nadi; Suhu; Glukosa darah; Output urine; Refleks neurologis; Status kognitif.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.07061",
+        "Nama":  "Status Kenyamanan Pascapartum",
+        "Definisi":  "Perasaan nyaman yang berhubungan dengan kondisi setelah melahirkan. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Ketuban tidak nyaman; Meringis; Luka episiotomi; Kontraksi uterus; Berkeringat; Menangis; Merintih; Hemoroid; Kontraksi utereus; Payudara bengkak; Tekanan darah; Frekuensi nadi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.07062",
+        "Nama":  "Status PAscapartum",
+        "Definisi":  "Kondisi sejak bayi dilahirkan sampai dengan enam minggu berikutnya disertai dengan pulihnya kembali organ-organ yang berkaitan dengan kandungan yang mengalami perubahan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Sirkulasi perifer; Payudara penuh; Pemulihan perineum; Pemilihan Insisi; Intake makanan dan cairan; Aktivitas fisik; Ketahanan; Kenyamanan; Infeksi; Nyeri insisi; Pendarahan vagina; Laserasi; Keletihan; Depresi; Jumlah lochia; Warna lochia; Tekanan darah; Frekuensi nadi; Suhu tubuh; Eliminasi urine; Eliminasi fekal; Enzim liver; Hemoglobin; Sel darah putih; Glukosa darah; Mood.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.08063",
+        "Nama":  "Kontrol Nyeri",
+        "Definisi":  "Tindakan untuk mengendalikan pengalaman fisik dan emosi yang menyakitkan.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Melaporkan nyeri terkontrol; Kemampuan mengenali onset nyeri; Kemampuan mengenali penyebab nyeri; Kemampuan menggunakan teknik non-farmakologis; Dukungan orang terdekat; Keluhan nyeri; Penggunaan analgesik.",
+        "Tautan Diagnosa":  "D.0074, D.0077, D.0078"
+    },
+    {
+        "Kode":  "L.08064",
+        "Nama":  "Status Kenyamanan",
+        "Definisi":  "Keseluruhan rasa nyaman dan aman secara fisik, psikologis, spiritual, sosial budaya dan lingkungan. Ekspektasi : Meningkat",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kesejahteraan fisik; Kesejahteraan psikologis; Dukungan sosial dari keluarga; Dukungan sosial dari teman; Perawatan sesuai keyakinan budaya; Perawatan sesuai kebutuhan; Kebebasan melakukan Ibadah; Rileks; Keluhan tidak nyaman; Gelisah; Kebisingan; Kesulitan sulit tidur; Keluhan kedinginan; Keluhan kepanansan; Gatal; Mual; Lelah; Merintih; Menangis; Iritabilitas; Menyalahkan diri sendiri; Konfusi; Konsumsi alkohol; Penggunaan zat; Pencobaan bunuh diri; Memori masa lalu; Suhu ruangan; Pola eliminasi; Postur tubuh; Kewaspadaan; Pola hidup; Pola tidur.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.08065",
+        "Nama":  "Tingkat Nausea",
+        "Definisi":  "Perasaan tidak nyaman pada bagian belakang tenggorokan atau lambung yang dapat mengakibatkan muntah. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Nafsu makan; Keluhan mual; Perasaan ingin muntah; Perasaan asam di mulut; Sensasi panas; Sensasi dingin; Frekuensi menelan; Diaforesis; Jumlah saliva; Pucat; Takikardia; Dilatasi pupil.",
+        "Tautan Diagnosa":  "D.0076"
+    },
+    {
+        "Kode":  "L.08066",
+        "Nama":  "Tingkat Nyeri",
+        "Definisi":  "Pengalaman sensorik atau emosional yang berkaitan dengan kerusakan jaringan aktual atau fungsional, dengan onset mendadak atau lambat dan berinteritas ringan hingga berat dan konstan. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kemampuan menuntaskan aktivitas; Keluhan nyeri; Meringis; Sikap protektif; Gelisah; Kesulitan tidur; Menarik diri; Berfokus pada diri sendiri; Diaforesis; Perasaan depresi (tertekan); Perasaan takut mengalami cedera berulang; Anoreksia; Perineum terasa tertekan; Uterus terasa membulat; Ketegangan otot; Pupil dilatasi; Muntah; Mual; Frekuensi nadi; Pola napas; Tekanan darah; Proses berpikir; Fokus; Fungsi berkemih; Perilaku; Nafsu makan; Pola tidur.",
+        "Tautan Diagnosa":  "D.0077, D.0078, D.0079, D.0075"
+    },
+    {
+        "Kode":  "L.08075",
+        "Nama":  "Ketahanan Komunitas",
+        "Definisi":  "Kapasitas komunitas untuk beradaptasi dan berfungsi secara positif setelah mengalami kesulitan atau krisis. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Keberlanjutan pelayanan rutin komunitas; Ketersediaan pelayanan kesehatan; Ketersediaan sumber daya untuk memenuhi kebutuhan dasar; Kesiapan komunitas untuk tanggap krisis; Adaptasi komunitas terhadap perubahan; Kerjasama komunitas untuk menghadapi lantangan di masa depan; Kemutakhiran rencana tanggap krisis; Pemimpin kunci memantau lingkungan sosial ekonomi; Pemimpin kunci memantau lingkungan fisik; Pemimpin kunci mengkoordinasi tanggap krisis; Mengidentifikasi strategi resolusi konflik; Penggunaan jejaring komunikasi; Berkolaborasi dengan badan/pemerintah; Akses ke sumber daya eksternal.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09056",
+        "Nama":  "Identitas Seksual",
+        "Definisi":  "Pengenalan dan penerimaan diri terhadap aspek seksual",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Menunjukkan pendirian seksual yang jelas; Integrasi orientasi seksual ke dalam kehidupan sehari-hari; Menyusun batasan-batasan sesuai jenis kelamin; Pencarian dukungan sosial; Verbalisasi hubungan harmonis; Verbalisasi hubungan seksual sehat.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09067",
+        "Nama":  "Citra Tubuh",
+        "Definisi":  "Persepsi tentang penampilan, struktur da fungsi fisik individu",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Melihat bagian tubuh; Menyentuh bagian tubuh; Verbalisasi kecacatan bagian tubuh; Verbalisasi kehilangan bagian tubuh; Verbalisasi perasaan negatif tentang perubahan tubuh; Verbalisasi kekhawatiran pada penolakan/reaksi orang lain; Verbalisasi perubahan gaya hidup; Menyembunyikan bagian tubuh berlebih; Fokus pada bagian tubuh; Fokus pada penampilan masa lalu; Fokus pada kekuatan masa lalu; Respon nonverbal pada perubahan tubuh; Hubungan sosial.",
+        "Tautan Diagnosa":  "D.0083, D.0084"
+    },
+    {
+        "Kode":  "L.09068",
+        "Nama":  "Harapan",
+        "Definisi":  "Ketersediaan alternatif pemecah pada masalah yang dihadapi",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Keterlibatan pada aktivitas keperawatan; Selera makan; Inisiatif; Minat komunikasi verbal; Verbalisasi keputusasaan; Perilaku pasif; Afek datar; Mengangkat bahu saat bicara; Pola tidur.",
+        "Tautan Diagnosa":  "D.0088"
+    },
+    {
+        "Kode":  "L.09069",
+        "Nama":  "Harga Diri",
+        "Definisi":  "Persasaan positif terhadap diri sendiri atau kemampuan sebagai respon terhadap situasi saaat ini",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Penilaian diri positif; Perasaan memiliki kelebihan atau kemampuan positif; Penerimaan penilaian positif terhadap diri sendiri; Minat mencoba hal baru; Berjalan menampakkan wajah; Postur tubuh menampakkan wajah; Konsentrasi; Tidur; Kontak mata; Gairan aktivitas; Aktiv; Percaya diri berbicara; Perilaku asertif; Kemampuan membuat keputusan; Perasaan malu; Perasaan bersalah; Perasaan tidak mampu melakukan apapun; Meremehkan kemampuan mengatasi masalah; Ketergantungan pada pengutan secara berlebihan; Pencarian penguatan secara berlebih.",
+        "Tautan Diagnosa":  "D.0086, D.0087, D.0101, D.0102"
+    },
+    {
+        "Kode":  "L.09070",
+        "Nama":  "Identitas Diri",
+        "Definisi":  "Kemampuan mempertahankan keutuhan persepsi terhadap diri",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Perilaku konsisten; Hubungan yang efektif; Strategi koping efektif; Penampilan peran efektif; Perasaan fluktuatif terhadap diri; Kebingungan dengan nilai-nilai budaya; Kebingungan dengan tujuan hidup; Kebingungan dengan jenis kelamin; Kebingungan dengan niali-nilai ideal; Persepsi pada diri.",
+        "Tautan Diagnosa":  "D.0088, D.0084"
+    },
+    {
+        "Kode":  "L.09071",
+        "Nama":  "Keberdayaan",
+        "Definisi":  "Persepsi bahwa tindakan seseorang mampu mempengaruhi hasil secara signifikan Ekpetasi : Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Pernyataan mampu melakukan aktivitas; Pernyataan keyakinan tentang kinerja peran; Berpartisipasi dalam perawatan; Pernyataan frustasi; Ketergantungan pada orang lain; Perasaan diasingkan; Pernyataan kurang kontrol; Pernyataan rasa malu; Perasaaan tertekan (depresi); Pengasingan.",
+        "Tautan Diagnosa":  "D.0092, D.0103"
+    },
+    {
+        "Kode":  "L.09072",
+        "Nama":  "Kesadaran Diri",
+        "Definisi":  "Kemampuan menilai kekuatan, kelemahan, pikiran, sikap, kepercayaan, emosi, motivasi seseorang berkaitan dengan diri, lingkungan dan orang lain",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Mengakui kemampuan fisik; Mengakui kemampuan mental; Mengakui kemampuan emosional; Mengenali keterbatasan fisik; Mengenali keterbatasan mental; Mengenali keterbatasan emosi; Mengenali pola kebiasaan; Mengenali niali-nilai pribadi; Mengenali respon subjektif orang lain; Mengenali respon subjektif terhadap situasi; Mempertahankan kesadaran berpikir; Mempertahankan kesadaran terhadap perasaan; Verbalisasi terhadap orang lain; Interaksi dengan orang lain; Verbalisasi kebutuhan; Menerima perasaan sendiri; Menerima perilau sendiri; Membedakan diri dan orang lain; Membedakan diri dari lingkungan.",
+        "Tautan Diagnosa":  "D.0090, D.0093, D.0097, D.0122"
+    },
+    {
+        "Kode":  "L.09073",
+        "Nama":  "Ketahanan Personal",
+        "Definisi":  "Kapasitas untuk beradaptasi dan berfungsi secara positif setelah mengalami kesulitan atau krisis",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi harapan yang positif; Menggunakan strategi koping yang efektif; Verbalisasi perasaan; Menunjukkan harga diri positif; Mengambil tanggung jawab; Mencari dukungan emosional; Menganggap kesulitan sebagai tantangan; Menggunakan strategi untuk meningkatkan keamanan; Menggunakan strategi untuk menghindari bahaya; Menghindari penyalahgunaan obat; Menghindari penyalahgunaan zat; Menahan diri menyakiti orang lain; Mengidentifikasi model peran; Mengidentifikasi sumber daya di komunitas; Memanfaatkan sumber daya di komunitas; Verbalisasi kesiapan untuk belajar.",
+        "Tautan Diagnosa":  "D.0094, D.0096, D.0098, D.0099, D.0104"
+    },
+    {
+        "Kode":  "L.09074",
+        "Nama":  "Ketahanan Keluarga",
+        "Definisi":  "Kapasitas keluaga untuk beradaptasi dan berfungsi secara positif setelah mengalami kesulitan atau krisis",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Mendiskusikan makna krisis; Mempertahankan kebiasaan rutin keluarga; Dukungan kemandirian antara anggota keluarga; Verbalisasi harapan yang positif antar anggota keluarga; Menggunakan strategi koping yang efektif; Verbalisasi perasaan antar anggota keluarga; Mencari dukungan emosional dari anggota keluarga yang lain; Menganggap kesulitan sebagai tantangan; Toleransi perpisahan; Mengidentifikasi sumber daya di komunitas; Memanfaatkan sumber daya di komunitas; Memanfaatkan kelompok komunitas umtuk dukungan emosional; Memanfaatkan tenaga kesehatan umtuk mendapat informasi; Memanfaatkan tenaga kesehatan umtuk mendapat bantuan; Verbalisasi kesiapan untuk belajar.",
+        "Tautan Diagnosa":  "D.0092, D.0103"
+    },
+    {
+        "Kode":  "L.09076",
+        "Nama":  "Konsep Diri",
+        "Definisi":  "Pola persepsi yang cukup untuk merasa sejahtera.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Verbalisasi kepuasan terhadap diri; Verbalisasi kepuasan terhadap harga diri; Verbalisasi kepuasan terhadap penampilan peran; Verbalisasi kepuasan terhadap citra tubuh; Verbalisasi kepuasan terhadap identitas diri; Verbalisasi keinginan meningkatkan konsep percaya diri; Verbalisasi rasa percaya diri; Verbalisasi penerimaan terhadap kelebihan diri; Verbalisasi peneriman terhadap keterbatasan diri.",
+        "Tautan Diagnosa":  "D.0082, D.0100, D.0122, D.0107, D.0146, D.0089"
+    },
+    {
+        "Kode":  "L.09076R",
+        "Nama":  "Kontrol Diri",
+        "Definisi":  "Kemampuan untuk, mengendalikan atau mengatur emosi, pikiran, dan perilaku dalam menghadapi masalah",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi ancaman kepada orang lain; Vebalisasi umpatan; Perilaku menyerang; Perilaku melukai diri sendiri/orang lain; Perilaku merusak lingkungan sekitar; Perilaku agresif/amuk; Suara keras; Bicara ketus; Verbalisasi keinginan bunuh diri; Verbalisasi isyarat bunuh diri; Verbalisasi ancaman bunuh diri; Verbalisasi rencana bunuh diri; Verbalisasi kehilangan hubungan yang penting; Perilaku merencanakan bunuh diri; Euforia; Alam perasaan depresi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09078",
+        "Nama":  "Kontrol Pikir",
+        "Definisi":  "kemampuan seseorang mengendalikan diri dari gangguan persepsi sendori, proses pikir dan isi pikir. Ekspekrasi : Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan mengenali halusinasi  dan delusi; Kemampuan menahan diri mengikuti halusinasi dan delusi; Kemampuan menjelaskan isi halusinasi dan delusi; Melaporkan penurunan halusinasi dan delusi; Validasi; Kemampuan berinteraksi; Kemampuan memahami ide orang lain; Kesesuain efek; Memandang lingkungan secara akurat; Menunjukan pola berfikir yang logis; Menunjukan pemikiran yang berdasarkan kenyataan; Menunjukan isi pikir positif.",
+        "Tautan Diagnosa":  "D.0104"
+    },
+    {
+        "Kode":  "L.09079",
+        "Nama":  "Memori",
+        "Definisi":  "Kemampuan mengingat bebrapa informasi atau perilaku.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "D.0112, D.0114, D.0116, D.0117"
+    },
+    {
+        "Kode":  "L.09080",
+        "Nama":  "Motivasi",
+        "Definisi":  "Keinginan internal individu untuk melakukan tindakan/perilaku positif. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Pikiran berfokus masa depan; Upaya menyusun rencana tindakan; Upaya mencari sumber sesuai kebutuhan; Upaya mencari  dukungan sesuai kebutuhan; Perilaku bertujuan; Inisiatif; Harga diri positif; Keyakinan Positif; Berani mencari pengalaman baru; Penyelesaian tugas; Pengambilan kesempatan; Bertanggung jawab.",
+        "Tautan Diagnosa":  "D.0107"
+    },
+    {
+        "Kode":  "L.09081",
+        "Nama":  "Orientasi Kognitif",
+        "Definisi":  "Kemampuan mengidentifikasi orang, tempat dan aktu secara akurat. Ekpekstasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Identifikasi diri sendiri; identifikasi orang terdekat; Identifikasi orang tempat saat ini; Identifikasi hari; Identifikasi bulan; Identifikasi tahun; Identifikasi peristiwa penting.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09082",
+        "Nama":  "Penerimaan Kehamilan",
+        "Definisi":  "Keinginan untuk melangsungkan kehamilan.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi penerimaan; Verbalisasi persaan yang dialami; Verbalisasi perilaku mencari perawatan/pengobatan; Menyusun perencanaan masa depan; Perilaku sesuai perasaan yang dialami; Kemampuan menghargai diri sendiri; Hubungan positif; Kemampuan menyesuaikan diri; Verbalisasi perasaan tenang; Resilensi; Upaya mencari informasi/masalah; Koping; Pembuatan keputusan; Penyelesaian tugas; Marah; Pikiran tentang kehilangan; Ketergantungan pada orang lain; Menarik diri; Perasaan kesepian; Afek.",
+        "Tautan Diagnosa":  "D.0073"
+    },
+    {
+        "Kode":  "L.09083",
+        "Nama":  "Persepsi Sensori",
+        "Definisi":  "Persepsi-realitas terhadap stimulus baik internal maupun eksternal. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi mendengar bisikan 1-5.; Verbalisasi melihat bayanan 1-5.; Verbalisasi merasakan sesuatu melalui indra perabaan.; Verbalisasi merasakan sesuatu melalui indra penciuman.; Verbalisasi merasakan sesuatu melalui indra pengecapan.; Distorsi Sensori; Perilaku Halusinasi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09084",
+        "Nama":  "Psikospiritual",
+        "Definisi":  "Kenyamanan psikososial terkait konsep diri, kesejahteraan emosional, sumber inspirasi, serta makna dan tujuan hidup seseorang. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Keyakinan; Harapan; Konsep diri; Citra diri; Perasaan tenang; Verbalisasi optimisme; Penetapan tujuan; Kemampuan memaknai hidup; Kegelisahan; Depresi; Perasaan takut; Perasaan mengabaikan spiritual; Pikiran bunuh diri.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09085",
+        "Nama":  "Resolusi Berduka",
+        "Definisi":  "Respons psikososial yang di tunjukan akibat kehilangan (orang, objek, fungsi, status, bagian tubuh atau hubungan). Ekspestasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi menerima kehilangan; Verbalisasi harapan; Verbalisasi perasaan berguna; Konsentrasi; Imunitas; Verbalisasi perasaan sedih; Verbalisasi perasaan bersalah; Verbalisasi menyalahkan orang lain; Verbalisasi mimpi buruk; Menangis; Fobia; Marah; Panik; Pola tidur.",
+        "Tautan Diagnosa":  "D.0085, D.0105"
+    },
+    {
+        "Kode":  "L.09086",
+        "Nama":  "Status Koping",
+        "Definisi":  "Kemampuan menilai dan merespons stresor dan / atau kemampuan menggunakan sumber-sumber yang ada untuk mengatasi masalah. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kemampuan memenuhi peran sesuai usia; Perilaku koping adaptif; Verbalisasi  kemampuan mengatasi masalah; Verbalisasi pengakuan masalah; Verbalisasi kelemahan diri; Perilaku asertif; Partisipasi sosial; Tanggung jawab diri; Orientasi realitas; Minat mengikuti perawatan/pengobatan; Kemampuan membina hubungan; Verbalisasi menyalahkan orang lain; Verbalisasi rasionalisasi kegagalan; Hipersensitif pada kritik; Perilaku penyalahgunaan zat; Perilaku manipulasi; Perilaku permusuhan; Perilaku superior.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09086R",
+        "Nama":  "Status Kognitif",
+        "Definisi":  "Kemampuan melakukan proses mental yang kompleks. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Komunikasi jelas sesuai usia; Pemahaman makna situasi; Kemampuan membuat keputusan; Perhatian; Konsentrasi; Orientasi kognitif; Memori segara; Memori saat ini; Memori jangka panjang; Proses informasi; Pertimbangan alternatif saat memutuskan; Kemampuan berhitung.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09088",
+        "Nama":  "Status Koping Keluarga",
+        "Definisi":  "Perilaku anggota keluarga dapat mendukung, memberi rasa nyaman, membantu dan memotivasi anggota keluarga lain yang sakit terhadap kemampuan beradaptasi, mengelola dan mengatasi masalah kesehatan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kepuasan terhadap perilaku bantuan anggota keluarga lain; Keterpaparan inforrmasi; Perasaan diabaikan; Kekahawatir tentang anggota keluarga; Perilaku mengabaikan anggota keluarga; Kemampuan memenuhi kebutuhan anggota keluarga; Komitmen pada keperawatan/pengobatan; Komunikasi antara anggota keluarga; Perasaan tertekan (depresi); Perilaku menyerang (agresi); Perilaku menghasut; Gejala psikosomatis; Perilaku menolak perawatan; Perilaku bermusuhan; Perilaku individualistik; Ketergantungan pada anggota keluarga lain; Perilaku overprotektif; Toleransi; Perilaku bertujuan; Perilaku sehat.",
+        "Tautan Diagnosa":  "D.0090, D.0093, D.0097"
+    },
+    {
+        "Kode":  "L.09089",
+        "Nama":  "Status Koping Komunitas",
+        "Definisi":  "Pola adaptasi aktivitas komunitas dan penyelesaian masalah yang memuaskan untuk memenuhi tuntutan kebutuhan masyarakat. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Keberdayaan komunitas; Perencanaan komunitas; Pemecahan masalah komunitas; Sumber daya komunitas; Partisipasi masyarakat; Kegiatan komunitas memenuhi harapan anggotanya; Komunikasi positif; Program reaksi; Program relaksasi/bersantai; Tanggung jawab komunitas terhadap penatalaksanaan stres; Kerentanan komunitas; Konflik dalam komunitas; Tingkat kejadian penyakit; Tingkat stres.",
+        "Tautan Diagnosa":  "D.0125, D.0123, D.0091, D.0095"
+    },
+    {
+        "Kode":  "L.09090",
+        "Nama":  "Status Orientasi",
+        "Definisi":  "Keyakinan yang sesuai dengan kenyataan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Produktivitas; Verbalisasi waham; Perilaku waham; Khawatir; Curiga; Sikap bermusuhan; Tegang; Menarik diri; Perilaku sesuai realita; Isi pikir sesuai realita; Pembicaraan; Konsentrasi; Pola tidur; Kemampuan mengambil keputusan; Proses pikir; Perawatan diri.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09091",
+        "Nama":  "Status Spiritual",
+        "Definisi":  "Keyakinan atau system nilai berupa kemampuan merasakan makna dan tujuan hidup melalui hubungan diri, orang lain, lingkungan atau Tuhan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Verbalisasi makna dan tujuan hidup; Verbalisasi kepuasan terhadap makna hidup; Verbalisasi perasaan keberdayaan; Verbalisasi perasaan tenang; Verbalisasi penerimaan; Verbalisasi percaya pada orang lain; Perilaku marah pada Tuhan; Verbalisasi perasaan bersalah; Verbalisasi perasaan asing; Verbalisasi perasaan diabaikan; Verbalisasi perasaan menyalahkan diri sendiri; Mimpi buruk; Perasaan takut; Penghindaran aktivitas BS, tempat, orang terkait trauma; Kewaspadaan berlebihan; Perilaku merusak diri; Kemampuan beribadah; Interaksi dengan orang terdekat/pemimpin spiritual; Kopling; Memori; Interpretasi realitas.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09092",
+        "Nama":  "Tingkat Agitasi",
+        "Definisi":  "Manifestasi fisiologis dan perilaku akibat stres atau pemicu biokimia. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kegelisahan; Frustasi; Sifat lekas marah; Tidak mampu menahan diri; Mondar-mandir; Pergerakan berulang; Ketidakmampuan untuk tetap duduk; Menolak bantuan; Memukul; Menendang; Melempar; Meludah; Menggigit; Memaki; Ungkapan yang tidak tepat; Isyarat tidak pantas; Emosi; Status hidrasi; Tekanan darah; Nadi radial; Tidur.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09093",
+        "Nama":  "Tingkat Ansietas",
+        "Definisi":  "Kondisi emosi dan pengalaman subyektif terhadap objek yang tidak jelas dan spesifik akibat antisipasi bahaya yang memungkinkan individu melakukan tindakan untuk menghadapi ancaman. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi kebingungan; Verbalisasi khawatir akibat kondisi yang dihadapi; Perilaku gelisah; Perilaku tegang; Keluhan pusing; Anoreksia; Palpitasi; Frekuensi pemapasan; Frekuensi nadi; Tekanan darah; Diaforesis; Tremor; Pucat; Konsentrasi; Pola tidur; Perasaan keberdayaan; Kontak mata; Pola berkemih; Orientasi.",
+        "Tautan Diagnosa":  "D.0080"
+    },
+    {
+        "Kode":  "L.09094",
+        "Nama":  "Tingkat Berduka",
+        "Definisi":  "Respons psikososial yang ditunjukan akibat kehilangan (orang, obyek, fungsi, status, bagian tubuh atau hubungan). Ekspektasi : Membaik.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Verbalisasi menerima kehilangan; Verbalisasi harapan; Verbalisasi perasaan berguna; Verbalisasi perasaan sedih; Verbalisasi perasaan bersalah atau menyalahkan orang lain; Menangis; Verbalisasi mimpi buruk; Fobia; Marah; Panik; Pola tidur; Konsentrasi; Imunitas.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.09095",
+        "Nama":  "Tingkat Delirium",
+        "Definisi":  "Gangguan tingkat kesadaran dan kognisi pada periode waktu singkat dan reversibel. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Tingkat kesadaran; Kemampuan mengikuti perintah; Aktivitas psikomotorik; Kemampuan Interpretasi stimulus lingkungan; Gelisah; Agitasi; Halusinasi; Waham; Orientasi waktu; Orientasi tempat; Orientasi orang; Fokus perhatian; Kemampuan bercakap-cakap; Interpretasi isyarat; Pemikiran abstrak; Pola tidur; Mood.",
+        "Tautan Diagnosa":  "D.0081"
+    },
+    {
+        "Kode":  "L.09096",
+        "Nama":  "Tingkat Demensia",
+        "Definisi":  "Gangguan kesadaran dan kognisi yang menyebabkan kehilangan fungsi mental, fisik dan sosial yang ireversibel pada waktu yang lama. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kemampuan mengikuti perintah; Kemampuan mengingat peristiwa saat ini; Kemampuan mengingat nama; Kemampuan mengenal anggota keluarga; Kemampuan mengingat objek familiar; Kemampuan menemukan tempat familiar; Kemampuan mempertahankan percakapan; Intepretasi gejala fisik; Proses informasi; Kemampuan penyelesaian masalah; Kebutuhan mengungkapkan masalah; Perilaku bertujuan; Depresi; Agitasi; Gelisah; Agresi; Curiga; Orientasi waktu, tempat, dan orang; Pola tidur; Aktivitas sosial; Interaksi sosial; Kontinensia fekal; Kontinensia urine.",
+        "Tautan Diagnosa":  "D.0082"
+    },
+    {
+        "Kode":  "L.09097",
+        "Nama":  "Tingkat Depresi",
+        "Definisi":  "Perasaan sedih yang berdampak negatif pada pikiran, tindakan, perasaan dan kesehatan. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Minat beraktivitas; Aktivitas sehari-hari; Konsentrasi; Harga diri; Kebersihan diri; Perasaan tidak berharga; Sedih; Putus asa; Peristiwa negatif; Perasaan bersalah; Keletihan; Pikiran mencederai diri; Pikiran bunuh diri; Bimbang; Menangis; Marah; Penyalahgunaan zat; Penyalahgunaan alkohol; Berat badan; Nafsu makan; Pola tidur; Libido.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.10095",
+        "Nama":  "Adaptasi Neonatus",
+        "Definisi":  "Proses penyesuaian fungsionall neonatus dari kehidupan intra uterin ke ekstra uterin. Ekspektasi : membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Berat badan; Membran mukosa kuning; Kulit kuning; Sklera kuning; Prematuritas; Keterlambatan pengeluaran feses; Aktifitas ekstermitas; Respons terhadap stimulus sensorik.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.10099",
+        "Nama":  "Kontrol Mual/Muntah",
+        "Definisi":  "Kemampuan untuk mengendalikan atau mengurangi perasaan tidak nyaman pada bagian belakang tenggorok atau lambung yang dapat menyebabkan muntah. Ekspektasi : Meningkat,",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan mengenali gejala; Kemapuan mengenali penyebab/pemicu; Kemampuan melakukan tindakan untuk mengontrol mual/muntah; Melaporkan  mual dan muntah mundah terkontrol; Menghindari  faktor penyebab/pemicu; Memcatat pemantauan gejala; Menghindari bau tidak enak; Penggunaan obat antiemetik; Melaporkan kegagalan pengobatan antirmetik; Melaporkan efek samping obat; Melaporkan gejala yang tidak terkontrol.",
+        "Tautan Diagnosa":  "D.0076"
+    },
+    {
+        "Kode":  "L.10100",
+        "Nama":  "Proses Informasi",
+        "Definisi":  "Kemampuan untuk mencari, mengorganisasi dan menggunakan informasi. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Memahami kalimat; Memahami paragraf; Memahami cerita; Memahami simbol-simbol umum; Menyampaikan pesan yang koheren; Pesan verbal yang koheren; Proses pikir teratur; Proses pikir logis; Menjelaskan kesamaan antara dua item; Menjelaskan perbedaan antara dua item.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.10101",
+        "Nama":  "Status Perkembangan",
+        "Definisi":  "Kemampuan untuk berkembang sesuai dengan kelompok usia. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Keterampilan/perilaku sesuai usia; Kemampuan melakukan perawatan diri; Respon sosial; Kontak mata; Kemarahan; Regresi; Efek; Pola Tidur.",
+        "Tautan Diagnosa":  "D.0106, D.0107, D.0127"
+    },
+    {
+        "Kode":  "L.10102",
+        "Nama":  "Status Pertumbuhan",
+        "Definisi":  "Kondisi fisik bertambah secara normal dalam ukuran tubuh dan massa.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Berat badan sesuai usia; Panjang/tinggi badan sesuai usia; Lingkar kepala; Kecepatan pertambahan berat badan; Kecepatan pertambahan panjang/tinggi badan; Indeks masa tubuh; Asupan nutrisi.",
+        "Tautan Diagnosa":  "D.0108, D.0059, D.0128"
+    },
+    {
+        "Kode":  "L.11103",
+        "Nama":  "Perawatan Diri",
+        "Definisi":  "Kemampuan melakukan atau menyelesaikan aktivitas perawatan diri. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan mandi; Kemampuan mengenakan pakaian; Kemampuan makan; Kemampuan ke toilet (BAB/BAK); Verbalisasi keinginan melakukan perawatan diri; Minat melakukan perawatan diri; Mempertahankan kebersihan diri; Mempertahankan kebersihan mulut.",
+        "Tautan Diagnosa":  "D.0109, D.0113, D.0117, D.0110, D.0111"
+    },
+    {
+        "Kode":  "L.12104",
+        "Nama":  "Manajemen Kesehatan",
+        "Definisi":  "Kemampuan mengatur dan mengintegrasikan penanganan masalah kesehatan dalam kehidupan sehari-hari untuk mencapai status kesehatan Optimal. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Melakukan tindakan untuk mengurangi faktor resiko; Menetapkan program keperawatan; Aktivitas hidup sehari-hari efektif memenuhi tujuan kesehatan; Verbalisasi kesulitan dalam menjalani program perawatan/pengobatan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.12105",
+        "Nama":  "Manajemen Kesehatan Keluarga",
+        "Definisi":  "Kemampuan menangani masalah kesehatan keluarga secara optimal untuk memulihkan kondisi kesehatan anggota keluarga. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan menjelaskan masalah kesehatan yang dialami; Aktivitas keluarga mengatasi masalah kesehatan yang tepat; Tindakan untuk mengurangi faktor resiko; Verbalisasi kesulitan menjalankan perawatan yang ditetapkan; Gejala penyakit anggota keluarga.",
+        "Tautan Diagnosa":  "D.0115"
+    },
+    {
+        "Kode":  "L.12106",
+        "Nama":  "Pemeliharaan Kesehatan",
+        "Definisi":  "Kemampuan mengidentifikasi, mengelola, dan/atau menemukan bantuan untuk mempertahankan kesehatan. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Menunjukan perilaku adaptif; Menunjukan pemahaman perilaku sehat; Kemampuan menjalankan perilaku sehat; Perilaku mencari bantuan; Menunjukan minat meningkatan perilaku sehat; Memiliki sistem pendukung.",
+        "Tautan Diagnosa":  "D.0099"
+    },
+    {
+        "Kode":  "L.12107",
+        "Nama":  "Perilaku Kesehatan",
+        "Definisi":  "Kemampuan dalam mengubah gaya hidup / perilaku untuk memperbaiki status kesehatan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Penerimaan terhadap perubahan status kesehatan; Kemampuan melakukan tindakan pencegahan masalah kesehatan; Kemampuan peningkatan kesehatan; Pencapaian pengendalian kesehatan.",
+        "Tautan Diagnosa":  "D.0099"
+    },
+    {
+        "Kode":  "L.12108",
+        "Nama":  "Status Kesehatan Keluarga",
+        "Definisi":  "Kondisi Kesejahteraan fisik, mental dan sosial keluarga. Ekspekstasi : Meningkat.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Kesehatan fisik anggota keluarga; Kesehatan mental anggota keluarga; Aktivitas fisik anggota keluarga; Imunisasi anggota keluarga; Perkembangan psikososial anggota keluarga; Penyesuaian terhadap disabilitas; Pengawasan perawatan anak; Pengawasan perawatan kesehatan dewasa; Akses fasilitas kesehatan; Skrining kesehatan anggota keluarga sesuai usia; Kunjungan anggota keluarga ke sekolah; Prestasi sekolah anggota keluarga; Pekerjaan orang tua; Perumahan yang sesuai; Suplai makanan bernutrisi; Sumber keuangan; Sumber perawatan kesehatan; Sumber pelayanan sosial; Kejadian infeksi anggota keluarga; Kekerasan rumah tangga; Penganiayaan fisik; Penganiayaan psikologis; Penyalahgunaan zat; Penyalahgunaan merokok; Kecanduan judi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.12109",
+        "Nama":  "Status Kesehatan Komunitas",
+        "Definisi":  "Kondisi Kesejateraan fisik, mental dan sosial komunitas Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Ketersediaan program promosi kesehatan; Ketersediaan program proteksi kesehatan; Partisipasi dalam program kesehatan komunitas; Keikutsertaan asuransi/jaminan kesehatan; Kepatuhan terhadap standar kesehatan lingkungan; Sistem surveilens kesehatan; Pemantauan standar kesehatan komunitas; Angka mortalitas; Angka morbiditas; Angka gangguan kesehatan mental; Prevalensi penyakit; Angka penyalahgunaan zat; Angka penyalahgunaan alkohol; Angka kebiasaan merokok; Angka penyakit menular seksual; Angka kelahiran preterm; Angka berat badan lahir rendah; Angka kejadian cedera; Angka kriminalitas.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.12110",
+        "Nama":  "Tingkat Kepatuhan",
+        "Definisi":  "Perilaku individu dan/atau pemberi asuhan dalam mengikuti rencana perawatan/pengobatan yang disepakati dengan tenaga kesehatan, sehingga hasil perawatan/pengobatan efektif. Ekspektasi: Meningkat",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Memberikan informasi yang jelas dan detail tentang rencana perawatan/pengobatan, termasuk tujuan, manfaat, dan potensi efek samping.; Melibatkan individu atau pemberi asuhan dalam proses perencanaan perawatan/pengobatan, sehingga mereka merasa lebih terlibat dan memiliki rasa tanggung jawab.; Membuat jadwal kontrol yang jelas dan memastikan individu atau pemberi asuhan mengerti pentingnya mengikuti jadwal tersebut.; Membuat sistem dukungan yang kuat, seperti melibatkan keluarga dalam proses perawatan/pengobatan, atau memberikan dukungan emosional.; Menyediakan akses yang mudah dan cepat ke tenaga kesehatan untuk mengatasi masalah atau pertanyaan yang mungkin muncul selama perawatan/pengobatan.; Menggunakan teknologi untuk membantu dalam mengikuti rencana perawatan/pengobatan, seperti aplikasi pengingat atau sistem monitoring kesehatan.; Melakukan evaluasi secara teratur untuk mengevaluasi kepatuhan dan hasil perawatan/pengobatan, dan membuat perubahan jika diperlukan.; Menyediakan dukungan finansial bagi individu atau pemberi asuhan yang memiliki kesulitan dalam membayar perawatan/pengobatan.; Menyediakan pendidikan kesehatan yang berkelanjutan untuk individu dan pemberi asuhan, agar mereka dapat memahami kondisi kesehatan mereka dan cara untuk menjaganya.; Membuat komunikasi yang baik dan kerja sama dengan individu, pemberi asuhan, dan tim kesehatan lainnya untuk memastikan rencana perawatan/pengobatan dilaksanakan dengan efektif dan efisien..",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.12111",
+        "Nama":  "Tingkat Pengetahuan",
+        "Definisi":  "Kecukupan informasi kognitif yang berkaitan dengan topik tertentu Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Perilaku sesuai anjuran; Verbalisasi minat dalam belajar; Kemampuan menjelaskan pengetahuan tentang suatu topik; Kemampuan menggambarkan pengalaman sebelumnya yang sesuai dengan topik; Perilaku sesuai dengan pengetahuan; Pertanyaan yang sesuai dengan masalah yang dihadapi; Persepsi yang keliru tentang masalah; Menjalani pemeriksaan yang tidak tepat; Perilaku.",
+        "Tautan Diagnosa":  "D.0111, D.0114, D.0115, D.0116, D.0110"
+    },
+    {
+        "Kode":  "L.13112",
+        "Nama":  "Dukungan Keluarga",
+        "Definisi":  "Sikap atau tindakan keluarga yang menunjukkan kepedulian atau bantuan fisik dan psikologis terhadap anggota keluarga lain.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.13113",
+        "Nama":  "Dukungan Sosial",
+        "Definisi":  "Ketersediaan sokongan dari orang lain untuk memenuhi kebutuhan individu yang menjalani perawatan.",
+        "Ekspektasi":  "Meningkat.",
+        "Kriteria Hasil":  "Kemampuan meminta bantuan pada orang lain; Bantuan yang ditawarkan  oleh orang lain; Dukungan emosi yang disediakan oleh orang lain; Jaringan sosial yang membantu.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.13114",
+        "Nama":  "Fungsi Keluarga",
+        "Definisi":  "Kemampuan keluarga memenuhi kebutuhan anggota keluarga selama proses perkembangan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Pemenuhan kebutuhan anggota keluarga; Anggota keluarga saling mendukung; Anggota keluarga menjalankan peran yang diharapkan; Adaptasi terhadap masalah; Adaptasi terhadap tansisis perkembangan; Pembagian tanggung jawab  kepada anggota keluarga; Lingkungan mendukung anggota keluargamengukapkan perasaan; Perlibatan anggota keluarga dalam penyelesaian masalah; Verbalisasi komitmen terhadap keluarga; Anggota keluarga terlibat dalam aktivitas komunitas; Mempertahkan tradisi keluarga.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.13115",
+        "Nama":  "Interaksi Sosial",
+        "Definisi":  "Kuantitas dan / atau kualitas hubungan sosial yang cukup. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Perasaan nyaman dengan situasi sosial; Perasaan yang mudah menerima atau mengkomunikasikan perasaan; Responsif pada orang lain; Minat melakukan kontak fisik; PengVerbalisasi kasih sayang; Kontak mata; Ekspresi wajah responsif; Kooperatif dalam bermain dengan teman  sebaya; Kooperatif dengan teman sebaya; Perilaku sesuai usia.",
+        "Tautan Diagnosa":  "D.0118, D.0119, D.0121, D.0122, D.0126"
+    },
+    {
+        "Kode":  "L.13116",
+        "Nama":  "Keterlibatan Sosial",
+        "Definisi":  "Kemampuan untuk membina hubungan yang erat, hangat, terbuka dan independen dengan orang lain. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Minat interaksi; Verbalisasi tujuan yang jelas; Minat terhadap aktivitas.",
+        "Tautan Diagnosa":  "D.0121"
+    },
+    {
+        "Kode":  "L.13117",
+        "Nama":  "Kinerja Pengasuhan",
+        "Definisi":  "Pola pemberian lingkungan bagi anak atau anggota keluarga untuk, mendukung dan membangun aspek fisik, emosi dan sosial. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Pemenuhan kebutuhan fisik anak; Pemenuhan kebutuhan emosional anak; Pemenuhan kebutuhan sosial anak; Pemenuhan kebutuhan khusus anak; Penyedia nutrisi sesuai usia; Perawatan kesehatan anak; Stimulasi perkembangan kognitif; Stimulasi perkembangan sosial; Stimulasi perkembangan spiritual; Interaksi sesuai temperamen anak; Penggunaan disiplin sesuai usia; Berinteraksi dengan anak; Empati pada anak; Komunikasi terbuka pada anak; Verbalisasi positif pada anak; Hubungan saling mencintai; Harapan realistis peran orangtua; Ekspresi kepuasan peran orang tua.",
+        "Tautan Diagnosa":  "D.0118, D.0126, D.0127, D.0128, D.0124"
+    },
+    {
+        "Kode":  "L.13118",
+        "Nama":  "Komunitasi Verbal",
+        "Definisi":  "Kemampuan menerima, memproses, mengirim, dan / atau menggunakan sistem simbol. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan berbicara; Kemampuan mendengar; Kesesuaian ekspresi wajah/tubuh; Kontak mata; Afasia; Disfasia; Apraksia; Disleksia; Disatria; Afonia; Dislalia; Pelo; Gagap; Respons perilaku; Pemahaman komunikasi.",
+        "Tautan Diagnosa":  "D.0119, D.0121, D.0124"
+    },
+    {
+        "Kode":  "L.13119",
+        "Nama":  "Penampilan Peran",
+        "Definisi":  "Pola perilaku sesuai dengan harapan, norma dan lingkungan, Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Verbalisasi harapan terpenuhi; Verbalisasi kepuasan peran; Adaptasi peran; Strategi koping yang efektif; Dukungan sosial; Tanggung jawab peran; Verbalisasi perasaan bingung menjalankan peran; Konflik peran; Verbalisasi perasaan cemas; Perilaku cemas; Afek depresi.",
+        "Tautan Diagnosa":  "D.0132, D.0146"
+    },
+    {
+        "Kode":  "L.13120",
+        "Nama":  "Peran Menjadi Orang Tua",
+        "Definisi":  "Kemampuan crang tua memberi lingkungan bagi anak atau anggota keluarga yang cukup, untuk r ilitasi pertumbuhan dan perkembangan. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Bouding attachment; Perilaku positif menjadi orang tua; Interaksi perawatan bayi; Verbalisasi kepuasan memiliki bayi; Memberi pengertian pada anak/anggota keluarga; Kebutuhan fisik anak/anggota keluarga terpenuhi; Kebutuhan emosi anak/anggota keluarga terpenuhi; Keinginan meningkatkan peran menjadi orang tua; Verbalisasi kepuasan dengan lingkungan rumah; Anak atau keluarga Verbalisasi harapan yang realistis; Stimulasi visual; Stimulasi taktil; Stimulasi pendengaran.",
+        "Tautan Diagnosa":  "D.0140, D.0149"
+    },
+    {
+        "Kode":  "L.13121",
+        "Nama":  "Peran Pemberi Asuhan",
+        "Definisi":  "Kemampuan berperan memberikan asuhan dalam keluarga. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan memberi asuhan; Kemampuan merawat pasien; Kemampuan menyelesaikan tugas merawat pasien; Kekhawatiran dirawat kembali; Kekhawatiran kelanjutan perawatan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.13122",
+        "Nama":  "Perlekatan",
+        "Definisi":  "Hubungan interaktif awal antara orang tua dan anak.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Mempratikkan perilaku sehat selama hamil; Menyiapkan perlengkapan bayi sebelum kelahiran; Verbalisasi perasaan positif pada bayi; Mencium bayi; Tersenyum kepada bayi; Melakukan kontak mata dengan bayi; Berbicara kepada bayi; Bermain dengan bayi; Berespons pada isyarat bayi; Menghibur bayi; Menggendong bayi untuk menyusui/memberi makan; Mempertahankan bayi bersih dan hangat; Bayi menatap orang tua meningkat; Kekhawatiran menjalankan peran orang tua; Konflik hubungan orangtua dan bayi/anak; Kekhawatiran akibat hospitalisasi; Penghalang fisik; Penyalahgunaan zat.",
+        "Tautan Diagnosa":  "D.0100"
+    },
+    {
+        "Kode":  "L.13123",
+        "Nama":  "Proses Keluarga",
+        "Definisi":  "Perubahan dalam hubungan atau fungsi keluarga.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Adaptasi keluarga terhadap situasi; Kemampuan keluarga berkomunikasi secara terbuka di antara anggota keluarga; Kemampuan keluarga memenuhi kebutuhan fisik anggota keluarga; Kemampuan keluarga memenuhi kebutuhan emosional anggota keluarga; Kemampuan keluarga mencari bantuan secara tepat; Aktivitas mendukung keselamatan anggota keluarga; Aktivitas mendukung pertumbuhan anggota keluarga; Ketepatan peran keluarga pada tahap perkembangan; Sikap respek antara anggota keluarga; Minat keluarga melakukan aktivitas yang positif; Kemampuan keluarga pulih dari kondisi sulit; Keseimbangan otonomi dan kebersamaan; Pematian pada batasan anggota keluarga; Hubungan dengan masyarakat; Adaptasi keluarga terhadap perubahan.",
+        "Tautan Diagnosa":  "D.0112, D.0120"
+    },
+    {
+        "Kode":  "L.13124",
+        "Nama":  "Proses Pengasuhan",
+        "Definisi":  "Serangkaian tindakan pengasuhan anak.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Terpapar informasi tentang proses persalinan/pengasuhan; Keadekuatan manajemen ketidaknyamanan selama persalinan adekuat; Akses pelayanan kesehatan mudah dijangkau; Kesesuaian kondisi bayi dengan harapan; Keamanan lingkungan bayi; Kekerasan dalam rumah tangga; Stres psikologis; Kehamilan tidak diinginkan/direncanakan; Ketidakberdayaan maternal; Penyalahgunaan obat; Kurang minat dalam proses persalinan; Kurang proaktif dalam proses persalinan.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.14125",
+        "Nama":  "Integritas Kulit dan Jaringan",
+        "Definisi":  "Keutuhan kulit (dermis dan/atau epidermis) atau jaringan (membran mukosa, kornea, fasia, otot, tendon, tulang, kartilago, kapsul sendi dan/atau ligamen).",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Elastisitas; Hidrasi; Perfusi jaringan; Kerusakan  jaringan; Kerusakan lapisan kulit; Nyeri; Perdarahan; Kemerahan; Hematoma; Pigmentasi abnormal; Jaringan parut; Nekrosis; Abrasi kornea; Suhu kulit; Sensasi; Tekstur; Pertumbuhan rambut.",
+        "Tautan Diagnosa":  "D.0129, D.0139, D.0144"
+    },
+    {
+        "Kode":  "L.14126",
+        "Nama":  "Keamanan Lingkungan Rumah",
+        "Definisi":  "Pengaturan ruangan dan perabotan untuk mencegan terjadinya cedera fisik di rumah",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Pemeliharaan rumah; Pencahayaan eksterior; Pencahayaan interior; Ketersediaan air bersih; Kebersihan penyimpanan; Kebeisihun aersiapar makanan; Kebersihan hunian; Keamanan kunci pada pintu; Kematian kunci pada jendela; Pemasangan handrail; Perawatan detektor karbon monoksida; Sistem respon kegawatdaruratan; Ketersediaan akses telepon; Kemudahan akses kamar mandi; Keamanan penyimpanan obat; Ketersediaan perangkat bantu; Pemeliharaan peralatan rumah; Ketersediaan alarm kebakaran; Pembuangan bahan berbahaya; Keamanan area bermain anak; Pelindung outlet listrik; Pengaturan suhu ruangan; Risiko jamur; Risiko asap beracun; Risiko asap tembakau; Risiko bahaya timbal; Risiko suara berbahaya.",
+        "Tautan Diagnosa":  "D.0014"
+    },
+    {
+        "Kode":  "L.14127",
+        "Nama":  "Kontrol Gejala",
+        "Definisi":  "Kemampuan untuk mengendalikan atau mengurangi perubahan fungsi fisik dan emosi yang dirasakan akibat masalah kesehatan",
+        "Ekspektasi":  "meningkat",
+        "Kriteria Hasil":  "Kemampuan memonitor munculnya gejala secara mandiri; Kemampuan memonitor lama bertahannya gejala; Kemampuan memonitor keparahan gejala; Kemampuan memonitor frekuensi  gejala; Kemampuan memonitor variasi gejala; Kemampuan melakukan tindakan pencegahan; Kemampuan melakukan tindakan untuk mengurangi gejala; Mendapatkan perawatan kesehatan saat gejala  bahaya muncul; Kemampuan menggunakan sumber-sumber daya yang tersedia; memcatat hasil pemantauan gejala; kemampuan melaporkan gejala.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.14128",
+        "Nama":  "Kontrol Resiko",
+        "Definisi":  "Kemampuan untuk mengerti, mencegah, mengeliminasi atau mengurangi ancaman kesehatan yang dapat dimodifikasi.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kemampuan mencari informasi  tentang faktor risiko; Kemampuan megeditifikasi  faktor risiko; Kemampuan mengubah perilaku; Komitmen terhadap strategi; Kemampuan memodifikasi gaya hidup; Kemampuan memodifikasi gaya hidup; Kemampuan menghindari  faktor risiko; Kemampuan mengenali perubahan status kesehatan; Kemampuan berpartisipasi  dalam skrining risiko; Penggunaan fasilitas kesehatan; Penggunaan sistem pendukung; Pemantauan perubahan status imunisasi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.14129",
+        "Nama":  "Pemulihan Pascabedah",
+        "Definisi":  "Proses penyembuhan setelah menjalani pembedahan untuk memulai dan melakukan aktivitas sehari-hari. Ekspektasi : Meningkat.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Kenyamanan; Selera makan; Mobilitas; Kemampuan melanjutkan pekerjaan; Kemampuan berkerja; Kemampuan perawatan diri; Waktu penyembuhan; Area luka operasi.",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.14130",
+        "Nama":  "Penyembuhan Luka",
+        "Definisi":  "Kerusakan jaringan epitel, dermis, dan epidermis atau jaringan yang lebih dalam membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "Penyatuan kulit; Penyatuan tepi luka; Jaringan granulasi; Pembetukan jaringan parut; Edema pada sisi luka; Perandangan luka; Nyeri; Drainase purulen; Drainase sorosa; Drainase sanguinis; Drainese serosanguinis; Entema pada kulit sekitar; Peningkatan suhu kulit; Bau tidak sedap pada luka; Nekrosis; Infeksi.",
+        "Tautan Diagnosa":  "D.0130, D.0131, D.0147, D.0148"
+    },
+    {
+        "Kode":  "L.14131",
+        "Nama":  "Respon Alergi Lokal",
+        "Definisi":  "Perubahan daya reaksi tubuh secara lokal akibat terpapar alergen dan mengalami stimulasi respon imunitas yang berlebihan",
+        "Ekspektasi":  "menurun",
+        "Kriteria Hasil":  "Nyeri; Gatal lokal; Sekresi mukus; Bersin; Eritema lokal; Konjungtivttis; Lakrimasi; Rhinitis; Edema lokal.",
+        "Tautan Diagnosa":  "D.0135"
+    },
+    {
+        "Kode":  "L.14132",
+        "Nama":  "Respon Alergi Sistemik",
+        "Definisi":  "Reaksi hipersensitivitas imun sistemik segera atau dipercepat terhadap antigen (alergen) spesifik secara umum membaik.",
+        "Ekspektasi":  "Meningkat",
+        "Kriteria Hasil":  "-",
+        "Tautan Diagnosa":  "-"
+    },
+    {
+        "Kode":  "L.14133",
+        "Nama":  "Status Imum",
+        "Definisi":  "Kekebalan tubuh terhadap antigen internal dan eksternal. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Integritas kulit; Integritas mukosa; Titer antibodi; Imunisasi; Kadar sel T4; Kadar sel T8; Infeksi berulang; Tumor; Penurunan berat badan; Fatigue kronis; Suhu tubuh; Sel darah putih.",
+        "Tautan Diagnosa":  "D.0129, D.0144"
+    },
+    {
+        "Kode":  "L.14134",
+        "Nama":  "Termoregulasi",
+        "Definisi":  "Pengaturan suhu tubuh agar tetap berada pada rentang normal. Ekspektasi : Membaik.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Mengigil; Kulit merah; Kejang; Akrosianosis; Konsumsi oksigen; Piloereksi; Vasokontriksi  perifer; Kutis memorata; Pucat; Takikardi; Takipnea; Bradikardi; Dasar kuku sianolik; Hipoksia; Suhu tubuh; Suhu kulit; Kadar glukosa darah; Pengisian kapiler; Ventilasi; Tekanan darah.",
+        "Tautan Diagnosa":  "D.0145, D.0148, D.0141"
+    },
+    {
+        "Kode":  "L.14135",
+        "Nama":  "Termoregulasi Neonatus",
+        "Definisi":  "Pengaturan suhu tubuh neonatus agar tetap berada pad rentang normal.",
+        "Ekspektasi":  "Membaik",
+        "Kriteria Hasil":  "Mengigil; Akroslanosis; Piloereksi; Konsumsi oksigen; Kutis memorata; Dasar kuku sianotik; Suhu tubuh; Suhu kulit; Frekuensi nadi; Kadar glukosa darati; Pengisian kapiler; Piloereksi; Ventilasi.",
+        "Tautan Diagnosa":  "D.0039, D.0141"
+    },
+    {
+        "Kode":  "L.14136",
+        "Nama":  "Tingkat Cedera",
+        "Definisi":  "Keparahan dan cedera yang di amati atau dilaporkan. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Toleransi aktivitas; Nafsu makan; Toleransi makanan; Kejadian cedera; Luka/lecet; Ketegangan otot; Fraktur; Perdarahan; Ekspresi wajah kesakitan; Agitasi; Iritabilitas; Gangguan mobilitas; Gangguan kognitif; Tekanan darah; Frekuensi nadi; Frekuensi nafas; Denyut jantung apikal; Denyut jantung radialis; Pola istirahat/tidur.",
+        "Tautan Diagnosa":  "D.0134, D.0136, D.0137, D.0138, D.0012, D.0133, D.0146"
+    },
+    {
+        "Kode":  "L.14137",
+        "Nama":  "Tingkat Infeksi",
+        "Definisi":  "Derajat infeksi berdasarkan observasi atau sumber informasi. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Kebersihan tangan; Kebersihan tangan; Nafsu makan.",
+        "Tautan Diagnosa":  "D.0012, D.0142"
+    },
+    {
+        "Kode":  "L.14138",
+        "Nama":  "Tingkat Jatuh",
+        "Definisi":  "Derajat jatuh berdasarkan observasi atau sumber informasi. Ekspektasi : Menurun.",
+        "Ekspektasi":  "Menurun",
+        "Kriteria Hasil":  "Jatuh dari tempat tidur; Jatuh saat berdiri; Jatuh saat duduk; Jatuh saat berjalan; Jatuh saat dipindahkan; Jatuh saat naik tangga; Jatuh saat di kamar mandi; jatuh saat membungkuk.",
+        "Tautan Diagnosa":  "D.0138, D.0141, D.0012, D.0133, D.0136, D.0143"
+    }
+]
