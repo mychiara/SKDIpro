@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /data/
+Disallow: /google-apps-script/
+
+Sitemap: /sitemap.xml
